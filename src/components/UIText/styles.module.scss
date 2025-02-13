@@ -1,0 +1,24 @@
+.ui-text {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variants */
+// .ui-text-h1 { font-size: 2.5rem; }
+// .ui-text-h2 { font-size: 2rem; }
+// .ui-text-h3 { font-size: 1.75rem; }
+// .ui-text-body { font-size: 1rem; }
+// .ui-text-caption { font-size: 0.875rem; }
+// .ui-text-label { font-size: 0.75rem; }
+
+/* Sizes */
+.ui-text-size-xs { font-size: 12px !important; color: red; }
+.ui-text-size-sm { font-size: 16px !important; color: blue; }
+.ui-text-size-md { font-size: 1rem !important; }
+.ui-text-size-lg { font-size: 60px !important; }
+.ui-text-size-xl { font-size: 80px !important; }
+
+/* Weights */
+.ui-text-weight-normal { font-weight: 400; }
+.ui-text-weight-medium { font-weight: 500; }
+.ui-text-weight-bold { font-weight: 700; }
