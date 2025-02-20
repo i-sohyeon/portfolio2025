@@ -1,3 +1,16 @@
+
+export type UITextVariant = 'h1' | 'h2' | 'h3' | 'body' | 'caption';
+export type UITextSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type UITextWeight = "normal" | "bold";
+
+export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
+  variant?: UITextVariant;
+  size?: UITextSize;
+  weight?: UITextWeight;
+  color?: string;
+  as?: React.ElementType;
+}
+
 // import { ElementType, ReactNode } from 'react';
 
 // // Text variants
@@ -20,15 +33,3 @@
 //   weight?: 'normal' | 'medium' | 'bold';
 //   color?: string;
 // }
-
-export type UITextVariant = 'h1' | 'h2' | 'h3' | 'body' | 'caption';
-export type UITextSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-export type UITextWeight = "normal" | "bold";
-
-export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
-  variant?: UITextVariant;
-  size?: UITextSize;
-  weight?: UITextWeight;
-  color?: string;
-  as?: React.ElementType;
-}

@@ -1,11 +1,12 @@
 import React from 'react';
 import "./styles/style.scss";
-import { UIText } from './components/v1';
+import { UIText, UIContent } from './components/v1';
 
 
 function App() {
   return (
-    <div className="">
+   <UIContent bgColor='eee'>
+     <div className="">
         <p className='test'>테스트입니다.</p>
 
 
@@ -28,6 +29,7 @@ function App() {
       {/* <UITextHeader.Basic>test</UITextHeader.Basic> */}
     
     </div>
+   </UIContent>
 
     
   );
