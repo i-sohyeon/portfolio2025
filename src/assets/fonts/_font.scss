@@ -134,3 +134,13 @@
   src: 
   url('./Tenada/Tenada.ttf') format('truetype'), /* Safari, Android, iOS */
 }
+
+/* noto-sans-kr-100 - Bagel fat one */
+@font-face {
+  font-family: 'Bagel fat one';
+  font-style: normal;
+  font-weight: 400;
+  // src: url('.NotoSans/noto-sans-kr-v8-korean-100.eot'); /* IE9 Compat Modes */
+  src: 
+  url('./BagelFatOne/BagelFatOne-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
