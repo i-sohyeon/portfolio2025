@@ -124,3 +124,13 @@
   font-weight: 900;
   src: url('./Roboto/Roboto-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
+
+/* noto-sans-kr-100 - Tenada */
+@font-face {
+  font-family: 'Tenada';
+  font-style: normal;
+  font-weight: 700;
+  // src: url('.NotoSans/noto-sans-kr-v8-korean-100.eot'); /* IE9 Compat Modes */
+  src: 
+  url('./Tenada/Tenada.ttf') format('truetype'), /* Safari, Android, iOS */
+}
