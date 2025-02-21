@@ -4,9 +4,10 @@ import styles from "./styles.module.scss";
 
 export const UIContent: React.FC<UIContentProps> = ({ 
   variant="type1",
+  bgColor,
+  bgPattern,
   as: UIContent = "div",
   className,
-  bgColor,
   children,
   ...rest
 
@@ -15,24 +16,11 @@ export const UIContent: React.FC<UIContentProps> = ({
   const classes = [
     styles["ui-content"],
     styles[`ui-content-${variant}`],
+    styles[`ui-content-${bgColor}`],
     className
   ]
-  // const themeStyles = {
-  //   light: 'bg-white text-gray-800',
-  //   dark: 'bg-gray-800 text-white'
-  // };
-
-  // 테마 타입 정의
-// type ThemeType = 'primary' | 'secondary' | 'accent';
-
-// const getThemeClass = (theme: ThemeType): string => {
-//   const themes = {
-//     primary: 'bg-blue-100 border-blue-300',
-//     secondary: 'bg-gray-100 border-gray-300',
-//     accent: 'bg-green-100 border-green-300'
-//   };
-//   return themes[theme];
-// };
+  .filter(Boolean)
+  .join(" ");
 
   return (
     <UIContent variant='type1' className={classes} style={{bgColor}} {...rest}>

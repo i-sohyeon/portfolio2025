@@ -5,7 +5,7 @@ import { UIText, UIContent } from './components/v1';
 
 function App() {
   return (
-   <UIContent bgColor='eee'>
+  <UIContent bgColor='gray'>
     
     <p style={{fontFamily: "Bagel fat one"}}>S.H.LEE</p>
 
@@ -29,7 +29,7 @@ function App() {
     {/* <UITextHeader.Basic>test</UITextHeader.Basic> */}
     
 
-   </UIContent>
+  </UIContent>
 
     
   );
