@@ -1,7 +1,8 @@
 
-export type UITextVariant = 'h1' | 'h2' | 'h3' | 'body' | 'caption';
+export type UITextVariant = 'mainTitle' | 'contentTitle' | 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'caption';
 export type UITextSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type UITextWeight = "normal" | "bold";
+
 
 export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
   variant?: UITextVariant;

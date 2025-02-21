@@ -1,12 +1,13 @@
 import React from 'react';
-import { UIContentProps } from "./types";
+import { UIBoxProps } from "./types";
 import styles from "./styles.module.scss";
 
-export const UIContent: React.FC<UIContentProps> = ({ 
+export const UIBox: React.FC<UIBoxProps> = ({ 
   variant="type1",
   bgColor,
   bgPattern,
-  as: UIContent = "div",
+  as: UIBox = "div",
+  align,
   className,
   children,
   ...rest
@@ -14,19 +15,19 @@ export const UIContent: React.FC<UIContentProps> = ({
  }) => {
 
   const classes = [
-    styles["ui-content"],
-    styles[`ui-content-${variant}`],
-    styles[`ui-content-${bgColor}`],
-    styles[`ui-content-${bgPattern}`],
+    styles["ui-box"],
+    styles[`ui-box-${variant}`],
+    styles[`ui-box-${bgColor}`],
+    // styles[`ui-box-${textAi}`],
     className
   ]
   .filter(Boolean)
   .join(" ");
 
   return (
-    <UIContent variant='type1' className={classes} style={{bgColor}} {...rest}>
+    <UIBox variant='type1' className={classes} style={{ align }} {...rest}>
       {children}
-    </UIContent>
+    </UIBox>
   );
 };
 

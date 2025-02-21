@@ -4,6 +4,7 @@
 }
 
 /* Variants */
+.ui-text-mainTitle { font-family: 'Tenada'; }
 // .ui-text-h1 { font-size: 2.5rem; }
 // .ui-text-h2 { font-size: 2rem; }
 // .ui-text-h3 { font-size: 1.75rem; }
@@ -16,9 +17,12 @@
 .ui-text-size-sm { font-size: 16px !important; color: blue; }
 .ui-text-size-md { font-size: 1rem !important; }
 .ui-text-size-lg { font-size: 60px !important; }
-.ui-text-size-xl { font-size: 80px !important; font-family: "Tenada";}
+.ui-text-size-xl { font-size: 80px !important; }
 
 /* Weights */
 .ui-text-weight-normal { font-weight: 400; }
 .ui-text-weight-medium { font-weight: 500; }
 .ui-text-weight-bold { font-weight: 700; }
+
+// color
+.ui-text-color-wht {color: #fff;}
