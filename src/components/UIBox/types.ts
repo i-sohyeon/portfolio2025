@@ -1,5 +1,5 @@
-export type UIBoxVariant = 'type1' | 'type2';
-export type UIBoxBgColor = 'gray' | 'blue' ;
+export type UIBoxVariant = 'content' | 'flex';
+export type UIBoxBgColor = 'gray' | 'blue'| 'pink' ;
 export type UIBoxBgPattern = 'check';
 export type UIBoxTextAlign = 'left' | 'center' | 'right';
 

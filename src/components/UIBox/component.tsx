@@ -3,7 +3,7 @@ import { UIBoxProps } from "./types";
 import styles from "./styles.module.scss";
 
 export const UIBox: React.FC<UIBoxProps> = ({ 
-  variant="type1",
+  variant,
   bgColor,
   bgPattern,
   as: UIBox = "div",

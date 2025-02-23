@@ -4,9 +4,10 @@ import styles from "./styles.module.scss";
 
 export const UIText: React.FC<UITextProps> = ({
   variant = "span",
-  size = "md",
+  size,
   weight = "normal",
   color,
+  font,
   as: UIText = "span",
   className,
   children,
@@ -17,6 +18,7 @@ export const UIText: React.FC<UITextProps> = ({
     styles[`ui-text-${variant}`],
     styles[`ui-text-size-${size}`],
     styles[`ui-text-weight-${weight}`],
+    styles[`ui-text-font-${font}`],
     className
   ]
     .filter(Boolean)

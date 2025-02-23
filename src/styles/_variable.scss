@@ -2,3 +2,66 @@
   color: red;
 }
 
+// .txt-banner-wrap {
+//   width: 100%;
+//   overflow-x: hidden;
+// }
+
+// .txt-banner {
+//   display: flex;
+//   position: relative;
+//   // width: 1500px;
+//   white-space: nowrap;
+
+//   animation: scroll-animation 15s linear infinite;
+// }
+
+// .txt-banner span{
+//   display: inline-block;
+//   white-space: nowrap;
+//   margin-right: 36px;
+//   width: 100%;
+// }
+
+// @keyframes scroll-animation {
+//   0% {
+//     transform: translateX(100%);
+//   }
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// }
+
+
+
+
+
+.txt-banner-wrap {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.txt-banner {
+  display: flex;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: max-content; /* 내용물의 너비에 맞춰 자동으로 늘어남 */
+  animation: marquee 10s linear infinite;
+}
+
+.txt-banner span {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 36px;
+    width: 100%;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

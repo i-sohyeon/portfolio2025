@@ -4,7 +4,16 @@
 }
 
 /* Variants */
-.ui-text-mainTitle { font-family: 'Tenada'; }
+.ui-text-mainTitle {
+  font-family: 'Tenada';
+  font-size: 80px !important;
+}
+.ui-text-contentTitle { 
+  display: inline-block;
+  font-family: 'Tenada';
+  font-size: 60px !important;
+  margin: 0 0 48px 0;
+}
 // .ui-text-h1 { font-size: 2.5rem; }
 // .ui-text-h2 { font-size: 2rem; }
 // .ui-text-h3 { font-size: 1.75rem; }
@@ -13,11 +22,13 @@
 // .ui-text-label { font-size: 0.75rem; }
 
 /* Sizes */
-.ui-text-size-xs { font-size: 12px !important; color: red; }
-.ui-text-size-sm { font-size: 16px !important; color: blue; }
-.ui-text-size-md { font-size: 1rem !important; }
-.ui-text-size-lg { font-size: 60px !important; }
-.ui-text-size-xl { font-size: 80px !important; }
+.ui-text-size-xxs { font-size: 12px; }
+.ui-text-size-xs { font-size: 16px; }
+.ui-text-size-sm { font-size: 24px; }
+.ui-text-size-md { font-size: 28px; }
+.ui-text-size-lg { font-size: 36px; }
+.ui-text-size-xl { font-size: 40px; }
+.ui-text-size-xxl { font-size: 48px; }
 
 /* Weights */
 .ui-text-weight-normal { font-weight: 400; }
@@ -26,3 +37,6 @@
 
 // color
 .ui-text-color-wht {color: #fff;}
+
+// font
+.ui-text-font-tenada {font-family: 'Tenada';}
