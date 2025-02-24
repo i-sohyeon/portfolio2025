@@ -8,6 +8,6 @@ export interface UIBoxProps extends React.HTMLAttributes<HTMLElement> {
   bgColor?: UIBoxBgColor;
   bgPattern?: UIBoxBgPattern;
   color?: string;
-  align?: string;
+  align?: UIBoxTextAlign;
   as?: React.ElementType;
 }

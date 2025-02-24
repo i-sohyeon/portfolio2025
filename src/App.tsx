@@ -1,6 +1,6 @@
 import React from 'react';
 import "./styles/style.scss";
-import { UIText, UIContent, UIHeader, UIBox } from './components/v1';
+import { UIText, UIContent, UIHeader, UIBox, UIBanner } from './components/v1';
 
 
 
@@ -13,7 +13,7 @@ function App() {
         <p style={{fontFamily: "Bagel fat one", fontSize: "30px"}}>S.H.LEE</p>
       </UIHeader>
     </UIBox>
-    <UIBox align='center' style={{paddingTop: "200px"}}>
+    <UIBox align='center' style={{padding: "200px 0"}}>
       <div style={{paddingTop: "102px"}}>
         <UIText variant="mainTitle" as="h1">
           UI &middot; UX
@@ -47,11 +47,60 @@ function App() {
     
     <UIBox variant='flex'>
         <div>
-        <UIText variant='contentTitle' font='tenada' size='md'>경력 CAREER</UIText>
-
+          <UIText variant='contentTitle' font='tenada' size='md'>경력 CAREER</UIText>
+            <UIBanner.List
+              variant='list'
+              bgColor='type1'
+              title='ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정'
+              des='(20202.04~2020.10)'
+            >
+          </UIBanner.List>
+          <UIBanner.List
+              variant='list'
+              bgColor='type2'
+              title='인조이웍스(enjoy works)'
+              des='(2021.01 ~ 2022.04)'
+            >
+          </UIBanner.List>
+          <UIBanner.List
+              variant='list'
+              bgColor='type3'
+              title='[프론트엔드] 리액트 (React.js 자바스크립트)_주말'
+              des='(2022.01 ~2022.04)'
+            >
+          </UIBanner.List>
+          <UIBanner.List
+              variant='list'
+              bgColor='type4'
+              title='인픽스(INPIX)'
+              des='(2022.06 ~ )'
+            >
+          </UIBanner.List>
+          <UIBanner.List
+              variant='list'
+              bgColor='type5'
+              title='한국방송통신대학교 컴퓨터과학과 편입 (재학중)'
+              des='(2023.09 ~ )'
+            >
+          </UIBanner.List>
+          <UIBanner.List
+              variant='list'
+              bgColor='type6'
+              title='??????'
+              des='(????.?? ~ )'
+            >
+          </UIBanner.List>
         </div>
         <div>
-asdsfsdgdfhfgghjh
+
+          <UIBox>
+            <UIText>
+            프로젝트 경험
+            Project Experience
+            </UIText>
+
+            
+          </UIBox>
         </div>
    
     </UIBox>
@@ -59,7 +108,7 @@ asdsfsdgdfhfgghjh
   <UIContent bgColor='gray' bgPattern='check'>
     <UIBox variant='content'>
       <UIText variant='contentTitle' font='tenada' size='md'>PROJECT DETAILs</UIText>
-
+     
     </UIBox>
 
   </UIContent>

@@ -1,13 +1,14 @@
 import React from 'react';
-import { UIBannerProps } from "./types";
+import { UIBannerProps, UIBannerListProps } from "./types";
 import styles from "./styles.module.scss";
 
-export const UIBanner: React.FC<UIBannerProps> = ({ 
-  variant="type1",
+export const List: React.FC<UIBannerProps> = ({ 
+  title,
+  des,
+  variant,
   bgColor,
   bgPattern,
   as: UIBanner = "div",
-  align,
   className,
   children,
   ...rest
@@ -15,17 +16,27 @@ export const UIBanner: React.FC<UIBannerProps> = ({
  }) => {
 
   const classes = [
-    styles["ui-Banner"],
-    styles[`ui-Banner-${variant}`],
-    styles[`ui-Banner-${bgColor}`],
+    styles["ui-banner"],
+    styles[`ui-banner-${variant}`],
+    styles[`ui-banner-${bgColor}`],
     className
   ]
   .filter(Boolean)
   .join(" ");
 
   return (
-    <UIBanner variant='type1' className={classes} style={{ align }} {...rest}>
-      {children}
+    <UIBanner className={`${styles.bannerList} ${classes}`} style={{ bgColor }} {...rest}>
+      {/* {children} */}
+      <h3>{title}</h3>
+      <p>{des}</p>
     </UIBanner>
   );
 };
+
+const UIBanner = {
+  List,
+}
+
+UIBanner.List.displayName = "UIBanner.List";
+
+export { UIBanner };

@@ -18,6 +18,7 @@ export const UIBox: React.FC<UIBoxProps> = ({
     styles["ui-box"],
     styles[`ui-box-${variant}`],
     styles[`ui-box-${bgColor}`],
+    styles[`ui-box-${align}`],
     // styles[`ui-box-${textAi}`],
     className
   ]
@@ -25,7 +26,7 @@ export const UIBox: React.FC<UIBoxProps> = ({
   .join(" ");
 
   return (
-    <UIBox variant='type1' className={classes} style={{ align }} {...rest}>
+    <UIBox variant='type1' className={classes} style={{  }} {...rest}>
       {children}
     </UIBox>
   );
