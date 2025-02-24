@@ -16,16 +16,17 @@ export const UIText: React.FC<UITextProps> = ({
   const classes = [
     styles["ui-text"],
     styles[`ui-text-${variant}`],
-    styles[`ui-text-size-${size}`],
-    styles[`ui-text-weight-${weight}`],
-    styles[`ui-text-font-${font}`],
+    styles[`ui-text-${size}`],
+    styles[`ui-text-${weight}`],
+    styles[`ui-text-${font}`],
+    styles[`ui-text-${color}`],
     className
   ]
     .filter(Boolean)
     .join(" ");
 
   return (
-    <UIText className={classes} style={{ color }} {...rest}>
+    <UIText className={classes} style={{ }} {...rest}>
       {children}
     </UIText>
   );

@@ -3,13 +3,14 @@ export type UITextVariant = 'mainTitle' | 'contentTitle' | 'h1' | 'h2' | 'h3' | 
 export type UITextSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'| 'xxl';
 export type UITextWeight = "normal" | "bold";
 export type UITextStyle = "tenada" | "bold";
+export type UITextColor = "white" | "blue";
 
 
 export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
   variant?: UITextVariant;
   size?: UITextSize;
   weight?: UITextWeight;
-  color?: string;
+  color?: UITextColor;
   font?: UITextStyle;
   as?: React.ElementType;
 }

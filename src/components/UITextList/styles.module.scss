@@ -1,0 +1,22 @@
+.checkList {
+  li {
+    position: relative;
+    font-size: 20px;
+    margin-top: 12px;
+    padding-left: 24px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../../assets/images/icons/ico-check-blue.png');
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

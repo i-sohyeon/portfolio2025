@@ -11,3 +11,11 @@ export interface UIBoxProps extends React.HTMLAttributes<HTMLElement> {
   align?: UIBoxTextAlign;
   as?: React.ElementType;
 }
+
+type UIBoxContent = {
+
+} 
+
+type UIBoxDiv = {
+  
+}
