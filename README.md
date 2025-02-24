@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -43,4 +43,33 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
+
+
+# 본 프로젝트는 React를 사용하여 만든 개인 포트폴리오입니다.
+
+## 폴더 구조
+.
+├── README.md
+├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+│   ├── index.html
+│   └── (기타 등등...)
+└── src
+    ├── App.tsx
+    ├── assets
+    ├── components
+    │   ├──UIBanner
+    │   ├──UIBox
+    │   ├──UIContent
+    │   ├──UIHeader
+    │   ├──UISwiper
+    │   ├──UIText
+    │   └──UITextList
+    ├── index.tsx
+    ├── pages
+    └── styles
+
+### 각 컴포넌트에 대한 설명
