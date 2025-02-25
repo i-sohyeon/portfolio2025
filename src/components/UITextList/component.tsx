@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 
 export const Check: React.FC<UITextListCheckProps> = ({ 
   variant,
-  items,
+  checkItems,
   // size,
   // weight = "normal",
   // color,
@@ -29,17 +29,16 @@ export const Check: React.FC<UITextListCheckProps> = ({
 
   return (
     <ul className={`${styles.checkList} ${classes}`}>
-      {items.map((item, index) => (
+      {checkItems.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
     </ul>
   );
 };
 
-
 export const Circle: React.FC<UITextListCircleProps> = ({ 
   variant,
-  listItems,
+  circleItems,
   // size,
   // weight = "normal",
   // color,
@@ -50,21 +49,31 @@ export const Circle: React.FC<UITextListCircleProps> = ({
   ...rest
 
  }) => {
-      const classes = [
-        styles["ui-textList"],
-        styles[`ui-textList-${variant}`],
-        // styles[`ui-textList-size-${size}`],
-        // styles[`ui-textList-weight-${weight}`],
-        // styles[`ui-textList-font-${font}`],
-        // className
-      ]
-        .filter(Boolean)
-        .join(" ");
+    const classes = [
+      styles["ui-textList"],
+      styles[`ui-textList-${variant}`],
+      // styles[`ui-textList-size-${size}`],
+      // styles[`ui-textList-weight-${weight}`],
+      // styles[`ui-textList-font-${font}`],
+      // className
+    ]
+      .filter(Boolean)
+      .join(" ");
 
   return (
-    <ul>
-    {listItems}
-  </ul>
+    <ul className={`${styles.circleList} ${classes}`}>
+      {circleItems.map((item, index) => (
+        <li key={index}>
+          <div>{item}</div>
+        </li>
+      ))}
+    </ul>
+
+    // <div>
+    // {data.map((item) => (
+    //   <YearAndBiography key={item.year} year={item.year} biography={item.biography} />
+    // ))}
+    // </div>
   );
 };
 

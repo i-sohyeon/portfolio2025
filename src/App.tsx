@@ -20,6 +20,21 @@ function App() {
     '태양광 햇빛마루 pc/mobile(적응형)',
   ]
 
+  const sample = [
+    '현대카드 커머셜 web/app 운영',
+    '우리은행 won 뱅킹 재구축 사업',
+    '농협은행 올원뱅크 리뉴얼 구축',
+    'KB국민은행 멤버십 플랫폼 구축',
+    'KB국민은행 태블릿 브랜치 금융투자상품 판매프로세스 구축',
+    '문구야놀자 pc/mobile(적응형) 구축 및 운영',
+    '웅진 딸기콩 랜딩페이지 pc/web(반응형) 구축 및 운영',
+    '웅진 딸기콩 관리자 페이지',
+    '굿뜨래페이 pc/mobile(반응형)',
+    '인조이웍스 홈페이지 pc/web(반응형)',
+    '포토이 인생사진 mobile',
+    '태양광 햇빛마루 pc/mobile(적응형)',
+  ]
+
 
   return (
 <>
@@ -113,7 +128,8 @@ function App() {
             <UIText as="p" font='tenada' size='lg' >프로젝트 경험</UIText>
             <UIText as="p" font='tenada' size='lg' color='blue'>Project Experience</UIText>
           </div>
-          <UITextList.Check variant="check" items={textList} />
+          <UITextList.Check variant="check" checkItems={textList} />
+          <UITextList.Circle variant="check" circleItems={sample} />
         </div>
    
     </UIBox>

@@ -12,7 +12,7 @@ export interface UITextListCheckProps extends React.HTMLAttributes<HTMLElement> 
   color?: string;
   font?: UITextListStyle;
   as?: React.ElementType;
-  items: string[]; // 리스트에 보여질 문자열 배열
+  checkItems: string[]; // 리스트에 보여질 문자열 배열
   // steps: string[]; // 리스트에 보여질 문자열 배열
 }
 
@@ -24,7 +24,7 @@ export interface UITextListCircleProps extends React.HTMLAttributes<HTMLElement>
   font?: UITextListStyle;
   as?: React.ElementType;
   id?: string,
-  listItems?: string,
+  circleItems: string[];
 }
 
 

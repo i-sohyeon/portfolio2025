@@ -20,3 +20,17 @@
     }
   }
 }
+
+.circleList {
+  li {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: yellow;
+    }
+  }
+}
