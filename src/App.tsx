@@ -113,7 +113,7 @@ function App() {
             <UIText as="p" font='tenada' size='lg' >프로젝트 경험</UIText>
             <UIText as="p" font='tenada' size='lg' color='blue'>Project Experience</UIText>
           </div>
-          <UITextList items={textList} />
+          <UITextList.Check variant="check" items={textList} />
         </div>
    
     </UIBox>

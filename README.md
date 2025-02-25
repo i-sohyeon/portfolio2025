@@ -49,27 +49,30 @@ To learn React, check out the [React documentation](https://reactjs.org/). -->
 # 본 프로젝트는 React를 사용하여 만든 개인 포트폴리오입니다.
 
 ## 폴더 구조
-.
-├── README.md
-├── node_modules
-├── package-lock.json
-├── package.json
-├── public
-│   ├── index.html
-│   └── (기타 등등...)
-└── src
-    ├── App.tsx
-    ├── assets
-    ├── components
-    │   ├──UIBanner
-    │   ├──UIBox
-    │   ├──UIContent
-    │   ├──UIHeader
-    │   ├──UISwiper
-    │   ├──UIText
-    │   └──UITextList
-    ├── index.tsx
-    ├── pages
-    └── styles
+.  
+├── README.md  
+├── node_modules  
+├── package-lock.json  
+├── package.json  
+├── public  
+│   ├── index.html  
+│   └── (기타 등등...)  
+└── src  
+    ├── App.tsx  
+    ├── assets  
+    ├── components  
+    │   ├──UIBanner  
+    │   ├──UIBox  
+    │   ├──UIContent  
+    │   ├──UIHeader  
+    │   ├──UIListStep  
+    │   ├──UISwiper  
+    │   ├──UIText  
+    │   └──UITextList  
+    ├── index.tsx  
+    ├── pages  
+    └── styles  
 
 ### 각 컴포넌트에 대한 설명
+* UIBanner  
+UI
