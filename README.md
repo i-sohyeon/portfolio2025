@@ -1,54 +1,9 @@
-<!-- # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 본 프로젝트는 React를 사용하여 만든 개인 포트폴리오입니다.
 
-## Available Scripts
+### 폴더 구조
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/). -->
-
-
-# 본 프로젝트는 React를 사용하여 만든 개인 포트폴리오입니다.
-
-## 폴더 구조
+```
 .  
 ├── README.md  
 ├── node_modules  
@@ -60,19 +15,73 @@ To learn React, check out the [React documentation](https://reactjs.org/). -->
 └── src  
     ├── App.tsx  
     ├── assets  
+    │   ├──fonts
+    │   └──images  
+    │       ├── background-pattern 
+    │       └── icons  
+    └── (기타 등등...)  
     ├── components  
-    │   ├──UIBanner  
-    │   ├──UIBox  
-    │   ├──UIContent  
-    │   ├──UIHeader  
-    │   ├──UIListStep  
-    │   ├──UISwiper  
-    │   ├──UIText  
-    │   └──UITextList  
+    │   ├── UIBanner  
+    │   ├── UIBox  
+    │   ├── UIContent  
+    │   ├── UIHeader  
+    │   ├── UISwiper  
+    │   ├── UIText  
+    │   └── UITextList  
     ├── index.tsx  
     ├── pages  
-    └── styles  
+    ├── styles  
+    │   ├── mixins  
+    │   ├── _common.scss 
+    │   ├── _reset.scss 
+    │   ├── _variable.scss  
+    └── └── style.scss
+```
 
-### 각 컴포넌트에 대한 설명
+
+## 각 컴포넌트에 대한 설명
 * UIBanner  
-UI
+* UIBox
+* UIContent
+* UIHeader
+* UISwiper
+* UIText  
+    `size`
+
+* ### UITextList  
+    `UITextList.Check` `UITextList.Circle` `UITextList.Step`  
+        * 컴포넌트와 같이 비슷한 기능을 하는 컴포넌트들을 하위컴포넌트(서브컴포넌트)로 분리하여 재사용성을 높임
+
+
+
+
+
+
+
+<!-- | 첫번째(기본왼쪽정렬) | 두번째(가운데정렬) | 세번째(오른쪽정렬) |
+|---|:---:|---:|
+| `왼쪽` | 정렬확인1 | abc |
+| `정렬` | 정렬확인2 | abcdefgh |
+| `123` | 정렬확인,정렬확인,정렬확인 | abcdef |
+| `456` | 정렬확인1234 | abc |
+
+
+*이탤릭체*
+_이탤릭체_
+**굵은글씨**
+__굵은글씨__
+***굵은글씨+이탤릭체***
+___굵은글씨+이탤릭체___
+~~취소선~~
+**~~굵은글씨+취소선~~**
+<u>밑줄</u>
+
+[Google](https://www.google.com "구글")
+* 참조링크 방법
+Link: [Google][googleLink]
+[googleLink]: https://www.google.com "Go google"
+
+<https://www.google.com>
+
+<img src="이미지 주소" width="450px" height="300px" title="px(픽셀) 고정크기 설정" alt="exampleImage"></img>
+<img src="이미지 주소" width="40%" height="30%" title="px(픽셀) %크기 설정" alt="exampleImage2"></img> -->
