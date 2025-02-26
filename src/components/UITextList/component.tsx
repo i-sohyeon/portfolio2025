@@ -38,10 +38,10 @@ export const Check: React.FC<UITextListCheckProps> = ({
 
 function ItemComponent(props: { item: ItemData }) {
   return (
-    <div>
+    <li>
       <span>{props.item.number}</span>
       <p>{props.item.text}</p>
-    </div>
+    </li>
   );
 }
 
@@ -49,11 +49,11 @@ export const Circle: React.FC<UITextListCircleProps> = ({
     ...props
   }) =>  {
   return (
-    <div {...props}>
+    <ul {...props}>
       {props.data.map((item) => (
         <ItemComponent key={item.id} item={item} />
       ))}
-    </div>
+    </ul>
   );
 }
 
@@ -68,42 +68,11 @@ export const Circle: React.FC<UITextListCircleProps> = ({
 // }
 
 
-// export const Circle: React.FC<UITextListCircleProps> = ({ 
-//   variant,
-//   id,
-//   circleItems,
-//   className,
-//   children,
-//   ...rest
-
-//  }) => {
-//     const classes = [
-//       styles["ui-textList"],
-//       styles[`ui-textList-${variant}`],
-//     ]
-//       .filter(Boolean)
-//       .join(" ");
-
-//   return (
-//     // <ul className={`${styles.circleList} ${classes}`}>
-//     //   {circleItems.map((item, index) => (
-//     //     <li key={index}>
-//     //       <div>{item}</div>
-//     //     </li>
-//     //   ))}
-//     // </ul>
-//     <>
-//     </>
-        
-
-//   );
-// };
 
 const UITextList = {
    Check, Circle
 }
 
-// UITextList.Circle.displayName = "UITextList.Circle"
 UITextList.Check.displayName = "UITextList.Check"
 UITextList.Check.displayName = "UITextList.Circle"
 
