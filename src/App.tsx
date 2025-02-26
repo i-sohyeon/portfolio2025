@@ -1,7 +1,7 @@
 import React from 'react';
 import "./styles/style.scss";
 import { UIText, UIContent, UIHeader, UIBox, UIBanner, UITextList } from './components/v1';
-import UITextListCheck2 from './components/UITextList/component';
+
 
 
 
@@ -22,9 +22,9 @@ function App() {
   ]
 
   const data = [
-    { id: 0, title: "White and Black", price: 120000 },
-    { id: 1, title: "Red Knit", price: 110000 },
-    { id: 2, title: "Grey Yordan", price: 130000 },
+    { id: 0, number: 2020, text: 'zzz' },
+    { id: 1, number: 2021, text: '110000' },
+    { id: 2, number: 2022, text: '130000' },
   ];
 
 
@@ -70,6 +70,7 @@ function App() {
     
     <UIBox variant='flex'>
         <div>
+
           <UIText variant='contentTitle' font='tenada' size='md'>경력 CAREER</UIText>
             <UIBanner.List
               variant='list'
@@ -113,6 +114,9 @@ function App() {
               des='(????.?? ~ )'
             >
           </UIBanner.List>
+
+          <UITextList.Circle data={data} />
+
         </div>
 
         <div style={{height:'fit-content', backgroundColor: '#FFF302', borderRadius:'24px', display: 'block', width: '100%', maxWidth: '520px', padding:'60px 40px', boxSizing: 'border-box',}}>
@@ -121,7 +125,6 @@ function App() {
             <UIText as="p" font='tenada' size='lg' color='blue'>Project Experience</UIText>
           </div>
           <UITextList.Check variant="check" checkItems={textList} />
-          <UITextListCheck2 data={data} />
         </div>
 
    
