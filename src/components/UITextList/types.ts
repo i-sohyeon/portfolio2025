@@ -24,7 +24,18 @@ export interface UITextListCircleProps extends React.HTMLAttributes<HTMLElement>
   font?: UITextListStyle;
   as?: React.ElementType;
   id?: string,
-  circleItems: string[];
+  circleItems?: string[];
+}
+
+// test
+export interface ItemData {
+  id?: number;
+  title?: string;
+  price?: number;
+}
+
+export interface UITextListCheckProps2 extends React.HTMLAttributes<HTMLElement> {
+  data: ItemData[];
 }
 
 

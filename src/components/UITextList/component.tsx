@@ -1,5 +1,5 @@
 import React from "react";
-import { UITextListCheckProps, UITextListCircleProps } from "./types";
+import { UITextListCheckProps, UITextListCircleProps,ItemData,UITextListCheckProps2  } from "./types";
 import styles from "./styles.module.scss";
 
 
@@ -36,14 +36,29 @@ export const Check: React.FC<UITextListCheckProps> = ({
   );
 };
 
+function ItemComponent(props: { item: ItemData }) {
+  return (
+    <div>
+      <h4>{props.item.title}</h4>
+      <p>가격: {props.item.price}원</p>
+    </div>
+  );
+}
+
+export default function UITextListCheck2(props: UITextListCheckProps2) {
+  return (
+    <div {...props}>
+      {props.data.map((item) => (
+        <ItemComponent key={item.id} item={item} />
+      ))}
+    </div>
+  );
+}
+
 export const Circle: React.FC<UITextListCircleProps> = ({ 
   variant,
+  id,
   circleItems,
-  // size,
-  // weight = "normal",
-  // color,
-  // font,
-  // as: UITextList = "span",
   className,
   children,
   ...rest
@@ -52,28 +67,22 @@ export const Circle: React.FC<UITextListCircleProps> = ({
     const classes = [
       styles["ui-textList"],
       styles[`ui-textList-${variant}`],
-      // styles[`ui-textList-size-${size}`],
-      // styles[`ui-textList-weight-${weight}`],
-      // styles[`ui-textList-font-${font}`],
-      // className
     ]
       .filter(Boolean)
       .join(" ");
 
   return (
-    <ul className={`${styles.circleList} ${classes}`}>
-      {circleItems.map((item, index) => (
-        <li key={index}>
-          <div>{item}</div>
-        </li>
-      ))}
-    </ul>
+    // <ul className={`${styles.circleList} ${classes}`}>
+    //   {circleItems.map((item, index) => (
+    //     <li key={index}>
+    //       <div>{item}</div>
+    //     </li>
+    //   ))}
+    // </ul>
+    <>
+    </>
+        
 
-    // <div>
-    // {data.map((item) => (
-    //   <YearAndBiography key={item.year} year={item.year} biography={item.biography} />
-    // ))}
-    // </div>
   );
 };
 
