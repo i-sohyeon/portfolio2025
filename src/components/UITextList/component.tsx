@@ -40,22 +40,42 @@ function ItemComponent(props: { item: ItemData }) {
   return (
     <li>
       <span>{props.item.number}</span>
-      <p>{props.item.text}</p>
+      <div>
+        <h3>{props.item.title}</h3>
+        <p>{props.item.subText}</p>
+      </div>
     </li>
   );
 }
 
 export const Circle: React.FC<UITextListCircleProps> = ({
+    variant, 
+    className,
+    bgColor,
     ...props
   }) =>  {
+
+    const classes = [
+      styles[`ui-textList`],
+      styles[`ui-textList-${variant}`],
+      styles[`ui-textList-${bgColor}`],
+      // styles[`ui-textList-size-${size}`],
+      // styles[`ui-textList-weight-${weight}`],
+      // styles[`ui-textList-font-${font}`],
+    ]
+      .filter(Boolean)
+      .join(" ");
+
   return (
-    <ul {...props}>
+    <ul {...props} className={`${styles.circleList} ${classes}`}>
       {props.data.map((item) => (
-        <ItemComponent key={item.id} item={item} />
+        <ItemComponent key={item.id} item={item} {...item} />
       ))}
     </ul>
   );
 }
+
+
 
 // export default function Circle(props: UITextListCircleProps) {
 //   return (

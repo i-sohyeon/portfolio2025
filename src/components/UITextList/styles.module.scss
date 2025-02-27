@@ -23,14 +23,45 @@
 
 .circleList {
   li {
-    position: relative;
-    &::before {
-      position: absolute;
-      content: "";
+    display: flex;
+    margin-bottom: 16px;
+    span {
       display: inline-block;
-      width: 10px;
-      height: 10px;
-      background-color: yellow;
+      // width: 55px;
+      // height: 55px;
+      padding: 18px 8px;
+      border-radius: 50%;
+      background-color: #FFF302;
+      text-align: center;
+      vertical-align: middle;
     }
+    div {
+      margin-left: 28px;
+      display: block;
+      max-width: 305px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #111;
+      padding: 24px 20px 24px 56px;
+      border-radius: 24px;
+      margin-bottom: 16px;
+        h3 {}
+        p {}
+
+    }
+    // position: relative;
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   display: inline-block;
+    //   width: 10px;
+    //   height: 10px;
+    //   background-color: yellow;
+    // }
   }
+}
+
+
+.ui-textList-type1 {
+  background: #BEBADA;
 }

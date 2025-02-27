@@ -22,9 +22,14 @@ function App() {
   ]
 
   const data = [
-    { id: 0, number: 2020, text: 'zzz' },
-    { id: 1, number: 2021, text: '110000' },
-    { id: 2, number: 2022, text: '130000' },
+    { variant:'type1', id: 0, number: 2020, title:'ui/ux 스마트웹&앱디자인 (웹퍼블리싱&프론트엔드) 실무과정', subText:'(2020.04~2020.10)' },
+    { id: 1, number: 2021, title:'인조이웍스(enjoy works)', subText:'(2020.04~2020.10)' },
+    { id: 2, number: 2022, title:'[프론트엔드] 리액트 (React.js 자바스크립트)_주말', subText:'(2020.04~2020.10)' },
+    { id: 2, number: 2023, title:'인픽스(INPIX)', subText:'(2020.04~2020.10)' },
+    { id: 2, number: 2024, title:'한국방송통신대학교 컴퓨터과학과 편입 (재학중)', subText:'(2020.04~2020.10)' },
+    { id: 2, number: 2025, title:'??????', subText:'(????.??)' },
+    // { id: 1, number: 2021, Maintext: '??' },
+    // { id: 2, number: 2022, Maintext: '130000' },
   ];
 
 
@@ -72,7 +77,7 @@ function App() {
         <div>
 
           <UIText variant='contentTitle' font='tenada' size='md'>경력 CAREER</UIText>
-            <UIBanner.List
+          {/* <UIBanner.List
               variant='list'
               bgColor='type1'
               title='ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정'
@@ -113,9 +118,10 @@ function App() {
               title='??????'
               des='(????.?? ~ )'
             >
-          </UIBanner.List>
+          </UIBanner.List> */}
 
           <UITextList.Circle data={data} />
+          {/* {JSON.stringify(data)} */}
 
         </div>
 
