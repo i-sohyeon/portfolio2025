@@ -3,12 +3,13 @@ import { UIBannerProps } from "./types";
 import styles from "./styles.module.scss";
 
 export const List: React.FC<UIBannerProps> = ({
+  icon,
   number,
   title,
   des,
+
   variant,
   bgColor,
-  bgPattern,
   as: UIBanner = "div",
   className,
   children,
@@ -17,7 +18,8 @@ export const List: React.FC<UIBannerProps> = ({
  }) => {
 
   const classes = [
-    styles["ui-banner"],
+    styles[`ui-banner`],
+    styles[`ui-banner-${icon}`],
     styles[`ui-banner-${variant}`],
     styles[`ui-banner-${bgColor}`],
     className
@@ -30,6 +32,8 @@ export const List: React.FC<UIBannerProps> = ({
       {/* {children} */}
       <span>{number}</span>
       <div>
+        <i className='icon'></i>
+
         <h3>{title}</h3>
         <p>{des}</p>
       </div>
