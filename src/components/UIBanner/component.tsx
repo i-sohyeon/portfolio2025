@@ -1,8 +1,9 @@
 import React from 'react';
-import { UIBannerProps, UIBannerListProps } from "./types";
+import { UIBannerProps } from "./types";
 import styles from "./styles.module.scss";
 
-export const List: React.FC<UIBannerProps> = ({ 
+export const List: React.FC<UIBannerProps> = ({
+  number,
   title,
   des,
   variant,
@@ -27,8 +28,12 @@ export const List: React.FC<UIBannerProps> = ({
   return (
     <UIBanner className={`${styles.bannerList} ${classes}`} style={{ bgColor }} {...rest}>
       {/* {children} */}
-      <h3>{title}</h3>
-      <p>{des}</p>
+      <span>{number}</span>
+      <div>
+        <h3>{title}</h3>
+        <p>{des}</p>
+      </div>
+      
     </UIBanner>
   );
 };

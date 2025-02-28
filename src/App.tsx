@@ -21,16 +21,14 @@ function App() {
     '태양광 햇빛마루 pc/mobile(적응형)',
   ]
 
-  const data = [
-    { variant:'type1', id: 0, number: 2020, title:'ui/ux 스마트웹&앱디자인 (웹퍼블리싱&프론트엔드) 실무과정', subText:'(2020.04~2020.10)' },
-    { id: 1, number: 2021, title:'인조이웍스(enjoy works)', subText:'(2020.04~2020.10)' },
-    { id: 2, number: 2022, title:'[프론트엔드] 리액트 (React.js 자바스크립트)_주말', subText:'(2020.04~2020.10)' },
-    { id: 2, number: 2023, title:'인픽스(INPIX)', subText:'(2020.04~2020.10)' },
-    { id: 2, number: 2024, title:'한국방송통신대학교 컴퓨터과학과 편입 (재학중)', subText:'(2020.04~2020.10)' },
-    { id: 2, number: 2025, title:'??????', subText:'(????.??)' },
-    // { id: 1, number: 2021, Maintext: '??' },
-    // { id: 2, number: 2022, Maintext: '130000' },
-  ];
+  // const data = [
+  //   {  id: 0, number: 2020, title:'ui/ux 스마트웹&앱디자인 (웹퍼블리싱&프론트엔드) 실무과정', subText:'(2020.04~2020.10)' },
+  //   { id: 1, number: 2021, title:'인조이웍스(enjoy works)', subText:'(2020.04~2020.10)' },
+  //   { id: 2, number: 2022, title:'[프론트엔드] 리액트 (React.js 자바스크립트)_주말', subText:'(2020.04~2020.10)' },
+  //   { id: 3, number: 2023, title:'인픽스(INPIX)', subText:'(2020.04~2020.10)' },
+  //   { id: 4, number: 2024, title:'한국방송통신대학교 컴퓨터과학과 편입 (재학중)', subText:'(2020.04~2020.10)' },
+  //   { id: 5, number: 2025, title:'??????', subText:'(????.??)' },
+  // ];
 
 
   return (
@@ -77,7 +75,8 @@ function App() {
         <div>
 
           <UIText variant='contentTitle' font='tenada' size='md'>경력 CAREER</UIText>
-          {/* <UIBanner.List
+          <UIBanner.List
+              number='2020'
               variant='list'
               bgColor='type1'
               title='ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정'
@@ -85,6 +84,7 @@ function App() {
             >
           </UIBanner.List>
           <UIBanner.List
+              number='2021'
               variant='list'
               bgColor='type2'
               title='인조이웍스(enjoy works)'
@@ -92,6 +92,7 @@ function App() {
             >
           </UIBanner.List>
           <UIBanner.List
+              number='2022'
               variant='list'
               bgColor='type3'
               title='[프론트엔드] 리액트 (React.js 자바스크립트)_주말'
@@ -99,6 +100,7 @@ function App() {
             >
           </UIBanner.List>
           <UIBanner.List
+              number='2023'
               variant='list'
               bgColor='type4'
               title='인픽스(INPIX)'
@@ -106,6 +108,7 @@ function App() {
             >
           </UIBanner.List>
           <UIBanner.List
+              number='2024'
               variant='list'
               bgColor='type5'
               title='한국방송통신대학교 컴퓨터과학과 편입 (재학중)'
@@ -113,14 +116,15 @@ function App() {
             >
           </UIBanner.List>
           <UIBanner.List
+              number='2025'
               variant='list'
               bgColor='type6'
               title='??????'
               des='(????.?? ~ )'
             >
-          </UIBanner.List> */}
+          </UIBanner.List>
 
-          <UITextList.Circle data={data} />
+          {/* <UITextList.Circle data={data} /> */}
           {/* {JSON.stringify(data)} */}
 
         </div>
@@ -139,7 +143,6 @@ function App() {
   <UIContent bgColor='gray' bgPattern='check'>
     <UIBox variant='content'>
       <UIText variant='contentTitle' font='tenada' size='md'>PROJECT DETAILs</UIText>
-     
     </UIBox>
 
   </UIContent>

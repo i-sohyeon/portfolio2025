@@ -36,11 +36,12 @@ export const Check: React.FC<UITextListCheckProps> = ({
   );
 };
 
-function ItemComponent(props: { item: ItemData }) {
+function ItemComponent(props: { item: ItemData;  }) {
+  
   return (
     <li>
       <span>{props.item.number}</span>
-      <div>
+      <div  style={{ }}>
         <h3>{props.item.title}</h3>
         <p>{props.item.subText}</p>
       </div>
@@ -69,7 +70,7 @@ export const Circle: React.FC<UITextListCircleProps> = ({
   return (
     <ul {...props} className={`${styles.circleList} ${classes}`}>
       {props.data.map((item) => (
-        <ItemComponent key={item.id} item={item} {...item} />
+        <ItemComponent key={item.id} item={item}  />
       ))}
     </ul>
   );
