@@ -26,6 +26,7 @@
     │   ├── UIContent  
     │   ├── UIHeader  
     │   ├── UISwiper  
+    │   ├── UITable  
     │   ├── UIText  
     │   └── UITextList  
     ├── index.tsx  

@@ -1,6 +1,7 @@
 import React from 'react';
 import "./styles/style.scss";
 import { UIText, UIContent, UIHeader, UIBox, UIBanner, UITextList } from './components/v1';
+import { UISwiper } from './components/UISwiper';
 
 
 
@@ -149,6 +150,7 @@ function App() {
   <UIContent bgColor='gray' bgPattern='check'>
     <UIBox variant='content'>
       <UIText variant='contentTitle' font='tenada' size='md'>PROJECT DETAILs</UIText>
+      {/* <UISwiper.Basic></UISwiper.Basic> */}
     </UIBox>
 
   </UIContent>
