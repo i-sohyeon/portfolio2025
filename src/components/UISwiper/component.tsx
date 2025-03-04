@@ -1,45 +1,92 @@
-import React, { useRef, useState } from 'react';
+// import React, { useRef, useState } from 'react';
+// import ReactDOM from "react-dom";
 // Import Swiper React components
+import { SwiperProps } from './types';
+// import styles from './styles.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { UISwiperProps } from './types';
-
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+// import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import './styles.css';
-import { Pagination } from 'swiper/modules';
 
-export const Basic: React.FC<UISwiperProps> = ({
- variant,
- as: UISwiper = "div",
-}) => {
+// export const UISwiper: React.FC<SwiperProps> = ({
+//   variant,
+//   as: Swiper = "div",
+//   children,
+//   spaceBetween = 50,
+//   slidesPerView = 1,
+//   navigation = true,
+//   pagination,
+//   className,
+//   ...props
+// }) => {
+//   return (
+//     <Swiper
+//       pagination
+//       modules={[Navigation, Pagination, A11y, Autoplay]}
+//       {...props}
+//     >
+//       {children}
+//     </Swiper>
+
+//     // <Swiper
+//     //   // slidesPerView={'auto'}
+//     //   // spaceBetween={30}
+//     // //   pagination={{
+//     // //   clickable: true,
+//     // // }}
+//     //   modules={[Pagination, Navigation]}
+//     //   // modules={[Navigation, Pagination]}
+//     //   spaceBetween={spaceBetween}
+//     //   slidesPerView={slidesPerView}
+//     //   navigation={navigation}
+//     //   // pagination={pagination}
+//     //   className="mySwiper">
+//     //   {/* <SwiperSlide>Slide 1</SwiperSlide> */}
+//     //    {children}
+//     //   </Swiper>
+
+//   );
+// };
+
+export const UISwiper: React.FC<SwiperProps> = () => {
   return (
-    <UISwiper
-      slidesPerView={'auto'}
-      spaceBetween={30}
-      pagination={{
-      clickable: true,
-    }}
-      modules={[Pagination]}
-      className="mySwiper">
-  <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-    </UISwiper>
-
+    <Swiper
+      modules={[Navigation, Pagination]}
+      spaceBetween={50}
+      slidesPerView={2}
+      //   breakpoints={{
+      //   768: {
+      //     slidesPerView: 2,
+      //   },
+      //   1024: {
+      //     slidesPerView: 3,
+      //   },
+      // }}
+      navigation={false}
+      // pagination={{ clickable: true }}
+    >
+      <SwiperSlide>
+        <div>Slide 1</div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>Slide 2</div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>Slide 3</div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
-const UISwiper = {
-  Basic,
-}
+// const Swiper = {
+//   Basic,
+// }
 
-UISwiper.Basic.displayName = "UISwiper.Basic";
+// Swiper.Basic.displayName = "Swiper.Basic";
 
-export { UISwiper };
+// export { UISwiper };
+
+export default UISwiper;

@@ -1,6 +1,14 @@
-export type UISwiperVariant = "type1"
+export type SwiperVariant = "type1"
 
-export interface UISwiperProps extends React.HTMLAttributes<HTMLElement> {
-  variant?: UISwiperVariant;
+export interface SwiperProps extends React.HTMLAttributes<HTMLElement> {
+  variant?: SwiperVariant;
+  children?: React.ReactNode;
+  spaceBetween?: number;
+  slidesPerView?: number;
+  navigation?: boolean;
+  pagination?: boolean;
+  modules?: string[]
+  // modules?: string;
+  
   as?: React.ElementType;
 }

@@ -1,9 +1,9 @@
-import React from 'react';
+// import React from 'react';
+// import ReactDOM from "react-dom";
 import "./styles/style.scss";
-import { UIText, UIContent, UIHeader, UIBox, UIBanner, UITextList } from './components/v1';
-import { UISwiper } from './components/UISwiper';
-
-
+import { UIText, UIContent, UIHeader, UIBox, UIBanner, UISwiper , UITextList } from './components/v1';
+import { SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
 
 function App() {
@@ -71,7 +71,6 @@ function App() {
   </UIContent>
 
   <UIContent bgColor='blue' bgPattern='halfcheck'>
-    
     <UIBox variant='flex'>
         <div>
 
@@ -147,10 +146,22 @@ function App() {
    
     </UIBox>
   </UIContent>
+
   <UIContent bgColor='gray' bgPattern='check'>
     <UIBox variant='content'>
       <UIText variant='contentTitle' font='tenada' size='md'>PROJECT DETAILs</UIText>
-      {/* <UISwiper.Basic></UISwiper.Basic> */}
+    
+      <UISwiper pagination={true} navigation={false} className="swiper mySwiper">
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </UISwiper>
     </UIBox>
 
   </UIContent>
