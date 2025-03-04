@@ -1,11 +1,10 @@
-// import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 // import ReactDOM from "react-dom";
 // Import Swiper React components
 import { SwiperProps } from './types';
-// import styles from './styles.module.scss'
+import styles from './styles.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
-// import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -51,7 +50,23 @@ import 'swiper/css/pagination';
 //   );
 // };
 
-export const UISwiper: React.FC<SwiperProps> = () => {
+export const Box: React.FC<SwiperProps> = ({
+  variant,
+  children,
+  className,
+  ...rest
+  
+}) => {
+  const classes = [
+   styles[`ui-swiper`],
+   styles[`ui-swiper-${variant}`],
+    className,
+
+  ]
+
+  .filter(Boolean)
+  .join(" ");
+
   return (
     <Swiper
       modules={[Navigation, Pagination]}
@@ -66,27 +81,18 @@ export const UISwiper: React.FC<SwiperProps> = () => {
       //   },
       // }}
       navigation={false}
+      className={`${styles.swiperBox} ${classes}`}
       // pagination={{ clickable: true }}
+   
     >
-      <SwiperSlide>
-        <div>Slide 1</div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div>Slide 2</div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div>Slide 3</div>
-      </SwiperSlide>
+      {children}
     </Swiper>
   );
 };
 
-// const Swiper = {
-//   Basic,
-// }
+const UISwiper = {
+  Box
+}
 
-// Swiper.Basic.displayName = "Swiper.Basic";
-
-// export { UISwiper };
-
-export default UISwiper;
+UISwiper.Box.displayName = "UISwiper.Box"
+export {UISwiper};

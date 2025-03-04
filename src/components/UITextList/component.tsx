@@ -17,7 +17,7 @@ export const Check: React.FC<UITextListCheckProps> = ({
 
  }) => {
     const classes = [
-      styles["ui-textList"],
+      styles[`ui-textList`],
       styles[`ui-textList-${variant}`],
       // styles[`ui-textList-size-${size}`],
       // styles[`ui-textList-weight-${weight}`],
