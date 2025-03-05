@@ -144,11 +144,17 @@ function App() {
     
       <UISwiper.Box variant="type1" pagination={true} navigation={false} className="swiper mySwiper">
         <SwiperSlide>
-          <h3>title 영역111</h3>
-          <p>content 영역</p>
+          <SlideItem title="문구야놀자(PC/Mobile)" content="dd" imgSrc="" bgColor="red">
+            <table>
+              <tr>
+                <th>제목이죠?</th>
+                <td>내용이죠?</td>
+              </tr>
+            </table>
+          </SlideItem>
         </SwiperSlide>
         <SwiperSlide>
-          <SlideItem title="dd" content="dd"></SlideItem>
+          <SlideItem title="dd" content="dd" imgSrc=""></SlideItem>
         </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>

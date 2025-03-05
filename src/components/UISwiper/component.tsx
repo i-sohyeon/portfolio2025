@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from './styles.module.scss'
+import { Children, ReactNode } from 'react';
 
 
 
@@ -72,7 +73,7 @@ export const Box: React.FC<SwiperProps> = ({
     <Swiper
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
-      slidesPerView={2}
+      slidesPerView={1.5}
       //   breakpoints={{
       //   768: {
       //     slidesPerView: 2,
@@ -94,13 +95,18 @@ export const Box: React.FC<SwiperProps> = ({
 interface SlideItemProps {
   title: string;
   content: string;
+  imgSrc: string;
+  children?: ReactNode;
+  bgColor?: string;
 }
 
-export const SlideItem = ({ title, content }: SlideItemProps) => {
+export const SlideItem = ({ title, content, imgSrc, children }: SlideItemProps) => {
   return (
     <div className={`${styles.slideItem}`}>
-      <h2>{title}</h2>
+      <img src={imgSrc} alt="" />
+      <h3>{title}</h3>
       <p>{content}</p>
+      {children}
     </div>
   );
 };
