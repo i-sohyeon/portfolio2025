@@ -12,10 +12,10 @@ export interface UIBoxProps extends React.HTMLAttributes<HTMLElement> {
   as?: React.ElementType;
 }
 
-type UIBoxContent = {
+// type UIBoxContent = {
 
-} 
+// } 
 
-type UIBoxDiv = {
+// type UIBoxDiv = {
   
-}
+// }

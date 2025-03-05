@@ -1,9 +1,9 @@
 // import React from 'react';
 // import ReactDOM from "react-dom";
 import "./styles/style.scss";
-import { UIText, UIContent, UIHeader, UIBox, UIBanner, UISwiper , UITextList } from './components/v1';
+import { UIText, UIContent, UIHeader, UIBox, UIBanner, UISwiper , UITextList, SlideItem } from './components/v1';
 import { SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+// import { Pagination } from 'swiper/modules';
 
 
 function App() {
@@ -147,7 +147,9 @@ function App() {
           <h3>title 영역111</h3>
           <p>content 영역</p>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <SlideItem title="dd" content="dd"></SlideItem>
+        </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>

@@ -1,13 +1,14 @@
-import React, { useRef, useState } from 'react';
+// import React, { useRef, useState } from 'react';
 // import ReactDOM from "react-dom";
 // Import Swiper React components
 import { SwiperProps } from './types';
-import styles from './styles.module.scss'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import styles from './styles.module.scss'
+
 
 
 // export const UISwiper: React.FC<SwiperProps> = ({
@@ -69,7 +70,7 @@ export const Box: React.FC<SwiperProps> = ({
 
   return (
     <Swiper
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
       slidesPerView={2}
       //   breakpoints={{
@@ -89,6 +90,21 @@ export const Box: React.FC<SwiperProps> = ({
     </Swiper>
   );
 };
+
+interface SlideItemProps {
+  title: string;
+  content: string;
+}
+
+export const SlideItem = ({ title, content }: SlideItemProps) => {
+  return (
+    <div className={`${styles.slideItem}`}>
+      <h2>{title}</h2>
+      <p>{content}</p>
+    </div>
+  );
+};
+
 
 const UISwiper = {
   Box
