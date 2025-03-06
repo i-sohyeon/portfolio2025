@@ -7,6 +7,7 @@ import { SwiperSlide } from 'swiper/react';
 
 
 function App() {
+  
   const textList = [
     '현대카드 커머셜 web/app 운영',
     '우리은행 won 뱅킹 재구축 사업',
@@ -64,7 +65,6 @@ function App() {
   <UIContent bgColor='blue' bgPattern='halfcheck'>
     <UIBox variant='flex'>
         <div>
-
           <UIText variant='contentTitle' font='tenada' size='md'>경력 CAREER</UIText>
           <UIBanner.List
             icon='study'
@@ -120,10 +120,6 @@ function App() {
               des='(????.?? ~ )'
             >
           </UIBanner.List>
-
-          {/* <UITextList.Circle data={data} /> */}
-          {/* {JSON.stringify(data)} */}
-
         </div>
 
         <div style={{height:'fit-content', backgroundColor: '#FFF302', borderRadius:'24px', display: 'block', width: '100%', maxWidth: '520px', padding:'60px 40px', boxSizing: 'border-box',}}>
@@ -141,15 +137,29 @@ function App() {
   <UIContent bgColor='gray' bgPattern='check'>
     <UIBox variant='content'>
       <UIText variant='contentTitle' font='tenada' size='md'>PROJECT DETAILS</UIText>
-    
-      <UISwiper.Box variant="type1" pagination={true} navigation={false} className="swiper mySwiper">
+      ㄴ
+      <UISwiper.Box variant="type1" pagination={true} navigation={false} className="swiper-custom">
         <SwiperSlide>
           <SlideItem title="문구야놀자(PC/Mobile)" content="dd" imgSrc="" bgColor="red">
             <table>
-              <tr>
-                <th>제목이죠?</th>
-                <td>내용이죠?</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>작업기간</th>
+                  <td>YYYY.MM.DD</td>
+                </tr>
+                <tr>
+                  <th>작업기간</th>
+                  <td>YYYY.MM.DD</td>
+                </tr>
+                <tr>
+                  <th>작업기간</th>
+                  <td>YYYY.MM.DD</td>
+                </tr>
+                <tr>
+                  <th>작업기간</th>
+                  <td>YYYY.MM.DD</td>
+                </tr>
+              </tbody>
             </table>
           </SlideItem>
         </SwiperSlide>

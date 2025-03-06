@@ -1,14 +1,14 @@
 // import React, { useRef, useState } from 'react';
 // import ReactDOM from "react-dom";
 // Import Swiper React components
-import { SwiperProps } from './types';
+import { SwiperProps, SlideItemProps } from './types';
 import { Swiper } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from './styles.module.scss'
-import { Children, ReactNode } from 'react';
+// import { Children, ReactNode } from 'react';
 
 
 
@@ -60,10 +60,9 @@ export const Box: React.FC<SwiperProps> = ({
   
 }) => {
   const classes = [
-   styles[`ui-swiper`],
-   styles[`ui-swiper-${variant}`],
+    styles[`ui-swiper`],
+    styles[`ui-swiper-${variant}`],
     className,
-
   ]
 
   .filter(Boolean)
@@ -92,17 +91,18 @@ export const Box: React.FC<SwiperProps> = ({
   );
 };
 
-interface SlideItemProps {
-  title: string;
-  content: string;
-  imgSrc: string;
-  children?: ReactNode;
-  bgColor?: string;
-}
+export const SlideItem = ({ title, content, imgSrc, children, bgColor }: SlideItemProps) => {
+  
+  const classes = [
+    styles[`ui-swiper`],
+    styles[`ui-swiper-${bgColor}`], 
+   ]
+ 
+   .filter(Boolean)
+   .join(" ");
 
-export const SlideItem = ({ title, content, imgSrc, children }: SlideItemProps) => {
   return (
-    <div className={`${styles.slideItem}`}>
+    <div className={`${styles.slideItem} ${classes}`}>
       <img src={imgSrc} alt="" />
       <h3>{title}</h3>
       <p>{content}</p>
@@ -110,7 +110,6 @@ export const SlideItem = ({ title, content, imgSrc, children }: SlideItemProps) 
     </div>
   );
 };
-
 
 const UISwiper = {
   Box

@@ -1,22 +1,18 @@
 
-
-
-.ui-swiper-type1 {
-
-
- 
-
+.swiper-custom {
+  display: none !important;
 }
-.swiper {
-  overflow: visible !important;
-}
+
+// .swiper {
+//   // overflow: visible !important;
+// }
 
 .slideItem {
   width: 750px;
   padding: 30px 40px;
-  border: 1px solid #111;
+  border: 3px solid #111;
   border-radius: 40px;
-  background-color: red !important;
+  background-color: #ccc !important;
   img {
     width: 600px;
     height: 380px;
@@ -24,10 +20,18 @@
     border-radius: 28px;
   }
   h3 {
+    font-family: "tenada";
     font-size: 48px;
     margin-top: -28px;
     & + p {
+      font-family: "tenada";
       font-size: 36px;
     }
   }
+}
+
+
+// UISwiper.Box slide bgColor
+.ui-swiper-red {
+  background-color: red !important;
 }

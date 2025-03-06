@@ -40,18 +40,21 @@
 ```
 
 
-## 각 컴포넌트에 대한 설명
+## About Components
+### 컴포넌트와 같이 비슷한 기능을 하는 컴포넌트들을 하위컴포넌트(서브컴포넌트)로 분리하여 재사용성을 높임
 * UIBanner  
+    `UIBanner.List`
 * UIBox
 * UIContent
 * UIHeader
 * UISwiper
+    `UISwiper.Box`
 * UIText  
     `size`
 
 * ### UITextList  
     `UITextList.Check` `UITextList.Circle` `UITextList.Step`  
-        * 컴포넌트와 같이 비슷한 기능을 하는 컴포넌트들을 하위컴포넌트(서브컴포넌트)로 분리하여 재사용성을 높임
+      
 
 
 ====
@@ -62,6 +65,7 @@
 * (구현 예정) 띠 배너 : 텍스트들이 자연스럽게 흘러가는 애니메이션
 
 
+## 미디어쿼리 (반응형)
 
 
 
