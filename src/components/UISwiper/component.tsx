@@ -1,17 +1,14 @@
 // import React, { useRef, useState } from 'react';
 // import ReactDOM from "react-dom";
 // Import Swiper React components
-import { SwiperProps, SlideItemProps } from './types';
+import { SwiperProps } from './types';
 import { Swiper } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styles from './styles.module.scss'
-<<<<<<< HEAD
-// import { Children, ReactNode } from 'react';
-=======
->>>>>>> parent of f262704 (UISwiper component props 수정 중)
+import { Children, ReactNode } from 'react';
 
 
 
@@ -63,9 +60,10 @@ export const Box: React.FC<SwiperProps> = ({
   
 }) => {
   const classes = [
-    styles[`ui-swiper`],
-    styles[`ui-swiper-${variant}`],
+   styles[`ui-swiper`],
+   styles[`ui-swiper-${variant}`],
     className,
+
   ]
 
   .filter(Boolean)
@@ -75,7 +73,7 @@ export const Box: React.FC<SwiperProps> = ({
     <Swiper
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
-      slidesPerView={2}
+      slidesPerView={1.5}
       //   breakpoints={{
       //   768: {
       //     slidesPerView: 2,
@@ -94,36 +92,25 @@ export const Box: React.FC<SwiperProps> = ({
   );
 };
 
-<<<<<<< HEAD
-export const SlideItem = ({ title, content, imgSrc, children, bgColor }: SlideItemProps) => {
-  
-  const classes = [
-    styles[`ui-swiper`],
-    styles[`ui-swiper-${bgColor}`], 
-   ]
- 
-   .filter(Boolean)
-   .join(" ");
-
-  return (
-    <div className={`${styles.slideItem} ${classes}`}>
-      <img src={imgSrc} alt="" />
-      <h3>{title}</h3>
-=======
 interface SlideItemProps {
   title: string;
   content: string;
+  imgSrc: string;
+  children?: ReactNode;
+  bgColor?: string;
 }
 
-export const SlideItem = ({ title, content }: SlideItemProps) => {
+export const SlideItem = ({ title, content, imgSrc, children }: SlideItemProps) => {
   return (
     <div className={`${styles.slideItem}`}>
-      <h2>{title}</h2>
->>>>>>> parent of f262704 (UISwiper component props 수정 중)
+      <img src={imgSrc} alt="" />
+      <h3>{title}</h3>
       <p>{content}</p>
+      {children}
     </div>
   );
 };
+
 
 const UISwiper = {
   Box
