@@ -140,6 +140,7 @@ function App() {
       ㄴ
       <UISwiper.Box variant="type1" pagination={true} navigation={false} className="swiper-custom">
         <SwiperSlide>
+<<<<<<< HEAD
           <SlideItem title="문구야놀자(PC/Mobile)" content="dd" imgSrc="" bgColor="red">
             <table>
               <tbody>
@@ -162,9 +163,13 @@ function App() {
               </tbody>
             </table>
           </SlideItem>
+=======
+          <h3>title 영역111</h3>
+          <p>content 영역</p>
+>>>>>>> parent of f262704 (UISwiper component props 수정 중)
         </SwiperSlide>
         <SwiperSlide>
-          <SlideItem title="dd" content="dd" imgSrc=""></SlideItem>
+          <SlideItem title="dd" content="dd"></SlideItem>
         </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
