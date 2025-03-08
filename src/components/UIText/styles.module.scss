@@ -14,12 +14,6 @@
   font-size: 60px !important;
   margin: 0 0 48px 0;
 }
-// .ui-text-h1 { font-size: 2.5rem; }
-// .ui-text-h2 { font-size: 2rem; }
-// .ui-text-h3 { font-size: 1.75rem; }
-// .ui-text-body { font-size: 1rem; }
-// .ui-text-caption { font-size: 0.875rem; }
-// .ui-text-label { font-size: 0.75rem; }
 
 /* Sizes */
 .ui-text-xxs { font-size: 12px; }
@@ -28,7 +22,7 @@
 .ui-text-md { font-size: 28px; }
 .ui-text-lg { font-size: 36px; }
 .ui-text-xl { font-size: 40px; }
-.ui-text-xxl { font-size: 48px; }
+// .ui-text-xxl { font-size: 48px; }
 
 /* Weights */
 .ui-text-normal { font-weight: 400; }
@@ -41,3 +35,45 @@
 
 // font
 .ui-text-tenada {font-family: 'Tenada';}
+
+
+/**** UIText.Header ****/
+.ui-text-header {
+  font-family: 'Tenada';
+}
+
+// size
+.ui-text-header-lg {
+  font-size: 60px;
+}
+.ui-text-header-md {
+  font-size: 48px;
+}
+
+.headerButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    padding-right: 30px;
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url('../../assets/images/icons/ico-arrow-r.png');
+      width: 20px;
+      height: 20px;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -3px;
+      right: 0;
+    }
+    &:hover {
+      margin-top: -18px;
+    }
+  }
+}

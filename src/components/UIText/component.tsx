@@ -1,8 +1,8 @@
 import React from "react";
-import { UITextProps } from "./types";
+import { UITextProps, UITextHeaderProps } from "./types";
 import styles from "./styles.module.scss";
 
-export const UIText: React.FC<UITextProps> = ({
+export const Basic: React.FC<UITextProps> = ({
   variant = "span",
   size,
   weight = "normal",
@@ -31,3 +31,38 @@ export const UIText: React.FC<UITextProps> = ({
     </UIText>
   );
 };
+
+export const Header : React.FC<UITextHeaderProps> = ({
+  size,
+  font,
+  as: UIText = "div",
+  className,
+  children,
+  button,
+  ...rest
+}) => {
+  const classes = [
+    styles["ui-text-header"],
+    styles[`ui-text-header-${size}`],
+    styles[`ui-text-haader-${font}`],
+    className
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return (
+    <UIText className={`${styles.headerButton} ${classes}`} style={{ }} {...rest}>
+      <h3>{children}</h3>
+      <a href="" type="button">{button}</a>
+    </UIText>
+  );
+};
+
+const UIText ={
+  Basic, Header
+}
+
+UIText.Basic.displayName = "UIText.Basic";
+UIText.Header.displayName = "UIText.Header";
+
+export {UIText};

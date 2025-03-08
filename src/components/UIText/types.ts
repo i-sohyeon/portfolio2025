@@ -5,6 +5,8 @@ export type UITextWeight = "normal" | "bold";
 export type UITextStyle = "tenada" | "bold";
 export type UITextColor = "white" | "blue";
 
+export type UITextHeaderSize = "lg" | "md" ;
+
 
 export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
   variant?: UITextVariant;
@@ -15,6 +17,13 @@ export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
   as?: React.ElementType;
 }
 
+export interface UITextHeaderProps extends React.HTMLAttributes<HTMLElement> {
+  size?: UITextHeaderSize;
+  weight?: UITextWeight;
+  font?: UITextStyle;
+  button?:string;
+  as?: React.ElementType;
+}
 // import { ElementType, ReactNode } from 'react';
 
 // // Text variants
