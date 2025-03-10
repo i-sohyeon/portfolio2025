@@ -1,5 +1,5 @@
 export type SwiperVariant = "type1"
-export type SwiperBgColor = "red" | "yellow"
+export type SwiperBgColor = "red" | "yellow" | "gray"
 
 export interface SwiperProps extends React.HTMLAttributes<HTMLElement> {
   variant?: SwiperVariant;

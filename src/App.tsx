@@ -1,8 +1,11 @@
-// import React from 'react';
+import React from 'react';
 // import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./styles/style.scss";
-import { UIText, UIContent, UIHeader, UIBox, UIBanner, UISwiper , UITextList, SlideItem } from './components/v1';
+import { UIText, UIContent, UIHeader, UIBox, UIBanner, UISwiper , UITextList, SlideItem, UIButton } from './components/v1';
 import { SwiperSlide } from 'swiper/react';
+import SubData2 from './pages/SubData';
+import { Link } from 'react-router-dom';
 // import { Pagination } from 'swiper/modules';
 
 
@@ -34,38 +37,38 @@ function App() {
     </UIBox>
     <UIBox align='center' style={{padding: "200px 0"}}>
       <div style={{paddingTop: "102px"}}>
-        <UIText variant="mainTitle" as="h1">
+        <UIText.Basic variant="mainTitle" as="h1">
           UI &middot; UX
           <br/>
           WEB PUBLISHER
-        </UIText>     
+        </UIText.Basic>     
 
-        <UIText variant="mainTitle" as="h1">
+        <UIText.Basic variant="mainTitle" as="h1">
           PORTFOLIO
-        </UIText>
+        </UIText.Basic>
       </div>
     </UIBox>
   </UIContent>
 
   <UIContent bgColor='black' className='txt-banner-wrqp' style={{overflowX:'hidden',  padding: "36px 0"}}>
     <div className='txt-banner'>
-      <UIText font='tenada' size='md' color='white'>현대카드</UIText>
-      <UIText font='tenada' size='md' color='white'>우리은행 우리WON뱅킹</UIText>
-      <UIText font='tenada' size='md' color='white'>농협은행 올원뱅크</UIText>
-      <UIText font='tenada' size='md' color='white'>KB국민은행 멤버십 플랫폼</UIText>
-      <UIText font='tenada' size='md' color='white'>문구야 놀자</UIText>
-      <UIText font='tenada' size='md' color='white'>웅진 딸기콩</UIText>
-      <UIText font='tenada' size='md' color='white'>굿뜨래페이</UIText>
-      <UIText font='tenada' size='md' color='white'>인조이웍스</UIText>
-      <UIText font='tenada' size='md' color='white'>포토이</UIText>
-      <UIText font='tenada' size='md' color='white'>태양광</UIText>
+      <UIText.Basic font='tenada' size='md' color='white'>현대카드</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>우리은행 우리WON뱅킹</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>농협은행 올원뱅크</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>KB국민은행 멤버십 플랫폼</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>문구야 놀자</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>웅진 딸기콩</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>굿뜨래페이</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>인조이웍스</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>포토이</UIText.Basic>
+      <UIText.Basic font='tenada' size='md' color='white'>태양광</UIText.Basic>
     </div>
   </UIContent>
 
   <UIContent bgColor='blue' bgPattern='halfcheck'>
     <UIBox variant='flex'>
         <div>
-          <UIText variant='contentTitle' font='tenada' size='md'>경력 CAREER</UIText>
+          <UIText.Header size='lg'>경력 CAREER</UIText.Header>
           <UIBanner.List
             icon='study'
             number='2020'
@@ -124,8 +127,8 @@ function App() {
 
         <div style={{height:'fit-content', backgroundColor: '#FFF302', borderRadius:'24px', display: 'block', width: '100%', maxWidth: '520px', padding:'60px 40px', boxSizing: 'border-box',}}>
           <div style={{marginBottom: '32px'}}>
-            <UIText as="p" font='tenada' size='lg' >프로젝트 경험</UIText>
-            <UIText as="p" font='tenada' size='lg' color='blue'>Project Experience</UIText>
+            <UIText.Basic as="p" font='tenada' size='lg' >프로젝트 경험</UIText.Basic>
+            <UIText.Basic as="p" font='tenada' size='lg' color='blue'>Project Experience</UIText.Basic>
           </div>
           <UITextList.Check variant="check" checkItems={textList} />
         </div>
@@ -136,11 +139,12 @@ function App() {
 
   <UIContent bgColor='gray' bgPattern='check'>
     <UIBox variant='content'>
-      <UIText variant='contentTitle' font='tenada' size='md'>PROJECT DETAILS</UIText>
-
+      {/* <UIButton.Text to='#none'>test button</UIButton.Text> */}
+      {/* <UIText.Basic variant='contentTitle' font='tenada' size='md'>PROJECT DETAILS</UIText.Basic> */}
+      <UIText.Header size="lg" button="경력기술서로 확인하기" btnUrl="https://www.naver.com/'">PROJECT DETAILS</UIText.Header>
       <UISwiper.Box variant="type1" pagination={true} navigation={false} className="swiper-custom">
         <SwiperSlide>
-          <SlideItem title="문구야놀자(PC/Mobile)" content="dd" imgSrc="" bgColor="red">
+          <SlideItem title="문구야놀자(PC/Mobile)" content="dd" imgSrc="test" bgColor="red">
             <table>
               <tbody>
                 <tr>
@@ -164,7 +168,7 @@ function App() {
           </SlideItem>
         </SwiperSlide>
         <SwiperSlide>
-          <SlideItem title="dd" content="dd" imgSrc=""></SlideItem>
+          <SlideItem title="dd" content="dd" imgSrc="test"></SlideItem>
         </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
@@ -179,10 +183,17 @@ function App() {
   </UIContent>
   <UIContent bgColor='pink' bgPattern='wave'>
     <UIBox variant='content'>
-      <UIText variant='contentTitle' font='tenada' size='md'>EXPERIENCE DETAIL</UIText>
+      <UIText.Basic variant='contentTitle' font='tenada' size='md'>EXPERIENCE DETAIL</UIText.Basic>
     </UIBox>
 
   </UIContent>
+  <BrowserRouter>
+      <Routes>
+        {/* <Route path="/data" element={<Data />} /> */}
+        {/* <Route path="/subdata" element={<Subd />} /> */}
+        <Route path="/subdata2" element={<SubData2 />} />
+      </Routes>
+    </BrowserRouter>
   </>
 
     

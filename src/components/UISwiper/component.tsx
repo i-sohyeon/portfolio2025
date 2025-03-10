@@ -76,14 +76,14 @@ export const Box: React.FC<SwiperProps> = ({
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
       slidesPerView={1.5}
-      //   breakpoints={{
-      //   768: {
-      //     slidesPerView: 2,
-      //   },
-      //   1024: {
-      //     slidesPerView: 3,
-      //   },
-      // }}
+        breakpoints={{
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 1.5,
+        },
+      }}
       navigation={false}
       className={`${styles.swiperBox} ${classes}`}
       // pagination={{ clickable: true }}
@@ -119,5 +119,5 @@ const UISwiper = {
   Box
 }
 
-UISwiper.Box.displayName = "UISwiper.Box"
+UISwiper.Box.displayName = "UISwiper.Box";
 export {UISwiper};
