@@ -39,6 +39,7 @@ export const Header : React.FC<UITextHeaderProps> = ({
   className,
   children,
   button,
+  btnUrl,
   ...rest
 }) => {
   const classes = [
@@ -53,7 +54,9 @@ export const Header : React.FC<UITextHeaderProps> = ({
   return (
     <UIText className={`${styles.headerButton} ${classes}`} style={{ }} {...rest}>
       <h3>{children}</h3>
-      <a href="" type="button">{button}</a>
+      {btnUrl && button ? (
+        <a href={btnUrl} type="button">{button}</a>
+      ) : null}
     </UIText>
   );
 };

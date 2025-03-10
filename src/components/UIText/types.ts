@@ -22,6 +22,7 @@ export interface UITextHeaderProps extends React.HTMLAttributes<HTMLElement> {
   weight?: UITextWeight;
   font?: UITextStyle;
   button?:string;
+  btnUrl?:string;
   as?: React.ElementType;
 }
 // import { ElementType, ReactNode } from 'react';

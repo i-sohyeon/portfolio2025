@@ -1,5 +1,6 @@
 export * from "./UIBanner/index";
 export * from "./UIBox/index";
+export * from "./UIButton/index";
 export * from "./UIContent/index";
 export * from "./UIHeader/index";
 export * from "./UISwiper/index";
