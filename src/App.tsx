@@ -50,19 +50,34 @@ function App() {
     </UIBox>
   </UIContent>
 
-  <UIContent bgColor='black' className='txt-banner-wrqp' style={{overflowX:'hidden',  padding: "36px 0"}}>
+  <UIContent bgColor='black' className='txt-banner-wrap' style={{overflowX:'hidden',  padding: "36px 0"}}>
     <div className='txt-banner'>
-      <UIText.Basic font='tenada' size='md' color='white'>현대카드</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>우리은행 우리WON뱅킹</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>농협은행 올원뱅크</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>KB국민은행 멤버십 플랫폼</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>문구야 놀자</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>웅진 딸기콩</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>굿뜨래페이</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>인조이웍스</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>포토이</UIText.Basic>
-      <UIText.Basic font='tenada' size='md' color='white'>태양광</UIText.Basic>
+      <div className='txt-banner-list'>
+        <UIText.Basic font='tenada' size='md' color='white'>현대카드</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>우리은행 우리WON뱅킹</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>농협은행 올원뱅크</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>KB국민은행 멤버십 플랫폼</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>문구야 놀자</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>웅진 딸기콩</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>굿뜨래페이</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>인조이웍스</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>포토이</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>태양광</UIText.Basic>
+      </div>
+      <div className='txt-banner-list'>
+        <UIText.Basic font='tenada' size='md' color='white'>현대카드</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>우리은행 우리WON뱅킹</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>농협은행 올원뱅크</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>KB국민은행 멤버십 플랫폼</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>문구야 놀자</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>웅진 딸기콩</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>굿뜨래페이</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>인조이웍스</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>포토이</UIText.Basic>
+        <UIText.Basic font='tenada' size='md' color='white'>태양광</UIText.Basic>
+      </div>
     </div>
+
   </UIContent>
 
   <UIContent bgColor='blue' bgPattern='halfcheck'>
