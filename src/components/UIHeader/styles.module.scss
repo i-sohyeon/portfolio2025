@@ -1,11 +1,27 @@
 .ui-header {
   width: 100%;
   position: fixed;
+  left: 0;
+  right: 0;
+  transition: 'top 0.5s ease-in-out';
+  z-index: 100;
+  > div {
+    width: 1280px;
+    margin: 0 auto;
+    p {
+      color: #3F89E6;
+    }
+  }
 }
+
+.ui-header-main {
+
+}
+
+// size
 .ui-header-md {
   padding: 36px 0;
 }
-
 .ui-header-lg {
   padding: 40px 0;
 }
