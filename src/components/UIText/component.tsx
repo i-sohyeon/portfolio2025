@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { UITextProps, UITextHeaderProps } from "./types";
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
 
 export const Basic: React.FC<UITextProps> = ({
   variant = "span",
@@ -20,52 +21,55 @@ export const Basic: React.FC<UITextProps> = ({
     styles[`ui-text-${weight}`],
     styles[`ui-text-${font}`],
     styles[`ui-text-${color}`],
-    className
+    className,
   ]
     .filter(Boolean)
     .join(" ");
 
   return (
-    <UIText className={classes} style={{ }} {...rest}>
+    <UIText className={classes} style={{}} {...rest}>
       {children}
     </UIText>
   );
 };
 
-export const Header : React.FC<UITextHeaderProps> = ({
+export const Header: React.FC<UITextHeaderProps> = ({
   size,
   font,
-  as: UIText = "div",
+  variant,
+  // as = "div",
   className,
   children,
   button,
-  btnUrl,
+  linkTo,
   ...rest
 }) => {
+  const [useLink, setUseLink] = useState(true);
+
   const classes = [
     styles["ui-text-header"],
     styles[`ui-text-header-${size}`],
-    styles[`ui-text-haader-${font}`],
-    className
+    styles[`ui-text-header-${font}`],
+    className,
   ]
     .filter(Boolean)
     .join(" ");
 
   return (
-    <UIText className={`${styles.headerButton} ${classes}`} style={{ }} {...rest}>
-      <h3>{children}</h3>
-      {btnUrl && button ? (
-        <a href={btnUrl} type="button">{button}</a>
-      ) : null}
-    </UIText>
+    <div className={`${styles.headerButton} ${classes}`} {...rest}>
+      <>{children}</>
+
+      {useLink && linkTo && <Link to={linkTo}>{button}</Link>}
+    </div>
   );
 };
 
-const UIText ={
-  Basic, Header
-}
+const UIText = {
+  Basic,
+  Header,
+};
 
 UIText.Basic.displayName = "UIText.Basic";
 UIText.Header.displayName = "UIText.Header";
 
-export {UIText};
+export { UIText };
