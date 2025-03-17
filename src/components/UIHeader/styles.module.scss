@@ -1,21 +1,16 @@
 .ui-header {
-  width: 100%;
+  width: 1280px;
+  margin: 0 auto;
   position: fixed;
   left: 0;
   right: 0;
-  transition: 'top 0.5s ease-in-out';
+  transition: "top 0.5s ease-in-out";
   z-index: 100;
-  > div {
-    width: 1280px;
-    margin: 0 auto;
-    p {
-      color: #3F89E6;
-    }
+
+  a {
+    color: #3f89e6;
+    text-decoration: none;
   }
-}
-
-.ui-header-main {
-
 }
 
 // size

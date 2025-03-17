@@ -35,11 +35,7 @@ function Home() {
     <>
       <UIContent bgColor="gray" bgPattern="check">
         <UIBox>
-          <UIHeader size="md">
-            <p style={{ fontFamily: "Bagel fat one", fontSize: "30px" }}>
-              S.H.LEE
-            </p>
-          </UIHeader>
+          <UIHeader size="md">S.H.LEE</UIHeader>
         </UIBox>
         <UIBox align="center" style={{ padding: "200px 0" }}>
           <div style={{ paddingTop: "102px" }}>
@@ -254,11 +250,10 @@ function Home() {
           </UISwiper.Box>
         </UIBox>
       </UIContent>
+
       <UIContent bgColor="pink" bgPattern="wave">
         <UIBox variant="content">
-          <UIText.Basic variant="contentTitle" font="tenada" size="md">
-            EXPERIENCE DETAIL
-          </UIText.Basic>
+          <UIText.Header size="lg">ABOUT PORTFOLIO</UIText.Header>
         </UIBox>
       </UIContent>
     </>
