@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { UIHeaderProps } from "./types";
 import styles from "./styles.module.scss";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+
+// export const Logo: React.FC<UILogoProps> = ({
+//   return ()
+// })
 
 export const UIHeader: React.FC<UIHeaderProps> = ({
   variant = "div",
@@ -25,19 +28,22 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
     }
   };
 
+  function Logo({ children }: { children: React.ReactNode }) {
+    return <div className={styles.logo}>{children}</div>;
+  }
+
+  function Items({ children }: { children: React.ReactNode }) {
+    return <ul className={styles.items}>{children}</ul>;
+  }
+
+  function Item({ children }: { children: React.ReactNode }) {
+    return <li className={styles.item}>{children}</li>;
+  }
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const Logo = styled.div`
-    color: #3f89e6;
-  `;
-
-  const Items = styled.ul`
-    display: flex;
-  `;
-  const Item = styled.li``;
 
   const classes = [
     styles["ui-header"],
@@ -76,7 +82,6 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
           <Link to="/">tistory</Link>
         </Item>
       </Items>
-      {/* <Link to="/"></Link> */}
     </UIHeader>
   );
 };
