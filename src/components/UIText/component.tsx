@@ -37,6 +37,7 @@ export const Header: React.FC<UITextHeaderProps> = ({
   size,
   font,
   variant,
+  color,
   // as = "div",
   className,
   children,
@@ -50,6 +51,7 @@ export const Header: React.FC<UITextHeaderProps> = ({
     styles["ui-text-header"],
     styles[`ui-text-header-${size}`],
     styles[`ui-text-header-${font}`],
+    styles[`ui-text-header-${color}`],
     className,
   ]
     .filter(Boolean)

@@ -3,10 +3,6 @@ import { UIHeaderProps } from "./types";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 
-// export const Logo: React.FC<UILogoProps> = ({
-//   return ()
-// })
-
 export const UIHeader: React.FC<UIHeaderProps> = ({
   variant = "div",
   size,
