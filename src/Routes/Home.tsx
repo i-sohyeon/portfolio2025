@@ -134,7 +134,8 @@ function Home() {
               variant="list"
               bgColor="type1"
               title="ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정"
-              des="(20202.04~2020.10)"></UIBanner.List>
+              des="(20202.04~2020.10)"
+            />
             <UIBanner.List
               icon="company"
               number="2021"
@@ -155,21 +156,24 @@ function Home() {
               variant="list"
               bgColor="type4"
               title="인픽스(INPIX)"
-              des="(2022.06 ~ )"></UIBanner.List>
+              des="(2022.06 ~ )"
+            />
             <UIBanner.List
               icon="study"
               number="2024"
               variant="list"
               bgColor="type5"
               title="한국방송통신대학교 컴퓨터과학과 편입 (재학중)"
-              des="(2023.09 ~ )"></UIBanner.List>
+              des="(2023.09 ~ )"
+            />
             <UIBanner.List
               icon="company"
               number="2025"
               variant="list"
               bgColor="type6"
               title="??????"
-              des="(????.?? ~ )"></UIBanner.List>
+              des="(????.?? ~ )"
+            />
           </div>
 
           <div
@@ -191,7 +195,7 @@ function Home() {
                 Project Experience
               </UIText.Basic>
             </div>
-            <UITextList.Check variant="check" checkItems={textList} />
+            <UITextList.Check variant="check" size="md" checkItems={textList} />
           </div>
         </UIBox>
       </UIContent>

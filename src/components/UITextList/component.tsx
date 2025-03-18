@@ -1,31 +1,27 @@
 import React from "react";
-import { UITextListCheckProps, ItemData, UITextListCircleProps  } from "./types";
+import {
+  UITextListCheckProps,
+  ItemData,
+  UITextListCircleProps,
+  UITextListNormalProps,
+  UITextListNestedProps,
+} from "./types";
 import styles from "./styles.module.scss";
 
-
-export const Check: React.FC<UITextListCheckProps> = ({ 
+export const Normal: React.FC<UITextListNormalProps> = ({
   variant,
   checkItems,
-  // size,
-  // weight = "normal",
-  // color,
-  // font,
-  // as: UITextList = "span",
   className,
   children,
   ...rest
-
- }) => {
-    const classes = [
-      styles[`ui-textList`],
-      styles[`ui-textList-${variant}`],
-      // styles[`ui-textList-size-${size}`],
-      // styles[`ui-textList-weight-${weight}`],
-      // styles[`ui-textList-font-${font}`],
-      className
-    ]
-      .filter(Boolean)
-      .join(" ");
+}) => {
+  const classes = [
+    styles[`ui-textList`],
+    styles[`ui-textList-${variant}`],
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <ul className={`${styles.checkList} ${classes}`}>
@@ -36,12 +32,67 @@ export const Check: React.FC<UITextListCheckProps> = ({
   );
 };
 
-function ItemComponent(props: { item: ItemData;  }) {
-  
+export const Check: React.FC<UITextListCheckProps> = ({
+  variant,
+  checkItems,
+  className,
+  children,
+  ...rest
+}) => {
+  const classes = [
+    styles[`ui-textList`],
+    styles[`ui-textList-${variant}`],
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return (
+    <ul className={`${styles.checkList} ${classes}`}>
+      {checkItems.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
+};
+
+export const Nested: React.FC<UITextListNestedProps> = ({
+  variant,
+  checkItems,
+  className,
+  ...rest
+}) => {
+  const classes = [
+    styles[`ui-nested`],
+    styles[`ui-nested-${variant}`],
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const renderList = (items: any[]) => {
+    return (
+      <ul className={`${styles.nested} ${classes}`}>
+        {items.map((item) => (
+          <li key={item.id}>
+            {item.name}
+            {item.children && renderList(item.children)}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
+  return (
+    <div className={`${styles.test} ${classes}`}>{renderList(checkItems)}</div>
+  );
+};
+
+function ItemComponent(props: { item: ItemData }) {
   return (
     <li>
       <span>{props.item.number}</span>
-      <div  style={{ }}>
+      <div style={{}}>
         <h3>{props.item.title}</h3>
         <p>{props.item.subText}</p>
       </div>
@@ -50,33 +101,30 @@ function ItemComponent(props: { item: ItemData;  }) {
 }
 
 export const Circle: React.FC<UITextListCircleProps> = ({
-    variant, 
-    className,
-    bgColor,
-    ...props
-  }) =>  {
-
-    const classes = [
-      styles[`ui-textList`],
-      styles[`ui-textList-${variant}`],
-      styles[`ui-textList-${bgColor}`],
-      // styles[`ui-textList-size-${size}`],
-      // styles[`ui-textList-weight-${weight}`],
-      // styles[`ui-textList-font-${font}`],
-    ]
-      .filter(Boolean)
-      .join(" ");
+  variant,
+  className,
+  bgColor,
+  ...props
+}) => {
+  const classes = [
+    styles[`ui-textList`],
+    styles[`ui-textList-${variant}`],
+    styles[`ui-textList-${bgColor}`],
+    // styles[`ui-textList-size-${size}`],
+    // styles[`ui-textList-weight-${weight}`],
+    // styles[`ui-textList-font-${font}`],
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <ul {...props} className={`${styles.circleList} ${classes}`}>
       {props.data.map((item) => (
-        <ItemComponent key={item.id} item={item}  />
+        <ItemComponent key={item.id} item={item} />
       ))}
     </ul>
   );
-}
-
-
+};
 
 // export default function Circle(props: UITextListCircleProps) {
 //   return (
@@ -88,13 +136,16 @@ export const Circle: React.FC<UITextListCircleProps> = ({
 //   );
 // }
 
-
-
 const UITextList = {
-   Check, Circle
-}
+  Normal,
+  Nested,
+  Check,
+  Circle,
+};
 
-UITextList.Check.displayName = "UITextList.Check"
-UITextList.Check.displayName = "UITextList.Circle"
+UITextList.Normal.displayName = "UITextList.Normal";
+UITextList.Nested.displayName = "UITextList.Nested";
+UITextList.Check.displayName = "UITextList.Check";
+UITextList.Check.displayName = "UITextList.Circle";
 
-export {UITextList}
+export { UITextList };
