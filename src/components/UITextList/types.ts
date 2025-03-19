@@ -24,7 +24,6 @@ export interface UITextListCheckProps
   font?: UITextListStyle;
   as?: React.ElementType;
   checkItems: string[]; // 리스트에 보여질 문자열 배열
-  // steps: string[]; // 리스트에 보여질 문자열 배열
 }
 
 export interface UITextListNestedProps
@@ -35,10 +34,7 @@ export interface UITextListNestedProps
   color?: string;
   font?: UITextListStyle;
   as?: React.ElementType;
-  // checkItems: string[]; // 리스트에 보여질 문자열 배열
-  // steps: string[]; // 리스트에 보여질 문자열 배열
-  // variant: string;
-  checkItems: {
+  nestedItems: {
     id: number;
     name: string;
     children?: { id: number; name: string; children?: any }[];
@@ -55,13 +51,8 @@ export interface UITextListCircleProps
   font?: UITextListStyle;
   bgColor?: UITextListBgColor;
   as?: React.ElementType;
-  // id?: string,
-  // circleItems?: string[];
 }
 
-// test
-
-// export interface ItemData
 export interface ItemData {
   id?: number;
   number?: number;

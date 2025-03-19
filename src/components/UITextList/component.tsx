@@ -58,8 +58,9 @@ export const Check: React.FC<UITextListCheckProps> = ({
 
 export const Nested: React.FC<UITextListNestedProps> = ({
   variant,
-  checkItems,
+  nestedItems,
   className,
+  children,
   ...rest
 }) => {
   const classes = [
@@ -70,22 +71,29 @@ export const Nested: React.FC<UITextListNestedProps> = ({
     .filter(Boolean)
     .join(" ");
 
-  const renderList = (items: any[]) => {
+  const renderList = (items: any[], isFirstLevel: boolean = true) => {
     return (
-      <ul className={`${styles.nested} ${classes}`}>
+      <ul
+        className={
+          isFirstLevel
+            ? styles.firstLevelList
+            : `${styles.nestedList} ${classes}`
+        }>
         {items.map((item) => (
-          <li key={item.id}>
-            {item.name}
-            {item.children && renderList(item.children)}
+          <li
+            key={item.id}
+            className={
+              isFirstLevel ? styles.firstLevelItem : styles.nestedItem
+            }>
+            <span>{item.name}</span>
+            {item.children && renderList(item.children, false)}
           </li>
         ))}
       </ul>
     );
   };
 
-  return (
-    <div className={`${styles.test} ${classes}`}>{renderList(checkItems)}</div>
-  );
+  return <div className={styles.testDiv}>{renderList(nestedItems)}</div>;
 };
 
 function ItemComponent(props: { item: ItemData }) {
