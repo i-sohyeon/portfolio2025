@@ -1,4 +1,3 @@
-
 // 텍스트가 흐르는 배너
 .txt-banner-wrap {
   width: 100%;
@@ -17,12 +16,11 @@
   }
 }
 
-
 .txt-banner span {
-    display: inline-block;
-    white-space: nowrap;
-    margin-right: 36px;
-    width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 36px;
+  width: 100%;
 }
 
 @keyframes flow {
@@ -35,6 +33,4 @@
 }
 
 .swiper {
-
 }
-
