@@ -7,7 +7,7 @@ import {
 } from "../components/v1";
 
 function Sub() {
-  const data = [
+  const data01 = [
     {
       id: 1,
       name: "주요업무",
@@ -36,6 +36,32 @@ function Sub() {
         { id: 10, name: "IE10, 11, Edge , Chrome 크로스 브라우징" },
       ],
     },
+    {
+      id: 11,
+      name: "성과",
+      children: [
+        {
+          id: 12,
+          name: "HTML5와 CSS3를 활용한 현대적이고 효율적인 마크업 구조 구현",
+        },
+        {
+          id: 13,
+          name: "레거시 코드 업데이트를 통한 시스템 성능 향상 및 유지보수성 제고",
+        },
+        {
+          id: 14,
+          name: "크로스 브라우징 호환성 확보IE10, IE11, Edge, Chrome 등 다양한 브라우저에서의 일관성 된 렌더링 구현",
+        },
+        {
+          id: 15,
+          name: "레거시 브라우저(IE10) 지원을 통한 폭 넓은 사용자 접근성 확보",
+        },
+        {
+          id: 16,
+          name: "SVN을 활용한 효율적인 소스 코드 버전 관리 시스템 운영",
+        },
+      ],
+    },
   ];
 
   return (
@@ -50,14 +76,22 @@ function Sub() {
 
         <UIBox style={{ display: "flex", justifyContent: "space-between" }}>
           <div>
-            <UIText.Basic size="sm" color="white">
+            <UIText.Basic size="fs24" color="white" className="mr-4">
               KB국민은행
             </UIText.Basic>
-            <UIText.Basic size="xs" color="white">
+            <UIText.Basic size="fs12" color="white">
+              2022.07 ~ 2022.11 (약 4개월)
+            </UIText.Basic>
+            <UIText.Basic size="fs20" color="white" display="block">
               태블릿브랜치 금융투자 상품 판매 프로세스 구축
             </UIText.Basic>
+            <UIText.Basic size="fs20" color="white" display="block">
+              은행 직원이 태블릿을 사용하여 금융 업무를 처리할 수 있도록 하는
+              프로세스 구축
+            </UIText.Basic>
           </div>
-          <UITextList.Nested nestedItems={data} />
+
+          <UITextList.Nested nestedItems={data01} />
         </UIBox>
       </UIBox>
     </UIContent>

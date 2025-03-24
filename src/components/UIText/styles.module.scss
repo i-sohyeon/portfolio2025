@@ -23,18 +23,48 @@
   font-size: 16px;
 }
 .ui-text-sm {
-  font-size: 24px;
+  font-size: 20px;
 }
 .ui-text-md {
-  font-size: 28px;
+  font-size: 24px;
 }
 .ui-text-lg {
-  font-size: 36px;
+  font-size: 28px;
 }
 .ui-text-xl {
   font-size: 40px;
 }
-// .ui-text-xxl { font-size: 48px; }
+.ui-text-xxl {
+  font-size: 48px;
+}
+
+.ui-text-fs12 {
+  font-size: 12px;
+}
+.ui-text-fs16 {
+  font-size: 16px;
+}
+.ui-text-fs20 {
+  font-size: 20px;
+}
+.ui-text-fs24 {
+  font-size: 24px;
+}
+.ui-text-fs28 {
+  font-size: 28px;
+}
+.ui-text-fs32 {
+  font-size: 32px;
+}
+.ui-text-fs36 {
+  font-size: 36px;
+}
+.ui-text-fs40 {
+  font-size: 40px;
+}
+.ui-text-fs48 {
+  font-size: 48px;
+}
 
 /* Weights */
 .ui-text-normal {
@@ -105,4 +135,15 @@
       margin-top: -18px;
     }
   }
+}
+
+// display
+.ui-text-block {
+  display: block;
+}
+.ui-text-inline {
+  display: inline;
+}
+.ui-text-inline {
+  display: inline;
 }

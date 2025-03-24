@@ -81,11 +81,16 @@
   line-height: 22px;
 }
 
-.ui-nested {
-  & > li > span {
+.firstLevelList > li {
+  margin-bottom: 24px;
+  padding-left: 24px;
+  > span {
+    display: inline-block;
     color: white;
-    padding-left: 12px;
+    padding-left: 0;
     position: relative;
+    font-weight: bold;
+    margin-bottom: 8px;
     &::before {
       content: "";
       display: inline-block;
@@ -94,29 +99,18 @@
       height: 16px;
       background-size: 16px 16px;
       position: absolute;
-      top: 0;
-      left: -16px;
-    }
-
-    & + ul {
-      li {
-        span {
-          color: pink;
-        }
-      }
+      top: -2px;
+      left: -24px;
     }
   }
-}
-.ui-nested > li > span + ul > li > span {
-  // color: #fff302;
-}
-
-.firstLevelList > li {
-  background-color: #f0f0f0; /* 첫 번째 리스트 배경색 */
 }
 
 /* 중첩 리스트 스타일 */
 .nestedList > li {
-  background-color: #e0e0e0; /* 중첩 리스트 배경색 */
-  margin-left: 16px; /* 중첩 리스트 여백 */
+  & + li {
+    margin-top: 12px;
+  }
+  > span {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }

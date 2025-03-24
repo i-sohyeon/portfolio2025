@@ -9,9 +9,11 @@ export const Basic: React.FC<UITextProps> = ({
   weight = "normal",
   color,
   font,
+  display,
   as: UIText = "span",
   className,
   children,
+
   ...rest
 }) => {
   const classes = [
@@ -21,6 +23,7 @@ export const Basic: React.FC<UITextProps> = ({
     styles[`ui-text-${weight}`],
     styles[`ui-text-${font}`],
     styles[`ui-text-${color}`],
+    styles[`ui-text-${display}`],
     className,
   ]
     .filter(Boolean)
