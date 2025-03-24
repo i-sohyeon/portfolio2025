@@ -89,7 +89,10 @@ export const Box: React.FC<SwiperProps> = ({
       // pagination={{ clickable: true }}
    
     >
+      <div>
       {children}
+      </div>
+   
     </Swiper>
   );
 };
