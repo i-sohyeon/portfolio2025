@@ -77,6 +77,9 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
         <Item>
           <Link to="/">tistory</Link>
         </Item>
+        <Item>
+          <Link to="/">codepen</Link>
+        </Item>
       </Items>
     </UIHeader>
   );

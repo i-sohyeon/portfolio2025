@@ -22,7 +22,7 @@
     background-color: blue;
     font-size: 62.5% !important; /* 작은 화면에서는 1rem = 10px */
     h3 {
-      font-size: calc(48px / 16px * 1rem) !important;
+      font-size: calc(16px / 16px * 1rem) !important;
       // font-size: 62.5% !important;
     }
   }

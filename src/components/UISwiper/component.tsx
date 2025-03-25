@@ -1,16 +1,14 @@
-// import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 // import ReactDOM from "react-dom";
 // Import Swiper React components
-import { SwiperProps, SlideItemProps } from './types';
-import { Swiper } from 'swiper/react';
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import styles from './styles.module.scss'
+import { SwiperProps, SlideItemProps } from "./types";
+import { Swiper } from "swiper/react";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import styles from "./styles.module.scss";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 // import { Children, ReactNode } from 'react';
-
-
 
 // export const UISwiper: React.FC<SwiperProps> = ({
 //   variant,
@@ -58,57 +56,72 @@ export const Box: React.FC<SwiperProps> = ({
   children,
   className,
   ...rest
-  
 }) => {
-  const classes = [
-   styles[`ui-swiper`],
-   styles[`ui-swiper-${variant}`],
-   styles[`ui-swiper-${bgColor}`],
-    className,
+  // const swiperBoxRef = useRef<HTMLDivElement>(null);
 
+  const classes = [
+    styles[`ui-swiper`],
+    styles[`ui-swiper-${variant}`],
+    styles[`ui-swiper-${bgColor}`],
+    className,
   ]
 
-  .filter(Boolean)
-  .join(" ");
+    .filter(Boolean)
+    .join(" ");
+
+  // useEffect(() => {
+  //   if (swiperBoxRef.current) {
+  //     // Ref를 통해 스타일을 적용
+  //     // swiperBoxRef.current.style.background = "lightblue";
+  //     swiperBoxRef.current.style.color = "#eee";
+  //   }
+  // }, []);
 
   return (
     <Swiper
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
       slidesPerView={1.5}
-        breakpoints={{
-        768: {
+      breakpoints={{
+        480: {
           slidesPerView: 1,
         },
-        1024: {
+        768: {
+          slidesPerView: 1.5,
+        },
+        1280: {
           slidesPerView: 1.5,
         },
       }}
       navigation={false}
       className={`${styles.swiperBox} ${classes}`}
       // pagination={{ clickable: true }}
-   
     >
-      <div>
-      {children}
-      </div>
-   
+      <div>{children}</div>
     </Swiper>
   );
 };
 
+export const SlideItem = ({
+  title,
+  content,
+  imgSrc,
+  children,
+  bgColor,
+}: SlideItemProps) => {
+  const swiperBoxRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    if (swiperBoxRef.current) {
+      // Ref를 통해 스타일을 적용
+      swiperBoxRef.current.style.width = "auto";
+    }
+  }, []);
 
-export const SlideItem = ({  title, content, imgSrc, children, bgColor }: SlideItemProps) => {
-  const classes = [
-    styles[`ui-swiper-${bgColor}`],
- 
-   ]
- 
-   .filter(Boolean)
-   .join(" ");
+  const classes = [styles[`ui-swiper-${bgColor}`]].filter(Boolean).join(" ");
+
   return (
-    <div className={`${styles.slideItem} ${classes}`}>
+    <div ref={swiperBoxRef} className={`${styles.slideItem} ${classes}`}>
       <img src={imgSrc} alt="" />
       <h3>{title}</h3>
       <p>{content}</p>
@@ -117,10 +130,9 @@ export const SlideItem = ({  title, content, imgSrc, children, bgColor }: SlideI
   );
 };
 
-
 const UISwiper = {
-  Box
-}
+  Box,
+};
 
 UISwiper.Box.displayName = "UISwiper.Box";
-export {UISwiper};
+export { UISwiper };
