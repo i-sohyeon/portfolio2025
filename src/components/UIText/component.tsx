@@ -48,7 +48,7 @@ export const Header: React.FC<UITextHeaderProps> = ({
   linkTo,
   ...rest
 }) => {
-  const [useLink, setUseLink] = useState(true);
+  const [useLink, _] = useState(true);
 
   const classes = [
     styles["ui-text-header"],
@@ -63,7 +63,6 @@ export const Header: React.FC<UITextHeaderProps> = ({
   return (
     <div className={`${styles.headerButton} ${classes}`} {...rest}>
       <>{children}</>
-
       {useLink && linkTo && <Link to={linkTo}>{button}</Link>}
     </div>
   );

@@ -1,5 +1,16 @@
-:root {
-  font-size: 16px;
+// :root {
+//   font-size: 16px;
+// }
+
+/** px to rem **/
+// @mixin fontSize($size) {
+//   font-size: $size;
+//   font-size: px-to-rem($size);
+// }
+
+@mixin fontSize($fs: null, $fw: null) {
+  font-size: $fs;
+  font-weight: $fw;
 }
 
 /* 모바일 세로 (0px ~ 479px) */
@@ -22,8 +33,9 @@
     background-color: blue;
     font-size: 62.5% !important; /* 작은 화면에서는 1rem = 10px */
     h3 {
-      font-size: calc(16px / 16px * 1rem) !important;
+      // font-size: calc(16px / 16px * 1rem) !important;
       // font-size: 62.5% !important;
+      @include fontSize(36px);
     }
   }
 }

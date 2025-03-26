@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 // import ReactDOM from "react-dom";
 // Import Swiper React components
 import { SwiperProps, SlideItemProps } from "./types";
@@ -55,9 +55,10 @@ export const Box: React.FC<SwiperProps> = ({
   bgColor,
   children,
   className,
+  ref,
   ...rest
 }) => {
-  // const swiperBoxRef = useRef<HTMLDivElement>(null);
+  const swiperBoxRef = useRef<HTMLDivElement>(null);
 
   const classes = [
     styles[`ui-swiper`],
@@ -69,16 +70,17 @@ export const Box: React.FC<SwiperProps> = ({
     .filter(Boolean)
     .join(" ");
 
-  // useEffect(() => {
-  //   if (swiperBoxRef.current) {
-  //     // Ref를 통해 스타일을 적용
-  //     // swiperBoxRef.current.style.background = "lightblue";
-  //     swiperBoxRef.current.style.color = "#eee";
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (swiperBoxRef.current) {
+      // Ref를 통해 스타일을 적용
+      // swiperBoxRef.current.style.background = "lightblue";
+      swiperBoxRef.current.style.overflow = "visible";
+    }
+  }, []);
 
   return (
     <Swiper
+      ref={swiperBoxRef}
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
       slidesPerView={1.5}
@@ -109,19 +111,19 @@ export const SlideItem = ({
   children,
   bgColor,
 }: SlideItemProps) => {
-  const swiperBoxRef = useRef<HTMLDivElement>(null);
+  const swiperContentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (swiperBoxRef.current) {
+    if (swiperContentRef.current) {
       // Ref를 통해 스타일을 적용
-      swiperBoxRef.current.style.width = "auto";
+      swiperContentRef.current.style.width = "auto";
     }
   }, []);
 
   const classes = [styles[`ui-swiper-${bgColor}`]].filter(Boolean).join(" ");
 
   return (
-    <div ref={swiperBoxRef} className={`${styles.slideItem} ${classes}`}>
+    <div ref={swiperContentRef} className={`${styles.slideItem} ${classes}`}>
       <img src={imgSrc} alt="" />
       <h3>{title}</h3>
       <p>{content}</p>

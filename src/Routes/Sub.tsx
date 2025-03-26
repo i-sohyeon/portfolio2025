@@ -74,15 +74,23 @@ function Sub() {
           EXPERIENCE DETAIL
         </UIText.Header>
 
-        <UIBox style={{ display: "flex", justifyContent: "space-between" }}>
-          <div>
-            <UIText.Basic size="fs24" color="white" className="mr-4">
+        <UIBox
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}>
+          <div style={{ marginRight: "64px" }}>
+            <UIText.Basic size="fs24" color="white" className="mr-2">
               KB국민은행
             </UIText.Basic>
             <UIText.Basic size="fs12" color="white">
               2022.07 ~ 2022.11 (약 4개월)
             </UIText.Basic>
-            <UIText.Basic size="fs20" color="white" display="block">
+            <UIText.Basic
+              size="fs20"
+              color="white"
+              display="block"
+              className="mb-4">
               태블릿브랜치 금융투자 상품 판매 프로세스 구축
             </UIText.Basic>
             <UIText.Basic size="fs20" color="white" display="block">
