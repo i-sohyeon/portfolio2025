@@ -43,6 +43,33 @@
 .ui-text-fs48 {
   font-size: 48px;
 }
+
+/* opacity */
+.ui-text-10 {
+  opacity: 10%;
+}
+.ui-text-20 {
+  opacity: 20%;
+}
+.ui-text-30 {
+  opacity: 30%;
+}
+.ui-text-40 {
+  opacity: 40%;
+}
+.ui-text-50 {
+  opacity: 50%;
+}
+.ui-text-60 {
+  opacity: 60%;
+}
+.ui-text-70 {
+  opacity: 70%;
+}
+.ui-text-80 {
+  opacity: 80%;
+}
+
 /* 모바일 세로 (0px ~ 479px) */
 @media (max-width: 479px) {
   body {

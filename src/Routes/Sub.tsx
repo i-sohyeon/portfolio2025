@@ -83,7 +83,7 @@ function Sub() {
             <UIText.Basic size="fs24" color="white" className="mr-2">
               KB국민은행
             </UIText.Basic>
-            <UIText.Basic size="fs12" color="white">
+            <UIText.Basic size="fs12" color="white" opacity="50">
               2022.07 ~ 2022.11 (약 4개월)
             </UIText.Basic>
             <UIText.Basic

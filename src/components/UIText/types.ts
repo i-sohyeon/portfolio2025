@@ -24,8 +24,16 @@ export type UITextWeight = "normal" | "bold";
 export type UITextStyle = "tenada" | "bold";
 export type UITextColor = "white" | "blue";
 export type UIDisplay = "block" | "inline" | "inline-block";
-
 export type UITextHeaderSize = "lg" | "md";
+export type UITextOpacity =
+  | "10"
+  | "20"
+  | "30"
+  | "40"
+  | "50"
+  | "60"
+  | "70"
+  | "80";
 
 export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
   variant?: UITextVariant;
@@ -34,6 +42,7 @@ export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
   color?: UITextColor;
   font?: UITextStyle;
   display?: UIDisplay;
+  opacity?: UITextOpacity;
   as?: React.ElementType;
 }
 

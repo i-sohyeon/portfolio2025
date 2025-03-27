@@ -13,6 +13,7 @@ export const Basic: React.FC<UITextProps> = ({
   as: UIText = "span",
   className,
   children,
+  opacity,
 
   ...rest
 }) => {
@@ -24,6 +25,7 @@ export const Basic: React.FC<UITextProps> = ({
     styles[`ui-text-${font}`],
     styles[`ui-text-${color}`],
     styles[`ui-text-${display}`],
+    styles[`ui-text-${opacity}`],
     className,
   ]
     .filter(Boolean)
