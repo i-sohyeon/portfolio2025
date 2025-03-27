@@ -1,54 +1,11 @@
 import React, { useEffect, useRef } from "react";
-// import ReactDOM from "react-dom";
-// Import Swiper React components
 import { SwiperProps, SlideItemProps } from "./types";
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperRef } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import styles from "./styles.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import { Children, ReactNode } from 'react';
-
-// export const UISwiper: React.FC<SwiperProps> = ({
-//   variant,
-//   as: Swiper = "div",
-//   children,
-//   spaceBetween = 50,
-//   slidesPerView = 1,
-//   navigation = true,
-//   pagination,
-//   className,
-//   ...props
-// }) => {
-//   return (
-//     <Swiper
-//       pagination
-//       modules={[Navigation, Pagination, A11y, Autoplay]}
-//       {...props}
-//     >
-//       {children}
-//     </Swiper>
-
-//     // <Swiper
-//     //   // slidesPerView={'auto'}
-//     //   // spaceBetween={30}
-//     // //   pagination={{
-//     // //   clickable: true,
-//     // // }}
-//     //   modules={[Pagination, Navigation]}
-//     //   // modules={[Navigation, Pagination]}
-//     //   spaceBetween={spaceBetween}
-//     //   slidesPerView={slidesPerView}
-//     //   navigation={navigation}
-//     //   // pagination={pagination}
-//     //   className="mySwiper">
-//     //   {/* <SwiperSlide>Slide 1</SwiperSlide> */}
-//     //    {children}
-//     //   </Swiper>
-
-//   );
-// };
 
 export const Box: React.FC<SwiperProps> = ({
   variant,
@@ -58,7 +15,8 @@ export const Box: React.FC<SwiperProps> = ({
   ref,
   ...rest
 }) => {
-  const swiperBoxRef = useRef<HTMLDivElement>(null);
+  // const swiperBoxRef = useRef<HTMLDivElement>(null);
+  const swiperBoxRef = useRef<SwiperRef>(null);
 
   const classes = [
     styles[`ui-swiper`],
@@ -72,15 +30,26 @@ export const Box: React.FC<SwiperProps> = ({
 
   useEffect(() => {
     if (swiperBoxRef.current) {
-      // Ref를 통해 스타일을 적용
-      // swiperBoxRef.current.style.background = "lightblue";
-      swiperBoxRef.current.style.overflow = "visible";
+      // SwiperRef는 Swiper 인스턴스를 반환하므로, 직접적으로 $el에 접근할 수 없음
+      // 대신, onSwiper 이벤트를 사용하여 Swiper 인스턴스 얻어야함
+      // 하지만, 이 방법은 Swiper 인스턴스를 얻는 즉시 실행되므로, useEffect에서 사용하기보다는
+      // onSwiper 이벤트에서 직접 처리
     }
-  }, []);
+  }, [swiperBoxRef]);
+
+  const handleSwiper = (swiper: any) => {
+    if (swiper) {
+      const swiperElement = swiper.el;
+      if (swiperElement) {
+        swiperElement.style.overflow = "visible";
+      }
+    }
+  };
 
   return (
     <Swiper
       ref={swiperBoxRef}
+      onSwiper={handleSwiper}
       modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
       slidesPerView={1.5}
