@@ -1,3 +1,4 @@
+export * from "./UIBadge/index";
 export * from "./UIBanner/index";
 export * from "./UIBox/index";
 export * from "./UIButton/index";
@@ -6,4 +7,3 @@ export * from "./UIHeader/index";
 export * from "./UISwiper/index";
 export * from "./UIText/index";
 export * from "./UITextList/index";
-

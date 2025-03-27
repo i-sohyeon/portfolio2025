@@ -4,6 +4,7 @@ import {
   UIBox,
   UIHeader,
   UITextList,
+  UIBadge,
 } from "../components/v1";
 
 function Sub() {
@@ -93,10 +94,20 @@ function Sub() {
               className="mb-4">
               태블릿브랜치 금융투자 상품 판매 프로세스 구축
             </UIText.Basic>
-            <UIText.Basic size="fs20" color="white" display="block">
+            <UIText.Basic
+              size="fs20"
+              color="white"
+              display="block"
+              className="mb-5">
               은행 직원이 태블릿을 사용하여 금융 업무를 처리할 수 있도록 하는
               프로세스 구축
             </UIText.Basic>
+            <UIBadge variant="solid" bgColor="navy" size="sm">
+              퍼블리싱
+            </UIBadge>
+            <UIBadge variant="solid" bgColor="navy" size="sm">
+              크로스브라우징
+            </UIBadge>
           </div>
 
           <UITextList.Nested nestedItems={data01} />

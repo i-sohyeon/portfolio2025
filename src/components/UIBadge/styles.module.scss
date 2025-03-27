@@ -1,0 +1,23 @@
+.ui-badge {
+  display: inline-block;
+  border-radius: 24px;
+}
+
+/** variant **/
+.ui-badge-solid {
+}
+.ui-badge-line {
+}
+
+/** bgColor **/
+.ui-badge-navy {
+  color: #fff;
+  background-color: #160b43;
+}
+/** size **/
+.ui-badge-sm {
+  padding: 8px 24px;
+  & + span {
+    margin-left: 8px;
+  }
+}
