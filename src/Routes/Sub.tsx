@@ -112,6 +112,44 @@ function Sub() {
 
           <UITextList.Nested nestedItems={data01} />
         </UIBox>
+
+        <UIBox
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}>
+          <div style={{ marginRight: "64px" }}>
+            <UIText.Basic size="fs24" color="white" className="mr-2">
+              KB국민은행
+            </UIText.Basic>
+            <UIText.Basic size="fs12" color="white" opacity="50">
+              2022.07 ~ 2022.11 (약 4개월)
+            </UIText.Basic>
+            <UIText.Basic
+              size="fs20"
+              color="white"
+              display="block"
+              className="mb-4">
+              태블릿브랜치 금융투자 상품 판매 프로세스 구축
+            </UIText.Basic>
+            <UIText.Basic
+              size="fs20"
+              color="white"
+              display="block"
+              className="mb-5">
+              은행 직원이 태블릿을 사용하여 금융 업무를 처리할 수 있도록 하는
+              프로세스 구축
+            </UIText.Basic>
+            <UIBadge variant="solid" bgColor="navy" size="sm">
+              퍼블리싱
+            </UIBadge>
+            <UIBadge variant="solid" bgColor="navy" size="sm">
+              크로스브라우징
+            </UIBadge>
+          </div>
+
+          <UITextList.Nested nestedItems={data01} />
+        </UIBox>
       </UIBox>
     </UIContent>
   );

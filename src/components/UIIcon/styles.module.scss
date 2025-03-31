@@ -1,0 +1,30 @@
+.ui-icon {
+  display: inline-block;
+  border-radius: 24px;
+}
+
+/** variant **/
+.ui-icon-github {
+  background-image: url("../../assets//images/icons/ico_github.png");
+  background-size: 100% 100%;
+}
+.ui-icon-tistory {
+  background-image: url("../../assets//images/icons/ico_tistory.png");
+  background-size: 100% 100%;
+}
+.ui-icon-codepen {
+  background-image: url("../../assets//images/icons/ico_codepen.png");
+  background-size: 100% 100%;
+}
+
+/** size **/
+.ui-icon-sm {
+}
+
+.ui-icon-md {
+}
+
+.ui-icon-lg {
+  width: 36px;
+  height: 36px;
+}

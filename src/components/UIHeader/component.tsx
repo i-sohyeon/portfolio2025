@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { UIHeaderProps } from "./types";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
+import { UIIcon } from "../UIIcon";
 
 export const UIHeader: React.FC<UIHeaderProps> = ({
   variant = "div",
@@ -71,14 +72,18 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
       <Items>
         <Item>
           <Link to="https://github.com/i-sohyeon" target="_blank">
-            github
+            <UIIcon variant="github" size="lg" />
           </Link>
         </Item>
         <Item>
-          <Link to="/">tistory</Link>
+          <Link to="/" target="_blank">
+            <UIIcon variant="tistory" size="lg" />
+          </Link>
         </Item>
         <Item>
-          <Link to="/">codepen</Link>
+          <Link to="/" target="_blank">
+            <UIIcon variant="codepen" size="lg" />
+          </Link>
         </Item>
       </Items>
     </UIHeader>
