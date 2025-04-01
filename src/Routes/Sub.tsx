@@ -5,6 +5,7 @@ import {
   UIHeader,
   UITextList,
   UIBadge,
+  UIDivider,
 } from "../components/v1";
 
 function Sub() {
@@ -112,7 +113,7 @@ function Sub() {
 
           <UITextList.Nested nestedItems={data01} />
         </UIBox>
-
+        <UIDivider variant="type1" />
         <UIBox
           style={{
             display: "flex",
