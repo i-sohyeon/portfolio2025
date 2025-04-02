@@ -8,21 +8,23 @@
   padding: 102px 0;
 }
 
-.ui-box-flex {
-  padding: 80px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
+// align
 .ui-box-left {
   text-align: left;
 }
-
 .ui-box-center {
   text-align: center !important;
 }
-
 .ui-box-right {
   text-align: right;
+}
+
+// display
+.ui-box-flex {
+  display: flex;
+}
+
+// jContent
+.ui-box-jContent {
+  justify-content: space-between;
 }

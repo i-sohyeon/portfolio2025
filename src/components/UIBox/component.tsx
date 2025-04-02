@@ -1,32 +1,33 @@
-import React from 'react';
+import React from "react";
 import { UIBoxProps } from "./types";
 import styles from "./styles.module.scss";
 
-export const UIBox: React.FC<UIBoxProps> = ({ 
+export const UIBox: React.FC<UIBoxProps> = ({
   variant,
   bgColor,
   bgPattern,
   as: UIBox = "div",
   align,
+  display,
+  jContent,
   className,
   children,
   ...rest
-
- }) => {
-
+}) => {
   const classes = [
     styles["ui-box"],
     styles[`ui-box-${variant}`],
     styles[`ui-box-${bgColor}`],
     styles[`ui-box-${align}`],
-    // styles[`ui-box-${textAi}`],
-    className
+    styles[`ui-box-${display}`],
+    styles[`ui-box-${jContent}`],
+    className,
   ]
-  .filter(Boolean)
-  .join(" ");
+    .filter(Boolean)
+    .join(" ");
 
   return (
-    <UIBox variant='type1' className={classes} style={{  }} {...rest}>
+    <UIBox variant="type1" className={classes} style={{}} {...rest}>
       {children}
     </UIBox>
   );
