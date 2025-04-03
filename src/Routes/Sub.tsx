@@ -6,6 +6,7 @@ import {
   UITextList,
   UIBadge,
   UIDivider,
+  UIParagraph,
 } from "../components/v1";
 
 function Sub() {
@@ -133,40 +134,12 @@ function Sub() {
         </UIText.Header>
 
         <UIBox display="flex" jContent="space-between">
-          <div style={{ marginRight: "64px" }}>
-            <UIText.Basic size="fs24" color="white" className="mr-2">
-              현대카드
-            </UIText.Basic>
-            <UIText.Basic size="fs12" color="white" opacity="50">
-              2024.12 ~ (약 8개월)
-            </UIText.Basic>
-            <UIText.Basic
-              size="fs20"
-              color="white"
-              display="block"
-              className="mb-2 mt-2"
-              weight="bold">
-              현대카드 Web/App 운영
-            </UIText.Basic>
-            {/* <UIText.Basic
-              size="fs20"
-              color="white"
-              display="block"
-              className="mb-5"
-              opacity="80">
-              KB 멤버십 플랫폼 구축
-            </UIText.Basic> */}
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              퍼블리싱
-            </UIBadge>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              운영
-            </UIBadge>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              CMS
-            </UIBadge>
-          </div>
-
+          <UIParagraph
+            title="현대카드"
+            period="2025.01 ~"
+            subTitle="현대카드 앱/웹 운영"
+            desc="CMS를 통한 현대카드 웹사이트 PC/MO 버전 운영 관리"
+          />
           <UITextList.Nested nestedItems={data01} />
         </UIBox>
 
