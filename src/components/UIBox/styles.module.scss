@@ -28,3 +28,14 @@
 .ui-box-space-between {
   justify-content: space-between;
 }
+
+// aItems
+.ui-box-top {
+  align-items: start;
+}
+.ui-box-middle {
+  align-items: center;
+}
+.ui-box-bottom {
+  align-items: end;
+}

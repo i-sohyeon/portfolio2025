@@ -125,7 +125,7 @@ function Home() {
       </UIContent>
 
       <UIContent bgColor="blue" bgPattern="halfcheck">
-        <UIBox variant="flex">
+        <UIBox variant="flex" jContent="space-between" aItems="middle">
           <div>
             <UIText.Header size="lg">경력 CAREER</UIText.Header>
             <UIBanner.List
@@ -205,7 +205,10 @@ function Home() {
         </UIBox>
       </UIContent>
 
-      <UIContent bgColor="gray" bgPattern="check">
+      <UIContent
+        bgColor="gray"
+        bgPattern="check"
+        style={{ overflowX: "hidden" }}>
         <UIBox variant="content">
           <UIText.Header variant="h3" size="lg">
             PROJECT DETAILS

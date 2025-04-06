@@ -25,6 +25,7 @@ export const UIParagraph: React.FC<UIParagraphProps> = ({
       <span className={styles["paragraph-period"]}>{period}</span>
       <p className={styles["paragraph-subtitle"]}>{subTitle}</p>
       <p className={styles["paragraph-desc"]}>{desc}</p>
+      <div></div>
     </div>
   );
 };

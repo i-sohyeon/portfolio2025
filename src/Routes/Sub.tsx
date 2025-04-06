@@ -145,34 +145,13 @@ function Sub() {
 
         <UIDivider variant="type1" />
 
-        <UIBox
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}>
+        <UIBox display="flex" jContent="space-between">
+          <UIParagraph
+            title="우리은행"
+            period="2024.04 ~ 2024.12 (약 8개월)"
+            subTitle="우리 won 뱅킹 재구축 사업"
+          />
           <div style={{ marginRight: "64px" }}>
-            <UIText.Basic size="fs24" color="white" className="mr-2">
-              우리은행
-            </UIText.Basic>
-            <UIText.Basic size="fs12" color="white" opacity="50">
-              2024.04 ~ 2024.12 (약 8개월)
-            </UIText.Basic>
-            <UIText.Basic
-              size="fs20"
-              color="white"
-              display="block"
-              className="mb-2 mt-2"
-              weight="bold">
-              우리 won 뱅킹 재구축 사업
-            </UIText.Basic>
-            {/* <UIText.Basic
-              size="fs20"
-              color="white"
-              display="block"
-              className="mb-5"
-              opacity="80">
-              KB 멤버십 플랫폼 구축
-            </UIText.Basic> */}
             <UIBadge variant="solid" bgColor="navy" size="sm">
               React
             </UIBadge>

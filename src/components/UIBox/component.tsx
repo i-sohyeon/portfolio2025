@@ -10,6 +10,7 @@ export const UIBox: React.FC<UIBoxProps> = ({
   align,
   display,
   jContent,
+  aItems,
   className,
   children,
   ...rest
@@ -21,6 +22,7 @@ export const UIBox: React.FC<UIBoxProps> = ({
     styles[`ui-box-${align}`],
     styles[`ui-box-${display}`],
     styles[`ui-box-${jContent}`],
+    styles[`ui-box-${aItems}`],
     className,
   ]
     .filter(Boolean)
