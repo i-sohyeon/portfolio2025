@@ -125,9 +125,7 @@ function Sub() {
 
   return (
     <UIContent bgColor="navy">
-      <UIBox>
-        <UIHeader size="md">S.H.LEE</UIHeader>
-      </UIBox>
+      <UIHeader size="md">S.H.LEE</UIHeader>
       <UIBox variant="content">
         <UIText.Header size="lg" color="white">
           EXPERIENCE DETAIL

@@ -34,11 +34,9 @@ function Home() {
   return (
     <>
       <UIContent bgColor="gray" bgPattern="check">
-        <UIBox>
-          <UIHeader size="md">S.H.LEE</UIHeader>
-        </UIBox>
-        <UIBox align="center" style={{ padding: "200px 0" }}>
-          <div style={{ paddingTop: "102px" }}>
+        <UIHeader size="md">S.H.LEE</UIHeader>
+        <UIBox align="center" style={{ padding: "240px 0 220px 0" }}>
+          <div>
             <UIText.Basic variant="mainTitle" as="h1">
               UI &middot; UX
               <br />
