@@ -74,6 +74,25 @@
 /* 모바일 세로 (0px ~ 479px) */
 @media (max-width: 479px) {
   body {
+    /* Variants */
+    .ui-text-mainTitle {
+      font-family: "Tenada";
+      font-size: 48px !important;
+    }
+    .ui-text-contentTitle {
+      display: inline-block;
+      font-family: "Tenada";
+      font-size: 36px !important;
+      margin: 0 0 48px 0;
+    }
+    .ui-text-header-lg {
+      font-size: 32px;
+      margin-bottom: 48px;
+    }
+    .ui-text-header-md {
+      font-size: 28px;
+    }
+
     .ui-text-fs12 {
       font-size: 12px;
     }

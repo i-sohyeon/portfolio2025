@@ -54,6 +54,11 @@
 /* 모바일 가로 & 테블릿 세로 (480px ~ 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
   body {
+    .slideItem {
+      img {
+        width: 50vw;
+      }
+    }
     // background-color: blue;
     // font-size: 62.5% !important;
     h3 {

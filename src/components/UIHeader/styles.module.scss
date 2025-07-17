@@ -23,7 +23,13 @@
 
 .items {
   display: flex;
-}
-
-.item {
+  .item {
+    transition: 0.5s;
+    &:hover {
+      scale: 1.5;
+    }
+    & + .item {
+      margin-left: 28px;
+    }
+  }
 }
