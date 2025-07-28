@@ -61,6 +61,7 @@ export const Nested: React.FC<UITextListNestedProps> = ({
   nestedItems,
   className,
   children,
+  style,
   ...rest
 }) => {
   const classes = [
@@ -93,7 +94,9 @@ export const Nested: React.FC<UITextListNestedProps> = ({
     );
   };
 
-  return <div className={styles.testDiv}>{renderList(nestedItems)}</div>;
+  return <div className={styles.testDiv} style={style} {...rest}>
+    {renderList(nestedItems)}
+    </div>;
 };
 
 function ItemComponent(props: { item: ItemData }) {

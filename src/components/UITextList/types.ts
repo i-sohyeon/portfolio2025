@@ -33,6 +33,7 @@ export interface UITextListNestedProps
   weight?: UITextListWeight;
   color?: string;
   font?: UITextListStyle;
+  style?: React.CSSProperties; // style prop 추가
   as?: React.ElementType;
   nestedItems: {
     id: number;

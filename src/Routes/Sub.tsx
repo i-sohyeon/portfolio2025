@@ -13,56 +13,30 @@ function Sub() {
   const data01 = [
     {
       id: 1,
-      name: "주요업무",
+      name: "주요업무 및 담당 역할",
       children: [
-        { id: 2, name: "HTML, CSS, Javascript(JQuery) 추가 및 수정 작업" },
+        { id: 1-1, name: "- 현대카드 자체 CMS(Content Management System)활용" },
+        { id: 1-2, name: "- HTML 마크업 및 CSS 스타일링 작업" },
+        { id: 1-3, name: "- jQuery 기반의 스크립트 추가 및 수정" },
+        { id: 1-4, name: "- QA 과정에서 발생한 이슈 대응" },
+        { id: 1-5, name: "- 서비스 내 신규 이벤트 페이지, 배너, 공지사항 등 UI 퍼블리싱" },
+        { id: 1-6, name: "- EM 발송 시 디자인/마크업 담당" },
+      ],
+    },
+    {
+      id: 2,
+      name: "기술",
+      children: [
+        { id: 2-1, name: "HTML, CSS, JavaScript, jQuery, CMS" },
       ],
     },
     {
       id: 3,
-      name: "기술",
+      name: "상세 성과 및 작업 내용",
       children: [
-        { id: 4, name: "HTML, CSS, Javascript(JQuery), svn, alopex grid" },
-      ],
-    },
-    {
-      id: 5,
-      name: "상세내용",
-      children: [
-        { id: 6, name: "html 마크업 및 css 작업, 레거시 업데이트" },
-        { id: 7, name: "svn을 사용한 형상관리" },
-        {
-          id: 8,
-          name: "갤럭시탭 8 해상도 기준으로 최소 1024px의 태블릿 버전 width값을 기준으로 작업",
-        },
-        { id: 9, name: "IE10버전까지 고려하여 작업(크로스 브라우징)" },
-        { id: 10, name: "IE10, 11, Edge , Chrome 크로스 브라우징" },
-      ],
-    },
-    {
-      id: 11,
-      name: "성과",
-      children: [
-        {
-          id: 12,
-          name: "HTML5와 CSS3를 활용한 현대적이고 효율적인 마크업 구조 구현",
-        },
-        {
-          id: 13,
-          name: "레거시 코드 업데이트를 통한 시스템 성능 향상 및 유지보수성 제고",
-        },
-        {
-          id: 14,
-          name: "크로스 브라우징 호환성 확보IE10, IE11, Edge, Chrome 등 다양한 브라우저에서의 일관성 된 렌더링 구현",
-        },
-        {
-          id: 15,
-          name: "레거시 브라우저(IE10) 지원을 통한 폭 넓은 사용자 접근성 확보",
-        },
-        {
-          id: 16,
-          name: "SVN을 활용한 효율적인 소스 코드 버전 관리 시스템 운영",
-        },
+        { id: 3-1, name: "- 다크모드 / 라이트모드 대응 : prefers-color-scheme 및 사용자 설정에 따라 다크/라이트 테마 UI 구현" },
+        { id: 3-2, name: "- EM (outlook) 반복적인 퍼블리싱 작업을 템플릿화하여 화면 제작 속도를 약 30% 단축" },
+        { id: 3-3, name: "- 사용자 피드백을 반영하여 접근성 관련 마크업 개선  웹접근성 심사 통과" },
       ],
     },
   ];
@@ -138,7 +112,7 @@ function Sub() {
             subTitle="현대카드 앱/웹 운영"
             desc="CMS를 통한 현대카드 웹사이트 PC/MO 버전 운영 관리"
           />
-          <UITextList.Nested nestedItems={data01} />
+          <UITextList.Nested nestedItems={data01} style={{maxWidth: "650px"}}/>
         </UIBox>
 
         <UIDivider variant="type1" />
@@ -149,16 +123,16 @@ function Sub() {
             period="2024.04 ~ 2024.12 (약 8개월)"
             subTitle="우리 won 뱅킹 재구축 사업"
           />
-          <div style={{ marginRight: "64px" }}>
+          {/* <div style={{ marginRight: "64px" }}>
             <UIBadge variant="solid" bgColor="navy" size="sm">
               React
             </UIBadge>
             <UIBadge variant="solid" bgColor="navy" size="sm">
               크로스브라우징
             </UIBadge>
-          </div>
+          </div> */}
 
-          <UITextList.Nested nestedItems={data01} />
+          <UITextList.Nested nestedItems={data02} style={{maxWidth: "650px"}}/>
         </UIBox>
 
         <UIDivider variant="type1" />
@@ -169,14 +143,14 @@ function Sub() {
             justifyContent: "space-between",
           }}>
           <div style={{ marginRight: "64px" }}>
-            <UIText.Basic size="fs24" color="white" className="mr-2">
+            <UIText.Basic size="md" color="white" className="mr-2">
               농협은행
             </UIText.Basic>
-            <UIText.Basic size="fs12" color="white" opacity="50">
+            <UIText.Basic size="xxs" color="white" opacity="50">
               2023.08 ~ 2024.03 (약 7개월)
             </UIText.Basic>
             <UIText.Basic
-              size="fs20"
+              size="sm"
               color="white"
               display="block"
               className="mb-2 mt-2"
@@ -210,14 +184,14 @@ function Sub() {
             justifyContent: "space-between",
           }}>
           <div style={{ marginRight: "64px" }}>
-            <UIText.Basic size="fs24" color="white" className="mr-2">
+            <UIText.Basic size="md" color="white" className="mr-2">
               KB국민은행
             </UIText.Basic>
-            <UIText.Basic size="fs12" color="white" opacity="50">
+            <UIText.Basic size="xxs" color="white" opacity="50">
               2022.11 ~ 2023.07 (약 8개월)
             </UIText.Basic>
             <UIText.Basic
-              size="fs20"
+              size="sm"
               color="white"
               display="block"
               className="mb-2 mt-2"
@@ -225,7 +199,7 @@ function Sub() {
               KB 국민은행 그룹 멤버십플랫폼 개발의뢰
             </UIText.Basic>
             <UIText.Basic
-              size="fs20"
+              size="sm"
               color="white"
               display="block"
               className="mb-5"
@@ -254,14 +228,14 @@ function Sub() {
             justifyContent: "space-between",
           }}>
           <div style={{ marginRight: "64px" }}>
-            <UIText.Basic size="fs24" color="white" className="mr-2">
+            <UIText.Basic size="md" color="white" className="mr-2">
               KB국민은행
             </UIText.Basic>
-            <UIText.Basic size="fs12" color="white" opacity="50">
+            <UIText.Basic size="xxs" color="white" opacity="50">
               2022.07 ~ 2022.11 (약 4개월)
             </UIText.Basic>
             <UIText.Basic
-              size="fs20"
+              size="sm"
               color="white"
               display="block"
               className="mb-2 mt-2"
@@ -269,7 +243,7 @@ function Sub() {
               태블릿브랜치 금융투자 상품 판매 프로세스 구축
             </UIText.Basic>
             <UIText.Basic
-              size="fs20"
+              size="sm"
               color="white"
               display="block"
               className="mb-5"

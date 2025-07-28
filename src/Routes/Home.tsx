@@ -37,15 +37,13 @@ function Home() {
         <UIHeader size="md">S.H.LEE</UIHeader>
         <UIBox align="center" style={{ padding: "240px 0 220px 0" }}>
           <div>
-            <UIText.Basic variant="mainTitle" as="h1">
+            <UIText.Header size="xl" align="center" variant="mainTitle" as="h1">
               UI &middot; UX
               <br />
               WEB PUBLISHER
-            </UIText.Basic>
-
-            <UIText.Basic variant="mainTitle" as="h1">
-              PORTFOLIO
-            </UIText.Basic>
+              <br />
+              <span>PORTFOLIO</span>
+            </UIText.Header>
           </div>
         </UIBox>
       </UIContent>
@@ -56,66 +54,66 @@ function Home() {
         style={{ overflowX: "hidden", padding: "36px 0" }}>
         <div className="txt-banner">
           <div className="txt-banner-list">
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               현대카드
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               우리은행 우리WON뱅킹
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               농협은행 올원뱅크
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               KB국민은행 멤버십 플랫폼
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               문구야 놀자
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               웅진 딸기콩
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               굿뜨래페이
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               인조이웍스
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               포토이
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               태양광
             </UIText.Basic>
           </div>
           <div className="txt-banner-list">
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               현대카드
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               우리은행 우리WON뱅킹
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               농협은행 올원뱅크
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               KB국민은행 멤버십 플랫폼
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               문구야 놀자
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               웅진 딸기콩
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               굿뜨래페이
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               인조이웍스
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               포토이
             </UIText.Basic>
-            <UIText.Basic font="tenada" size="fs28" color="white">
+            <UIText.Basic font="tenada" size="lg" color="white">
               태양광
             </UIText.Basic>
           </div>
@@ -186,17 +184,12 @@ function Home() {
               boxSizing: "border-box",
             }}>
             <div style={{ marginBottom: "32px" }}>
-              <UIText.Basic as="p" font="tenada" size="fs40" display="block">
+              <UIText.Header as="p" font="tenada" size="lg">
                 프로젝트 경험
-              </UIText.Basic>
-              <UIText.Basic
-                as="p"
-                font="tenada"
-                size="fs40"
-                color="blue"
-                display="block">
+              </UIText.Header>
+              <UIText.Header as="p" font="tenada" size="lg" color="blue">
                 Project Experience
-              </UIText.Basic>
+              </UIText.Header>
             </div>
             <UITextList.Check variant="check" size="md" checkItems={textList} />
           </div>

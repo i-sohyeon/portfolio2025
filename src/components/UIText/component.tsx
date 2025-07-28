@@ -63,7 +63,7 @@ export const Header: React.FC<UITextHeaderProps> = ({
     .join(" ");
 
   return (
-    <div className={`${styles.headerButton} ${classes}`} {...rest}>
+    <div className={`${styles.header} ${classes}`} {...rest}>
       <>{children}</>
       {useLink && linkTo && <Link to={linkTo}>{button}</Link>}
     </div>

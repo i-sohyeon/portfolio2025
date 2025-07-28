@@ -17,32 +17,26 @@
 }
 
 /* Sizes */
-.ui-text-fs12 {
+.ui-text-xxs {
   font-size: 12px;
 }
-.ui-text-fs16 {
+.ui-text-xs {
   font-size: 16px;
 }
-.ui-text-fs20 {
+.ui-text-sm {
   font-size: 20px;
 }
-.ui-text-fs24 {
+.ui-text-md {
   font-size: 24px;
 }
-.ui-text-fs28 {
+.ui-text-lg {
   font-size: 28px;
 }
-.ui-text-fs32 {
+.ui-text-xl {
   font-size: 32px;
 }
-.ui-text-fs36 {
+.ui-text-xxl {
   font-size: 36px;
-}
-.ui-text-fs40 {
-  font-size: 40px;
-}
-.ui-text-fs48 {
-  font-size: 48px;
 }
 
 /* opacity */
@@ -85,40 +79,38 @@
       font-size: 36px !important;
       margin: 0 0 48px 0;
     }
+    .ui-text-header-xl {
+      font-size: 44px;
+    }
     .ui-text-header-lg {
       font-size: 32px;
-      margin-bottom: 48px;
+      // margin-bottom: 0px;
     }
     .ui-text-header-md {
       font-size: 28px;
     }
 
-    .ui-text-fs12 {
-      font-size: 12px;
+    /* Sizes */
+    .ui-text-xxs {
+      font-size: 11px;
     }
-    .ui-text-fs16 {
+    .ui-text-xs {
+      font-size: 14px;
+    }
+    .ui-text-sm {
       font-size: 16px;
     }
-    .ui-text-fs20 {
+    .ui-text-md {
       font-size: 20px;
     }
-    .ui-text-fs24 {
-      font-size: 24px;
+    .ui-text-lg {
+      font-size: 20px;
     }
-    .ui-text-fs28 {
-      font-size: 28px;
-    }
-    .ui-text-fs32 {
+    .ui-text-xl {
       font-size: 32px;
     }
-    .ui-text-fs36 {
+    .ui-text-xxl {
       font-size: 36px;
-    }
-    .ui-text-fs40 {
-      font-size: 40px;
-    }
-    .ui-text-fs48 {
-      font-size: 48px;
     }
   }
 
@@ -131,7 +123,6 @@
 @media (min-width: 480px) and (max-width: 767px) {
   body {
     background-color: blue;
-    font-size: 62.5% !important; /* 작은 화면에서는 1rem = 10px */
     h3 {
       // font-size: calc(16px / 16px * 1rem) !important;
       // font-size: 62.5% !important;
@@ -181,6 +172,10 @@
 }
 
 // size
+.ui-text-header-xl {
+  font-size: 80px;
+  margin-bottom: 48px;
+}
 .ui-text-header-lg {
   font-size: 60px;
   margin-bottom: 48px;
@@ -194,32 +189,45 @@
   color: #fff;
 }
 
-.headerButton {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #111;
-    position: relative;
-    padding-right: 30px;
-    &::after {
-      content: "";
-      display: inline-block;
-      background-image: url("../../assets/images/icons/ico-arrow-r.png");
-      width: 20px;
-      height: 20px;
-      background-size: 20px 20px;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -3px;
-      right: 0;
-    }
-    &:hover {
-      margin-top: -18px;
-    }
-  }
+.header {
+}
+// .headerButton {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   a {
+//     font-size: 20px;
+//     text-decoration: none;
+//     color: #111;
+//     position: relative;
+//     padding-right: 30px;
+//     &::after {
+//       content: "";
+//       display: inline-block;
+//       background-image: url("../../assets/images/icons/ico-arrow-r.png");
+//       width: 20px;
+//       height: 20px;
+//       background-size: 20px 20px;
+//       background-repeat: no-repeat;
+//       position: absolute;
+//       top: -3px;
+//       right: 0;
+//     }
+//     &:hover {
+//       margin-top: -18px;
+//     }
+//   }
+// }
+
+// align
+.ui-text-align-left {
+  text-align: left;
+}
+.ui-text-align-center {
+  text-align: center;
+}
+.ui-text-align-right {
+  text-align: right;
 }
 
 // display
