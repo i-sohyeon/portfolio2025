@@ -107,6 +107,7 @@ section {
 }
 body {
   line-height: 1.2;
+  color: #111;
 }
 ol,
 ul {
@@ -121,4 +122,8 @@ blockquote:after,
 q:before,
 q:after {
   content: "";
+}
+a {
+  text-decoration: none;
+  color: #111;
 }

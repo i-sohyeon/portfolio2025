@@ -7,7 +7,6 @@ export const List: React.FC<UIBannerProps> = ({
   number,
   title,
   des,
-
   variant,
   bgColor,
   as: UIBanner = "div",

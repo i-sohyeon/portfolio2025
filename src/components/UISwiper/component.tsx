@@ -12,6 +12,7 @@ export const Box: React.FC<SwiperProps> = ({
   bgColor,
   children,
   className,
+  titleColor,
   ref,
   ...rest
 }) => {
@@ -22,6 +23,7 @@ export const Box: React.FC<SwiperProps> = ({
     styles[`ui-swiper`],
     styles[`ui-swiper-${variant}`],
     styles[`ui-swiper-${bgColor}`],
+    styles[`ui-swiper-${titleColor}`],
     className,
   ]
 
@@ -54,9 +56,6 @@ export const Box: React.FC<SwiperProps> = ({
       spaceBetween={50}
       slidesPerView={1.5}
       breakpoints={{
-        320: {
-          slidesPerView: 1,
-        },
         480: {
           slidesPerView: 1,
         },
@@ -78,6 +77,7 @@ export const Box: React.FC<SwiperProps> = ({
 
 export const SlideItem = ({
   title,
+  titleColor,
   content,
   imgSrc,
   children,
@@ -93,12 +93,13 @@ export const SlideItem = ({
   }, []);
 
   const classes = [styles[`ui-swiper-${bgColor}`]].filter(Boolean).join(" ");
+  const colorClass = titleColor ? styles[`ui-title-color-${titleColor}`] : "";
 
   return (
     <div ref={swiperContentRef} className={`${styles.slideItem} ${classes}`}>
       <img src={imgSrc} alt="" />
-      <h3>{title}</h3>
-      <p>{content}</p>
+      <h3 className={`${colorClass} ${classes}`}>{title}</h3>
+      <p className={colorClass}>{content}</p>
       {children}
     </div>
   );

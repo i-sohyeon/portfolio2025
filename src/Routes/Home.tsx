@@ -10,6 +10,7 @@ import {
   UISwiper,
   UITextList,
   SlideItem,
+  UITable,
 } from "../components/v1";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
@@ -184,10 +185,10 @@ function Home() {
               boxSizing: "border-box",
             }}>
             <div style={{ marginBottom: "32px" }}>
-              <UIText.Header as="p" font="tenada" size="lg">
+              <UIText.Header as="p" font="tenada" size="md">
                 프로젝트 경험
               </UIText.Header>
-              <UIText.Header as="p" font="tenada" size="lg" color="blue">
+              <UIText.Header as="p" font="tenada" size="md" color="blue">
                 Project Experience
               </UIText.Header>
             </div>
@@ -212,10 +213,43 @@ function Home() {
             navigation={false}
             className="swiper-custom">
             <SwiperSlide>
-              <SlideItem
+              <SlideItem 
                 title="문구야놀자(PC/Mobile)"
+                titleColor="purple"
                 content="Adaptive Page Publishing"
-                imgSrc="test"
+                imgSrc="../../assets/images/swiper/playmoongu.png"
+                bgColor="yellow"
+                >
+                  <UITable.Default></UITable.Default>
+                {/* <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>2021.02 ~ 유지보수 진행중</td>
+                    </tr>
+                    <tr>
+                      <th>작업참여도</th>
+                      <td>퍼블리싱 100%</td>
+                    </tr>
+                    <tr>
+                      <th>사용 툴</th>
+                      <td>html, css(scss), jquery, javascript, gulp, vscode, zeplin</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table> */}
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
+            <SwiperSlide>
+              <SlideItem 
+                title="딸기콩(PC/Mobile)"
+                titleColor="green"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/ddalgicong.png"
                 bgColor="red">
                 <table>
                   <tbody>
@@ -241,11 +275,125 @@ function Home() {
               </SlideItem>
             </SwiperSlide>
             <SwiperSlide>
-              <SlideItem title="dd" content="dd" imgSrc="test"></SlideItem>
+              <SlideItem 
+                title="현대카드 web/app 운영"
+                titleColor="black"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/playmoongu.png"
+                bgColor="gray">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
             </SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
+            <SwiperSlide>
+            <SlideItem 
+                title="우리은행 won 뱅킹 재구축 사업"
+                titleColor="blue"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/playmoongu.png"
+                bgColor="light-blue">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
+            <SwiperSlide>
+            <SlideItem 
+                title="농협 올원뱅크 리뉴얼 구축"
+                titleColor="yellow"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/playmoongu.png"
+                bgColor="green">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
+            <SwiperSlide>
+            <SlideItem 
+                title="KB국민은행 멤버십 플랫폼 구축"
+                titleColor="yellow"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/playmoongu.png"
+                bgColor="brown">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
             <SwiperSlide>Slide 6</SwiperSlide>
             <SwiperSlide>Slide 7</SwiperSlide>
             <SwiperSlide>Slide 8</SwiperSlide>

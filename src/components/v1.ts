@@ -10,3 +10,4 @@ export * from "./UIParagraph/index";
 export * from "./UISwiper/index";
 export * from "./UIText/index";
 export * from "./UITextList/index";
+export * from "./UITable/index";

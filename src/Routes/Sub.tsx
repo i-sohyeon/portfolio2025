@@ -330,7 +330,7 @@ function Sub() {
             </UIBadge>
           </div>
 
-          <UITextList.Nested nestedItems={data05} style={{maxWidth: "650px"}} />
+          <UITextList.Nested nestedItems={data05} style={{minWidth: "650px",}} />
         </UIBox>
       </UIBox>
     </UIContent>

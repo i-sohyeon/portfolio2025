@@ -10,16 +10,6 @@ export type UITextVariant =
   | "span"
   | "caption";
 
-// export type UITextSize =
-//   | "fs12"
-//   | "fs16"
-//   | "fs20"
-//   | "fs24"
-//   | "fs28"
-//   | "fs32"
-//   | "fs36"
-//   | "fs40"
-//   | "fs48";
 export type UITextSize = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 export type UITextWeight = "normal" | "bold";
 export type UITextStyle = "tenada" | "bold";
