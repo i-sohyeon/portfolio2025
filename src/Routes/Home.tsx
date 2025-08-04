@@ -279,7 +279,7 @@ function Home() {
                 title="현대카드 web/app 운영"
                 titleColor="black"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/playmoongu.png"
+                imgSrc="../../assets/images/swiper/hyundaicard.png"
                 bgColor="gray">
                 <table>
                   <tbody>
@@ -309,7 +309,7 @@ function Home() {
                 title="우리은행 won 뱅킹 재구축 사업"
                 titleColor="blue"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/playmoongu.png"
+                imgSrc="../../assets/images/swiper/wooribank.png"
                 bgColor="light-blue">
                 <table>
                   <tbody>
@@ -339,7 +339,7 @@ function Home() {
                 title="농협 올원뱅크 리뉴얼 구축"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/playmoongu.png"
+                imgSrc="../../assets/images/swiper/nhbank.png"
                 bgColor="green">
                 <table>
                   <tbody>
@@ -369,7 +369,7 @@ function Home() {
                 title="KB국민은행 멤버십 플랫폼 구축"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/playmoongu.png"
+                imgSrc="../../assets/images/swiper/kbbank.png"
                 bgColor="brown">
                 <table>
                   <tbody>
@@ -394,10 +394,66 @@ function Home() {
                 <span># 어쩌구</span>
               </SlideItem>
             </SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <SwiperSlide>
+            <SlideItem 
+                title="인조이웍스 홈페이지"
+                titleColor="yellow"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/enjoyworks.png"
+                bgColor="brown">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
+            <SwiperSlide>
+            <SlideItem 
+                title="굿뜨래페이"
+                titleColor="yellow"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/goodtraepay.png"
+                bgColor="brown">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
           </UISwiper.Box>
         </UIBox>
       </UIContent>
