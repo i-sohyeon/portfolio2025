@@ -1,6 +1,6 @@
 import React from "react";
-// import ReactDOM from "react-dom";
-// import "./styles/style.scss";
+import ReactDOM from "react-dom";
+import "../styles/style.scss";
 import {
   UIText,
   UIContent,
@@ -33,15 +33,6 @@ function Home() {
     "태양광 햇빛마루 pc/mobile(적응형)",
   ];
 
-  const columns = [
-    { key: "name", header: "이름" },
-    { key: "age", header: "나이" },
-  ];
-  
-  const rows = [
-    { name: "홍길동", age: 28 },
-    { name: "김영희", age: 32 },
-  ];
 
   return (
     <>
