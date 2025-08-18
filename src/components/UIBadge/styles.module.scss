@@ -1,12 +1,14 @@
 .ui-badge {
   display: inline-block;
-  border-radius: 24px;
+  // border-radius: 24px;
 }
 
 /** variant **/
 .ui-badge-solid {
 }
 .ui-badge-line {
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 /** bgColor **/
@@ -16,7 +18,17 @@
 }
 /** size **/
 .ui-badge-sm {
-  padding: 8px 24px;
+  padding: 2px 4px;
+  & + span {
+    margin-left: 8px;
+    border-radius: 4px;
+  }
+}
+.ui-badge-md {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+
   & + span {
     margin-left: 8px;
   }

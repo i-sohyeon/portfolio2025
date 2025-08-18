@@ -7,19 +7,13 @@ body {
 
 // helper class
 /** margin **/
-$margin-sizes: 4px, 8px, 12px, 16px, 20px;
+// $margin-sizes: 4px, 8px, 12px, 16px, 20px;
 
-@each $size in $margin-sizes {
-  .mt-#{index($margin-sizes, $size)} {
-    margin-top: $size;
-  }
-  .mb-#{index($margin-sizes, $size)} {
-    margin-bottom: $size;
-  }
-  .ml-#{index($margin-sizes, $size)} {
-    margin-left: $size;
-  }
-  .mr-#{index($margin-sizes, $size)} {
-    margin-right: $size;
-  }
-}
+// @for $i from 1 through length($margin-sizes) {
+//   $size: nth($margin-sizes, $i);
+
+//   .mt-#{$i} { margin-top: $size; }
+//   .mb-#{$i} { margin-bottom: $size; }
+//   .ml-#{$i} { margin-left: $size; }
+//   .mr-#{$i} { margin-right: $size; }
+// }

@@ -51,7 +51,7 @@
 .ui-title-color-yellow {color: #FFC20D;}
 
 /* 모바일 세로 (0px ~ 479px) */
-@media (max-width: 479px) {
+@media (min-width: 320px) {
   // html {
   //   font-size: 62.5% ;
   // }
@@ -61,15 +61,19 @@
 
   .ui-content {
     // font-size: 62.5% !important;
+    .slideItem {
+      img {
+        width: 65vw;
+      }
   }
 }
 
 /* 모바일 세로 ( ~ 479px) */
-@media (max-width: 575px) {
+@media (min-width: 480px) and (max-width: 575px) {
   body {
     .slideItem {
       img {
-        width: 50vw;
+        width: 80vw;
       }
     }
     // background-color: blue;
@@ -82,11 +86,11 @@
 }
 
 /* 모바일 가로 & 테블릿 세로 (480px ~ 767px) */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 877px) {
   body {
     .slideItem {
       img {
-        width: 450px;
+        width: 85vw;
       }
     }
     // background-color: blue;
@@ -99,15 +103,13 @@
 }
 
 /* 모바일 가로 & 테블릿 세로 (480px ~ 767px) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 878px) and (max-width: 991px) {
   body {
     .slideItem {
       img {
         width: 50vw;
       }
     }
-    // background-color: blue;
-    // font-size: 62.5% !important;
     h3 {
       // font-size: calc(48px / 16px * 1rem) !important;
       // font-size: 62.5% !important;
@@ -121,7 +123,7 @@
   body {
     .slideItem {
       img {
-        width: 520px;
+        width: 54vw;
       }
     }
   }
@@ -134,4 +136,5 @@
       width: 650px;
     }
   }
+}
 }

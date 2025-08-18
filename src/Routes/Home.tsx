@@ -11,6 +11,7 @@ import {
   UITextList,
   SlideItem,
   UITable,
+  UIBadge,
 } from "../components/v1";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
@@ -229,27 +230,35 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="../../assets/images/swiper/hyundaicard.png"
                 bgColor="gray">
-                <table className="ui-table-default">
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
+                 <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2024. 12. ~</td>
+                      </tr>
+                      <tr>
+                        <th>작업 참여인원</th>
+                        <td>퍼블리싱 8명 </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>CMS, VSCODE, Figma</td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>https://www.hyundaicard.com/index.jsp</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#CMS</UIBadge>
+                  <UIBadge size="md" variant="line">#적응형홈페이지</UIBadge>
+                  <UIBadge size="md" variant="line">#Webview</UIBadge>
+                  <UIBadge size="md" variant="line">#CMS</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
 
@@ -260,27 +269,35 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="../../assets/images/swiper/wooribank.png"
                 bgColor="light-blue">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
+              <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2024. 04. ~ 2024. 12</td>
+                      </tr>
+                      <tr>
+                        <th>작업 참여인원</th>
+                        <td>퍼블리싱 12명 </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCODE, Figma, React, css(scss), Typescript(Javascript), Git</td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>https://www.hyundaicard.com/index.jsp</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#CMS</UIBadge>
+                  <UIBadge size="md" variant="line">#적응형홈페이지</UIBadge>
+                  <UIBadge size="md" variant="line">#Webview</UIBadge>
+                  <UIBadge size="md" variant="line">#CMS</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
 
@@ -354,7 +371,7 @@ function Home() {
                 imgSrc="../../assets/images/swiper/playmoongu.png"
                 bgColor="yellow"
                 >
-                  <UITable.Default columns={columns} rows={rows} />
+                  {/* <UITable.Default columns={columns} rows={rows} /> */}
                 <span># 어쩌구</span>
               </SlideItem>
             </SwiperSlide>

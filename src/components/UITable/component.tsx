@@ -1,48 +1,31 @@
-import { UITableProps } from "./types";
+import React, { ReactNode } from "react";
 import styles from "./styles.module.scss";
+import { UITableProps } from "./types";
 
-export const Default = <T,>({
-  columns,
-  rows,
+export const Default: React.FC<UITableProps> = ({
+  variant,
+  size,
+  align,
   className,
-  rowKey,
+  children,
   ...rest
-}: UITableProps<T>) => {
+}) => {
   const classes = [
     styles["ui-table"],
+    styles[`ui-table-${variant}`],
+    styles[`ui-table-${size}`],
+    styles[`ui-table-${align}`],
     className,
-  ].filter(Boolean).join(" ");
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
-    <table className={classes} {...rest}>
-      <thead>
-        <tr>
-          {columns.map(col => (
-            <th key={String(col.key)} className={col.className}>
-              {col.header}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row, rowIndex) => (
-          <tr key={rowKey ? rowKey(row, rowIndex) : rowIndex}>
-            {columns.map(col => (
-              <td key={String(col.key)} className={col.className}>
-                {col.render
-                  ? col.render(row[col.key as keyof T], row, rowIndex)
-                  : (row[col.key as keyof T] as React.ReactNode)
-                }
-              </td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div className={classes} {...rest}>
+      {children}
+    </div>
   );
 };
-
-(Default as React.FC).displayName = "UITable.Default";
 
 const UITable = {
   Default,
