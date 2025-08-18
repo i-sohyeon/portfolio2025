@@ -7,7 +7,7 @@ import Sub from "./Routes/Sub";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio2025">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sub" element={<Sub />} />
