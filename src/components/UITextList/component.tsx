@@ -13,6 +13,7 @@ export const Normal: React.FC<UITextListNormalProps> = ({
   checkItems,
   className,
   children,
+  size,
   ...rest
 }) => {
   const classes = [
@@ -37,11 +38,14 @@ export const Check: React.FC<UITextListCheckProps> = ({
   checkItems,
   className,
   children,
+  size,
   ...rest
 }) => {
   const classes = [
     styles[`ui-textList`],
     styles[`ui-textList-${variant}`],
+    styles[`ui-textList-${size}`],
+    
     className,
   ]
     .filter(Boolean)
@@ -62,6 +66,7 @@ export const Nested: React.FC<UITextListNestedProps> = ({
   className,
   children,
   style,
+  size,
   ...rest
 }) => {
   const classes = [
@@ -121,9 +126,9 @@ export const Circle: React.FC<UITextListCircleProps> = ({
     styles[`ui-textList`],
     styles[`ui-textList-${variant}`],
     styles[`ui-textList-${bgColor}`],
-    // styles[`ui-textList-size-${size}`],
-    // styles[`ui-textList-weight-${weight}`],
-    // styles[`ui-textList-font-${font}`],
+    // styles[`ui-textList-${size}`],
+    // styles[`ui-textListå-${weight}`],
+    // styles[`ui-textList-${font}`],
   ]
     .filter(Boolean)
     .join(" ");

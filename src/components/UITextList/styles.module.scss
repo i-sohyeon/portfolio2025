@@ -77,8 +77,11 @@
   line-height: 18px;
 }
 .ui-textList-md {
-  font-size: 20px !important;
-  line-height: 22px;
+  li {
+    font-size: 20px !important;
+    line-height: 1.2;
+  }
+  
 }
 
 .firstLevelList > li {

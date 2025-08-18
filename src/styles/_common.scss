@@ -4,16 +4,3 @@ body {
   // width: 100%;
   // margin: 0px auto;
 }
-
-// helper class
-/** margin **/
-// $margin-sizes: 4px, 8px, 12px, 16px, 20px;
-
-// @for $i from 1 through length($margin-sizes) {
-//   $size: nth($margin-sizes, $i);
-
-//   .mt-#{$i} { margin-top: $size; }
-//   .mb-#{$i} { margin-bottom: $size; }
-//   .ml-#{$i} { margin-left: $size; }
-//   .mr-#{$i} { margin-right: $size; }
-// }

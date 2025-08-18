@@ -1,73 +1,107 @@
-
 ## 본 프로젝트는 React를 사용하여 만든 개인 포트폴리오입니다.
 
 ### 폴더 구조
 
 ```
-.  
-├── README.md  
-├── node_modules  
-├── package-lock.json  
-├── package.json  
-├── public  
-│   ├── index.html  
-│   └── (기타 등등...)  
-└── src  
-    ├── App.tsx  
-    ├── assets  
+.
+├── README.md
+├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+│   ├── index.html
+│   └── (기타 등등...)
+└── src
+    ├── App.tsx
+    ├── assets
     │   ├──fonts
-    │   └──images  
-    │       ├── background-pattern 
-    │       └── icons  
-    └── (기타 등등...)  
-    ├── components  
-    │   ├── UIBanner  
-    │   ├── UIBox  
-    │   ├── UIContent  
-    │   ├── UIHeader  
-    │   ├── UISwiper  
-    │   ├── UITable  
-    │   ├── UIText  
-    │   └── UITextList  
-    ├── index.tsx  
-    ├── pages  
-    ├── styles  
-    │   ├── mixins  
-    │   ├── _common.scss 
-    │   ├── _reset.scss 
-    │   ├── _variable.scss  
+    │   └──images
+    │       ├── background-pattern
+    │       └── icons
+    └── (기타 등등...)
+    ├── components
+    │   ├── UIBanner
+    │   ├── UIBox
+    │   ├── UIContent
+    │   ├── UIHeader
+    │   ├── UISwiper
+    │   ├── UITable
+    │   ├── UIText
+    │   └── UITextList
+    ├── index.tsx
+    ├── pages
+    ├── styles
+    │   ├── mixins
+    │   ├── _common.scss
+    │   ├── _reset.scss
+    │   ├── _variable.scss
     └── └── style.scss
 ```
 
-
 ## About Components
+
 ### 컴포넌트와 같이 비슷한 기능을 하는 컴포넌트들을 하위컴포넌트(서브컴포넌트)로 분리하여 재사용성을 높임
-* UIBanner  
-    `UIBanner.List`
-* UIBox
-* UIContent
-* UIHeader
-* UISwiper
-    `UISwiper.Box`
-* UIText  
-    `size`
 
-* ### UITextList  
-    `UITextList.Check` `UITextList.Circle` `UITextList.Step`  
-      
+- UIBanner  
+   `UIBanner.List`
+- UIBox
+- UIContent
+- UIHeader
+- UISwiper
+  `UISwiper.Box`
+- UIText  
+   `size`
 
+- ### UITextList
+  `UITextList.Check` `UITextList.Circle` `UITextList.Step`
 
 ====
 
 ## 구현 애니메이션
-* 헤더 영역 : 일정 높이갚으로 스크롤이 되면 헤더 영역을 보이지 않게 숨겼다가 페이지가 다시 일정영역 위로 올라오면, 헤더가 보이게 설정
-* (구현 예정) 메인 화면 : 카드 이미지가 뒤집히는게 무한으로 반복되는 애니메이션
-* 띠 배너 : 텍스트들이 자연스럽게 흘러가는 애니메이션
-* (구현 예정) Career 콘텐츠 영역 : 아래로 스크롤 할때 텍스트가 주르륵 나타는 애니메이션, 다시 아래로 스크롤을 올리면 텍스트가 주르륵 사라짐
-                
 
+- 헤더 영역 : 일정 높이갚으로 스크롤이 되면 헤더 영역을 보이지 않게 숨겼다가 페이지가 다시 일정영역 위로 올라오면, 헤더가 보이게 설정
+- (구현 예정) 메인 화면 : 카드 이미지가 뒤집히는게 무한으로 반복되는 애니메이션
+- 띠 배너 : 텍스트들이 자연스럽게 흘러가는 애니메이션
+- (구현 예정) Career 콘텐츠 영역 : 아래로 스크롤 할때 텍스트가 주르륵 나타는 애니메이션, 다시 아래로 스크롤을 올리면 텍스트가 주르륵 사라짐
 
 ## 미디어쿼리 (반응형)
+
+### 텍스트 사이즈
+
+UITextSize
+
+- xxs 12 | 11
+- xs 16 | 14
+- sm 20 | 16
+- md 24 | 20
+- lg 28 | 24
+- xl 32 | 28
+- xxl 36 | 32
+
+UITextHeaderSize
+
+- sm 40 |
+- md 48 |
+- lg 60 |
+- xl 72 |
+- xxl 80 | 60
+
+미디어쿼리 분기
+5분기(좀 더 세분화)
+대형 PC: 1200px 이상
+@media (min-width: 1200px)
+
+데스크탑: 992px ~ 1199px
+@media (min-width: 992px) and (max-width: 1199px)
+
+태블릿: 768px ~ 991px
+@media (min-width: 768px) and (max-width: 991px)
+
+모바일 가로: 576px ~ 767px
+@media (min-width: 576px) and (max-width: 767px)
+
+모바일 세로: ~575px
+@media (max-width: 575px)
 
 
 
