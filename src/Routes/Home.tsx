@@ -32,6 +32,16 @@ function Home() {
     "태양광 햇빛마루 pc/mobile(적응형)",
   ];
 
+  const columns = [
+    { key: "name", header: "이름" },
+    { key: "age", header: "나이" },
+  ];
+  
+  const rows = [
+    { name: "홍길동", age: 28 },
+    { name: "김영희", age: 32 },
+  ];
+
   return (
     <>
       <UIContent bgColor="gray" bgPattern="check">
@@ -121,7 +131,7 @@ function Home() {
         </div>
       </UIContent>
 
-      <UIContent bgColor="blue" bgPattern="halfcheck">
+      <UIContent bgColor="blue" bgPattern="waveyellow">
         <UIBox variant="flex" jContent="space-between" aItems="middle">
           <div>
             <UIText.Header size="lg">경력 CAREER</UIText.Header>
@@ -214,74 +224,12 @@ function Home() {
             className="swiper-custom">
             <SwiperSlide>
               <SlideItem 
-                title="문구야놀자(PC/Mobile)"
-                titleColor="purple"
-                content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/playmoongu.png"
-                bgColor="yellow"
-                >
-                  <UITable.Default></UITable.Default>
-                {/* <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>2021.02 ~ 유지보수 진행중</td>
-                    </tr>
-                    <tr>
-                      <th>작업참여도</th>
-                      <td>퍼블리싱 100%</td>
-                    </tr>
-                    <tr>
-                      <th>사용 툴</th>
-                      <td>html, css(scss), jquery, javascript, gulp, vscode, zeplin</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table> */}
-                <span># 어쩌구</span>
-              </SlideItem>
-            </SwiperSlide>
-            <SwiperSlide>
-              <SlideItem 
-                title="딸기콩(PC/Mobile)"
-                titleColor="green"
-                content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/ddalgicong.png"
-                bgColor="red">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
-              </SlideItem>
-            </SwiperSlide>
-            <SwiperSlide>
-              <SlideItem 
                 title="현대카드 web/app 운영"
                 titleColor="black"
                 content="Adaptive Page Publishing"
                 imgSrc="../../assets/images/swiper/hyundaicard.png"
                 bgColor="gray">
-                <table>
+                <table className="ui-table-default">
                   <tbody>
                     <tr>
                       <th>작업기간</th>
@@ -304,6 +252,7 @@ function Home() {
                 <span># 어쩌구</span>
               </SlideItem>
             </SwiperSlide>
+
             <SwiperSlide>
             <SlideItem 
                 title="우리은행 won 뱅킹 재구축 사업"
@@ -334,8 +283,9 @@ function Home() {
                 <span># 어쩌구</span>
               </SlideItem>
             </SwiperSlide>
+
             <SwiperSlide>
-            <SlideItem 
+              <SlideItem 
                 title="농협 올원뱅크 리뉴얼 구축"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
@@ -361,11 +311,12 @@ function Home() {
                     </tr>
                   </tbody>
                 </table>
-                <span># 어쩌구</span>
+              <span># 어쩌구</span>
               </SlideItem>
             </SwiperSlide>
+
             <SwiperSlide>
-            <SlideItem 
+              <SlideItem 
                 title="KB국민은행 멤버십 플랫폼 구축"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
@@ -394,8 +345,53 @@ function Home() {
                 <span># 어쩌구</span>
               </SlideItem>
             </SwiperSlide>
+
             <SwiperSlide>
-            <SlideItem 
+              <SlideItem 
+                title="문구야놀자(PC/Mobile)"
+                titleColor="purple"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/playmoongu.png"
+                bgColor="yellow"
+                >
+                  <UITable.Default columns={columns} rows={rows} />
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <SlideItem 
+                title="딸기콩(PC/Mobile)"
+                titleColor="green"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/ddalgicong.png"
+                bgColor="red">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
+       
+            <SwiperSlide>
+              <SlideItem 
                 title="인조이웍스 홈페이지"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
@@ -425,12 +421,43 @@ function Home() {
               </SlideItem>
             </SwiperSlide>
             <SwiperSlide>
-            <SlideItem 
+              <SlideItem 
                 title="굿뜨래페이"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
                 imgSrc="../../assets/images/swiper/goodtraepay.png"
                 bgColor="brown">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                    <tr>
+                      <th>작업기간</th>
+                      <td>YYYY.MM.DD</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <span># 어쩌구</span>
+              </SlideItem>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <SlideItem 
+                title="딸기콩(PC/Mobile)"
+                titleColor="green"
+                content="Adaptive Page Publishing"
+                imgSrc="../../assets/images/swiper/ddalgicong_admin.png"
+                bgColor="red">
                 <table>
                   <tbody>
                     <tr>

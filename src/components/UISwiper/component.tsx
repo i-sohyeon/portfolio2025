@@ -56,13 +56,22 @@ export const Box: React.FC<SwiperProps> = ({
       spaceBetween={50}
       slidesPerView={1.5}
       breakpoints={{
-        480: {
+        320: {
+          slidesPerView: 1,
+        },
+        576: {
           slidesPerView: 1,
         },
         768: {
+          slidesPerView: 1,
+        },
+        878: {
           slidesPerView: 1.5,
         },
-        1280: {
+        992: {
+          slidesPerView: 1.5,
+        },
+        1200: {
           slidesPerView: 1.5,
         },
       }}

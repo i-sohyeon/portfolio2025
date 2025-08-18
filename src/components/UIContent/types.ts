@@ -6,7 +6,7 @@ export type UIContentBgColor =
   | "pink"
   | "green"
   | "navy";
-export type UIContentBgPattern = "check" | "halfcheck" | "wave";
+export type UIContentBgPattern = "check" | "halfcheck" | "wave" | "waveyellow";
 // export type UITextSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 // export type UITextWeight = "normal" | "bold";
 
