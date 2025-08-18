@@ -6,7 +6,7 @@ export const UIBox: React.FC<UIBoxProps> = ({
   variant,
   bgColor,
   bgPattern,
-  as: UIBox = "div",
+  as: UIBox = "article",
   align,
   display,
   jContent,

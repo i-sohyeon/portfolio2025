@@ -6,7 +6,7 @@ export const UIContent: React.FC<UIContentProps> = ({
   variant="type1",
   bgColor,
   bgPattern,
-  as: UIContent = "div",
+  as: UIContent = "section",
   className,
   children,
   ...rest

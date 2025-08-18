@@ -8,7 +8,7 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
   variant = "div",
   size,
   color,
-  as: UIHeader = "div",
+  as: UIHeader = "header",
   className,
   children,
   ...rest
