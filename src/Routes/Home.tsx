@@ -228,7 +228,7 @@ function Home() {
                 title="현대카드 web/app 운영"
                 titleColor="black"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/hyundaicard.png"
+                imgSrc="assets/images/swiper/hyundaicard.png"
                 bgColor="gray">
                  <UITable.Default className="mt-5" variant="type1" size="md" align="left">
                   <table>
@@ -267,7 +267,7 @@ function Home() {
                 title="우리은행 won 뱅킹 재구축 사업"
                 titleColor="blue"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/wooribank.png"
+                imgSrc="assets/images/swiper/wooribank.png"
                 bgColor="light-blue">
               <UITable.Default className="mt-5" variant="type1" size="md" align="left">
                   <table>
@@ -306,7 +306,7 @@ function Home() {
                 title="농협 올원뱅크 리뉴얼 구축"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/nhbank.png"
+                imgSrc="assets/images/swiper/nhbank.png"
                 bgColor="green">
                 <table>
                   <tbody>
@@ -337,7 +337,7 @@ function Home() {
                 title="KB국민은행 멤버십 플랫폼 구축"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/kbbank.png"
+                imgSrc="assets/images/swiper/kbbank.png"
                 bgColor="brown">
                 <table>
                   <tbody>
@@ -368,7 +368,7 @@ function Home() {
                 title="문구야놀자(PC/Mobile)"
                 titleColor="purple"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/playmoongu.png"
+                imgSrc="assets/images/swiper/playmoongu.png"
                 bgColor="yellow"
                 >
                   {/* <UITable.Default columns={columns} rows={rows} /> */}
@@ -381,7 +381,7 @@ function Home() {
                 title="딸기콩(PC/Mobile)"
                 titleColor="green"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/ddalgicong.png"
+                imgSrc="assets/images/swiper/ddalgicong.png"
                 bgColor="red">
                 <table>
                   <tbody>
@@ -412,7 +412,7 @@ function Home() {
                 title="인조이웍스 홈페이지"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/enjoyworks.png"
+                imgSrc="assets/images/swiper/enjoyworks.png"
                 bgColor="brown">
                 <table>
                   <tbody>
@@ -442,7 +442,7 @@ function Home() {
                 title="굿뜨래페이"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/goodtraepay.png"
+                imgSrc="assets/images/swiper/goodtraepay.png"
                 bgColor="brown">
                 <table>
                   <tbody>
@@ -473,7 +473,7 @@ function Home() {
                 title="딸기콩(PC/Mobile)"
                 titleColor="green"
                 content="Adaptive Page Publishing"
-                imgSrc="../../assets/images/swiper/ddalgicong_admin.png"
+                imgSrc="assets/images/swiper/ddalgicong_admin.png"
                 bgColor="red">
                 <table>
                   <tbody>
