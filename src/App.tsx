@@ -1,15 +1,18 @@
-import "./styles/style.scss";
+// src/App.jsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./Routes/Home";
 import Sub from "./Routes/Sub";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio2025">
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/Sub" element={<Sub />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/sub" element={<Sub />} />
+        {/* 존재하지 않는 경로는 루트로 리다이렉트 */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );
