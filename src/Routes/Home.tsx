@@ -255,7 +255,7 @@ function Home() {
 
             <SwiperSlide>
             <SlideItem 
-                title="우리은행 won 뱅킹 재구축 사업"
+                title="우리은행 won 뱅킹 재구축"
                 titleColor="blue"
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/wooribank.png"

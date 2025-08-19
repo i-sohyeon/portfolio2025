@@ -59,19 +59,16 @@ export const Box: React.FC<SwiperProps> = ({
         320: {
           slidesPerView: 1,
         },
-        576: {
+        480: {
           slidesPerView: 1,
         },
         768: {
           slidesPerView: 1,
         },
-        878: {
+        1024: {
           slidesPerView: 1.5,
         },
-        992: {
-          slidesPerView: 1.5,
-        },
-        1200: {
+        1280: {
           slidesPerView: 1.5,
         },
       }}
