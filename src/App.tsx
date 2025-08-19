@@ -7,7 +7,8 @@ import Sub from "./Routes/Sub";
 
 function App() {
   return (
-    <Router basename="/portfolio2025">
+    <Router basename="/">
+      {/* 배포할때는 basename="/portfolio2025" 추가, 로컬에서는 삭제 */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sub" element={<Sub />} />

@@ -133,6 +133,7 @@
   // src: url('.NotoSans/noto-sans-kr-v8-korean-100.eot'); /* IE9 Compat Modes */
   src: 
   url('./Tenada/Tenada.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
 }
 
 /* noto-sans-kr-100 - Bagel fat one */
@@ -143,4 +144,5 @@
   // src: url('.NotoSans/noto-sans-kr-v8-korean-100.eot'); /* IE9 Compat Modes */
   src: 
   url('./BagelFatOne/BagelFatOne-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
 }
