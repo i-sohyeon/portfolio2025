@@ -86,22 +86,21 @@ UITextHeaderSize
 - xl 72 |
 - xxl 80 | 60
 
-미디어쿼리 분기
-5분기(좀 더 세분화)
-대형 PC: 1200px 이상
-@media (min-width: 1200px)
+## 미디어쿼리 분기
+대형 PC: 1280px 이상
+@media (min-width: 1280px)
 
-데스크탑: 992px ~ 1199px
-@media (min-width: 992px) and (max-width: 1199px)
+데스크탑: 1024px ~ 1279px
+@media (min-width: 1024px) and (max-width: 1279px)
 
-태블릿: 768px ~ 991px
-@media (min-width: 768px) and (max-width: 991px)
+태블릿: 768px ~ 1023px
+@media (min-width: 768px) and (max-width: 1023px)
 
-모바일 가로: 576px ~ 767px
-@media (min-width: 576px) and (max-width: 767px)
+모바일 가로: 480px ~ 767px
+@media (min-width: 480px) and (max-width: 767px)
 
-모바일 세로: ~575px
-@media (max-width: 575px)
+모바일 세로: ~479px
+@media (max-width: 479px)
 
 
 

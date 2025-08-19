@@ -12,7 +12,7 @@
 // 데스크탑 1280px ~
 .slideItem {
   width: 750px;
-  padding: 30px 40px;
+  padding: toRem(30) toRem(40);
   border: 3px solid #111;
   border-radius: 40px;
   background-color: #ccc !important;
@@ -35,29 +35,29 @@
   }
 }
 
-/* 모바일 세로1 (0px ~ 320px, 479px) */
+/* 모바일 세로 (0px ~ 320px, 479px) */
 @media (max-width: 479px) {
-  .ui-content {
-    .slideItem {
-      img {
-        width: 65vw;
+  .slideItem {
+    padding: toRem(28) toRem(16);
+    img {
+      width: 80vw;
+      height: toRem(250);
+    }
+    h3 {
+      font-size: toRem(32);
+      margin-top: -28px;
+      & + p {
+        font-size: toRem(20);
       }
-      h3 {
-        font-size: toRem(32);
-        margin-top: -28px;
-        & + p {
-          font-size: toRem(20);
-        }
-      } 
+    } 
   }
-}
 }
 
 /* 모바일 가로 & 테블릿 세로 (480px ~ 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
     .slideItem {
       img {
-        width: 85vw;
+        width: 78vw;
       }
       h3 {
         font-size: toRem(36);

@@ -33,7 +33,6 @@ function Home() {
     "태양광 햇빛마루 pc/mobile(적응형)",
   ];
 
-
   return (
     <>
       <UIContent bgColor="gray" bgPattern="check">
@@ -182,9 +181,10 @@ function Home() {
               borderRadius: "24px",
               display: "block",
               width: "100%",
-              maxWidth: "520px",
+              maxWidth: "550px",
               padding: "60px 40px",
               boxSizing: "border-box",
+              marginTop: "24px",
             }}>
             <div style={{ marginBottom: "32px" }}>
               <UIText.Header as="p" font="tenada" size="md">
@@ -234,7 +234,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th>사용 툴</th>
-                        <td>CMS, VSCODE, Figma</td>
+                        <td>CMS, VSCODE, Figma, HTML, CSS, JQuery, Javascript, Photoshop, Admin</td>
                       </tr>
                       <tr>
                         <th>웹주소</th>
@@ -243,12 +243,11 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-6">
                   <UIBadge size="md" variant="line">#CMS</UIBadge>
-                  <UIBadge size="md" variant="line">#적응형홈페이지</UIBadge>
+                  <UIBadge size="md" variant="line">#적응형</UIBadge>
                   <UIBadge size="md" variant="line">#Webview</UIBadge>
                   <UIBadge size="md" variant="line">#CMS</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -260,7 +259,8 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/wooribank.png"
                 bgColor="light-blue">
-              <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -277,16 +277,16 @@ function Home() {
                       </tr>
                       <tr>
                         <th>웹주소</th>
-                        <td>https://www.hyundaicard.com/index.jsp</td>
+                        <td>우리WON뱅킹 앱</td>
                       </tr>
                     </tbody>
                   </table>
                 </UITable.Default>
                 <div className="mt-8">
-                  <UIBadge size="md" variant="line">#CMS</UIBadge>
-                  <UIBadge size="md" variant="line">#적응형홈페이지</UIBadge>
+                  <UIBadge size="md" variant="line">#접근성</UIBadge>
+                  <UIBadge size="md" variant="line">#리액트</UIBadge>
                   <UIBadge size="md" variant="line">#Webview</UIBadge>
-                  <UIBadge size="md" variant="line">#CMS</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
                   <UIBadge size="md" variant="line">#MoWeb</UIBadge>
                 </div>
               </SlideItem>
@@ -299,58 +299,74 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/nhbank.png"
                 bgColor="green">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-              <span># 어쩌구</span>
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2023. 08. ~ 2024. 03</td>
+                      </tr>
+                      <tr>
+                        <th>작업 참여인원</th>
+                        <td>퍼블리싱 3명 </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCode, Html, Css, JQuery, Javascript, Git, AdobeXD</td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>NH올원뱅크 앱</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#Git</UIBadge>
+                  <UIBadge size="md" variant="line">#재구축</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
 
             <SwiperSlide>
               <SlideItem 
-                title="KB국민은행 멤버십 플랫폼 구축"
+                title="KB국민은행 멤버십 플랫폼"
                 titleColor="yellow"
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/kbbank.png"
                 bgColor="brown">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
+                         <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2022. 11. ~ 2023. 07</td>
+                      </tr>
+                      <tr>
+                        <th>작업 참여인원</th>
+                        <td>퍼블리싱 4명 </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCode, Html, Css, JQuery, Javascript, Gulp, Figma, CMS </td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>KB스타뱅킹 앱</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#Git</UIBadge>
+                  <UIBadge size="md" variant="line">#재구축</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
 

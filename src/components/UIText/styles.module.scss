@@ -1,3 +1,6 @@
+@import "../../styles/utils/mixins";
+@import "../../styles/style.scss";
+
 .ui-text {
   margin: 0;
   padding: 0;
@@ -17,13 +20,25 @@
 }
 
 /* Sizes */
-.ui-text-xxs {font-size: 12px;}
-.ui-text-xs {font-size: 16px;}
-.ui-text-sm {font-size: 20px;}
-.ui-text-md {font-size: 24px;}
-.ui-text-lg {font-size: 28px;}
-.ui-text-xl {font-size: 32px;}
-.ui-text-xxl {font-size: 36px;}
+.ui-text-xxs {font-size: toRem(12);}
+.ui-text-xs {font-size: toRem(16);}
+.ui-text-sm {font-size: toRem(20)}
+.ui-text-md {font-size: toRem(24);}
+.ui-text-lg {font-size: toRem(28)}
+.ui-text-xl {font-size: toRem(32);}
+.ui-text-xxl {font-size: toRem(36)}
+
+
+@media (max-width: 479px) {
+  .ui-text-xxs {font-size: 11px;}
+  .ui-text-xs {font-size: 12px;}
+  .ui-text-sm {font-size: 14px;}
+  .ui-text-md {font-size: 16px;}
+  .ui-text-lg {font-size: 20px;}
+  .ui-text-xl {font-size: 28px;}
+  .ui-text-xxl {font-size: 32px;}
+}
+
 
 /* opacity */
 .ui-text-10 {
@@ -50,8 +65,6 @@
 .ui-text-80 {
   opacity: 80%;
 }
-
-
 
 /* Weights */
 .ui-text-normal {
@@ -84,15 +97,15 @@
 
 // size
 .ui-text-header-xl {
-  font-size: 80px;
-  margin-bottom: 48px;
+  font-size: toRem(80);
+  margin-bottom: toRem(48);
 }
 .ui-text-header-lg {
-  font-size: 60px;
-  margin-bottom: 48px;
+  font-size: toRem(60);
+  margin-bottom: toRem(48);
 }
 .ui-text-header-md {
-  font-size: 48px;
+  font-size: toRem(48);
 }
 
 // color

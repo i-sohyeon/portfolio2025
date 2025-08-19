@@ -20,18 +20,23 @@
 }
 /** size **/
 .ui-badge-sm {
-  padding: 2px 4px;
-  & + span {
-    margin-left: 8px;
-    border-radius: 4px;
-  }
+  padding: toRem(2) toRem(4);
+  margin-left: 8px;
+  border-radius: toRem(2);
+  font-size: toRem(12);
 }
-.ui-badge-md {
-  padding: 8px;
-  border-radius: 4px;
-  font-size: toRem(16);
 
-  & + span {
-    margin-left: 8px;
+.ui-badge-md {
+  padding: toRem(8);
+  margin-left: toRem(8);
+  border-radius: toRem(4);
+  font-size: toRem(16);
+}
+@media (max-width: 479px) {
+  .ui-badge-md {
+    padding: toRem(4);
+    margin-left: toRem(4);
+    border-radius: toRem(2);
+    font-size: toRem(12);
   }
 }

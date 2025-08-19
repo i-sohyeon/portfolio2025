@@ -1,4 +1,4 @@
-@import "../../styles/utils/mixins";
+@import "../../styles/style.scss";
 
 .ui-table-default {
   // margin-top: 20;
@@ -9,6 +9,16 @@
   th {min-width: 120px;}
   th, td {padding: 6px 0;}
   td {padding-left: 50px;}
+}
+@media (max-width: 479px) {
+  .ui-table-md {
+    font-size: toRem(14);
+    th {min-width: toRem(88);}
+    th, td {padding: toRem(4) toRem(0);}
+    td {
+      padding-left: toRem(20);
+    }
+  }
 }
 
 .ui-table-left { text-align: left;}
