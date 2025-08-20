@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.5283db7b.css",
-    "main.js": "./static/js/main.0e205e15.js",
+    "main.css": "./static/css/main.519d3f35.css",
+    "main.js": "./static/js/main.26e2eddf.js",
+    "static/media/BagelFatOne-Regular.ttf": "./static/media/BagelFatOne-Regular.2b0033879965892f1953.ttf",
+    "static/media/Tenada.ttf": "./static/media/Tenada.0cfe8963fde304575974.ttf",
     "static/media/bg_wave_blue.png": "./static/media/bg_wave_blue.215e2cb436359a260dcb.png",
     "static/media/bg_half_grid_yellow.png": "./static/media/bg_half_grid_yellow.b76164b9acd1ded5ce82.png",
     "static/media/bg_wave_yellow.png": "./static/media/bg_wave_yellow.1df8431da80fe6ab375c.png",
     "static/media/main_top_bg_grid_gray.png": "./static/media/main_top_bg_grid_gray.6dc5905e6cc5621896ce.png",
     "index.html": "./index.html",
-    "main.5283db7b.css.map": "./static/css/main.5283db7b.css.map",
-    "main.0e205e15.js.map": "./static/js/main.0e205e15.js.map"
+    "main.519d3f35.css.map": "./static/css/main.519d3f35.css.map",
+    "main.26e2eddf.js.map": "./static/js/main.26e2eddf.js.map"
   },
   "entrypoints": [
-    "static/css/main.5283db7b.css",
-    "static/js/main.0e205e15.js"
+    "static/css/main.519d3f35.css",
+    "static/js/main.26e2eddf.js"
   ]
 }
