@@ -1,3 +1,4 @@
+export * from "./UIAccordion/index";
 export * from "./UIBadge/index";
 export * from "./UIBanner/index";
 export * from "./UIBox/index";

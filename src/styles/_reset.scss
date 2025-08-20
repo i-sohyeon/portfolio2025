@@ -108,12 +108,10 @@ body {
   line-height: 1.2;
   color: #111;
 }
-ol,
-ul, li {
+ol, ul, li {
   list-style: none;
 }
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 blockquote:before,
@@ -124,5 +122,6 @@ q:after {
 }
 a {
   text-decoration: none;
-  color: #111;
+  color: inherit;
 }
+button {border: none;}
