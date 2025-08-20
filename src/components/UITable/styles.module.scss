@@ -10,13 +10,14 @@
   th, td {padding: 6px 0;}
   td {padding-left: 50px;}
 }
-@media (max-width: 479px) {
+
+@media (max-width: 767px) {
   .ui-table-md {
     font-size: toRem(14);
     th {min-width: toRem(88);}
     th, td {padding: toRem(4) toRem(0);}
     td {
-      padding-left: toRem(20);
+      padding-left: toRem(0);
     }
   }
 }
