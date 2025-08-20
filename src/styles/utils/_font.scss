@@ -121,27 +121,26 @@
   unicode-range: U+0020-007E;
   font-family: 'Noto Sans KR';
   font-weight: 900;
-  // src: url('/fonts/Roboto/Roboto-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../../assets/fonts/Roboto/Roboto-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
-/* noto-sans-kr-100 - Tenada */
+/* Tenada */
 @font-face {
   font-family: 'Tenada';
   font-style: normal;
   font-weight: 700;
-  // src: url('.NotoSans/noto-sans-kr-v8-korean-100.eot'); /* IE9 Compat Modes */
   src: 
+  url('../../assets/fonts/Tenada/Tenada.woff') format('woff'), /* Super Modern Browsers */
+  url('../../assets/fonts/Tenada/Tenada.woff2') format('woff2'), /* Super Modern Browsers */
   url('../../assets/fonts/Tenada/Tenada.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
 }
 
-/* noto-sans-kr-100 - Bagel fat one */
+/* Bagel fat one */
 @font-face {
   font-family: 'Bagel fat one';
   font-style: normal;
   font-weight: 400;
-  // src: url('.NotoSans/noto-sans-kr-v8-korean-100.eot'); /* IE9 Compat Modes */
-  src: 
-  url('../../assets/fonts/BagelFatOne/BagelFatOne-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+  src: url('../../assets/fonts/BagelFatOne/BagelFatOne-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../../assets/fonts/BagelFatOne/BagelFatOne-Regular.woff') format('woff'), /* Super Modern Browsers */
+  url('../../assets/fonts/BagelFatOne/BagelFatOne-Regular.woff2') format('woff2'), /* Super Modern Browsers */
 }
