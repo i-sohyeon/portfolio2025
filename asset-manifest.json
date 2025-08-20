@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a3e003d3.css",
-    "main.js": "./static/js/main.6909a98a.js",
+    "main.js": "./static/js/main.2c41c988.js",
     "static/media/BagelFatOne-Regular.ttf": "./static/media/BagelFatOne-Regular.2b0033879965892f1953.ttf",
     "static/media/Tenada.ttf": "./static/media/Tenada.0cfe8963fde304575974.ttf",
     "static/media/BagelFatOne-Regular.woff": "./static/media/BagelFatOne-Regular.daae500168db9d6462d5.woff",
@@ -15,10 +15,10 @@
     "static/media/main_top_bg_grid_gray.png": "./static/media/main_top_bg_grid_gray.6dc5905e6cc5621896ce.png",
     "index.html": "./index.html",
     "main.a3e003d3.css.map": "./static/css/main.a3e003d3.css.map",
-    "main.6909a98a.js.map": "./static/js/main.6909a98a.js.map"
+    "main.2c41c988.js.map": "./static/js/main.2c41c988.js.map"
   },
   "entrypoints": [
     "static/css/main.a3e003d3.css",
-    "static/js/main.6909a98a.js"
+    "static/js/main.2c41c988.js"
   ]
 }
