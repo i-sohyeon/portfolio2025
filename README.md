@@ -1,6 +1,65 @@
-## 본 프로젝트는 React를 사용하여 만든 개인 포트폴리오입니다.
+# 🌐 Portfolio 2025
 
-### 폴더 구조
+## 🛜 개인 포트폴리오 웹사이트  
+React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최적화를 모두 고려했습니다.  
+[👉 배포 URL](https://i-sohyeon.github.io/portfolio2025/)
+
+
+
+---
+## 🛠️ 기술 스택
+- **Framework**: [Create React App](https://create-react-app.dev/) (TypeScript + JSX/TSX)
+- **Language**: TypeScript, SCSS
+- **Styling**: CSS Modules, SCSS
+- **Build & Deploy**: GitHub Actions
+- **Accessibility**: 시맨틱 마크업, aria-속성 적용, 명도 대비 준수
+- **Performance**: 코드 스플리팅, 이미지 최적화(Lazy Loading, WebP 변환)
+---
+
+
+## 📱 주요 기능 및 특징
+
+### 🎨 반응형 UI
+- Desktop / Tablet / Mobile 반응형 레이아웃
+- Flexbox & Grid 활용
+- 미디어쿼리 분기
+
+```
+대형 PC: 1280px 이상
+@media (min-width: 1280px)
+
+데스크탑: 1024px ~ 1279px
+@media (min-width: 1024px) and (max-width: 1279px)
+
+태블릿: 768px ~ 1023px
+@media (min-width: 768px) and (max-width: 1023px)
+
+모바일 가로: 480px ~ 767px
+@media (min-width: 480px) and (max-width: 767px)
+
+모바일 세로: ~479px
+@media (max-width: 479px)
+```
+
+### ♿ 접근성 (Accessibility)
+- 시맨틱 태그(`header`, `main`, `section`, `article`, `nav`, `footer` ) 사용
+- 스크린리더 친화적 `aria-label` 및 role 속성
+- 명도 대비 WCAG 가이드라인 준수
+
+### ⚡ 성능 최적화
+- 이미지 압축(webp) 및 Lazy Loading
+<!-- - React `Suspense` & `React.lazy`를 활용한 코드 스플리팅 -->
+<!-- - 불필요한 리렌더링 방지를 위한 React.memo 사용 -->
+
+### 🖌️ 구현 애니메이션
+- 헤더 영역 : 일정 높이갚으로 스크롤이 되면 헤더 영역을 보이지 않게 숨겼다가 페이지가 다시 일정영역 위로 올라오면, 헤더가 보이게 설정
+- (구현 예정) 메인 화면 : 카드 이미지가 뒤집히는게 무한으로 반복되는 애니메이션
+- 띠 배너 : 텍스트들이 자연스럽게 흘러가는 애니메이션
+- (구현 예정) Career 콘텐츠 영역 : 아래로 스크롤 할때 텍스트가 주르륵 나타는 애니메이션, 다시 아래로 스크롤을 올리면 텍스트가 주르륵 사라짐
+---
+
+
+## 📁 폴더 구조
 
 ```
 .
@@ -17,28 +76,38 @@
     │   ├──fonts
     │   └──images
     │       ├── background-pattern
-    │       └── icons
+    │       ├── icons
+    │       └── swiper
     └── (기타 등등...)
     ├── components
+    │   ├── UIAccordion
+    │   ├── UIBadge
     │   ├── UIBanner
     │   ├── UIBox
+    │   ├── UIButton
     │   ├── UIContent
+    │   ├── UIDivider
     │   ├── UIHeader
+    │   ├── UIcon
     │   ├── UISwiper
     │   ├── UITable
     │   ├── UIText
     │   └── UITextList
-    ├── index.tsx
-    ├── pages
+    ├── Routes
+    │   ├── Home.tsx
+    │   └── Sub.tsx
     ├── styles
-    │   ├── mixins
+    │   └── utils
+    │       ├── _font.scss
+    │       ├── _function.scss
+    │       ├── _mixins.scss
+    │       ├── _variables.scss
     │   ├── _common.scss
     │   ├── _reset.scss
-    │   ├── _variable.scss
     └── └── style.scss
 ```
 
-## About Components
+## About Components (작성중)
 
 ### 컴포넌트와 같이 비슷한 기능을 하는 컴포넌트들을 하위컴포넌트(서브컴포넌트)로 분리하여 재사용성을 높임
 
@@ -57,17 +126,13 @@
 
 ====
 
-## 구현 애니메이션
 
-- 헤더 영역 : 일정 높이갚으로 스크롤이 되면 헤더 영역을 보이지 않게 숨겼다가 페이지가 다시 일정영역 위로 올라오면, 헤더가 보이게 설정
-- (구현 예정) 메인 화면 : 카드 이미지가 뒤집히는게 무한으로 반복되는 애니메이션
-- 띠 배너 : 텍스트들이 자연스럽게 흘러가는 애니메이션
-- (구현 예정) Career 콘텐츠 영역 : 아래로 스크롤 할때 텍스트가 주르륵 나타는 애니메이션, 다시 아래로 스크롤을 올리면 텍스트가 주르륵 사라짐
 
-## 미디어쿼리 (반응형)
+
+
+
 
 ### 텍스트 사이즈
-
 UITextSize
 
 - xxs 12 | 11
@@ -86,21 +151,7 @@ UITextHeaderSize
 - xl 72 |
 - xxl 80 | 60
 
-## 미디어쿼리 분기
-대형 PC: 1280px 이상
-@media (min-width: 1280px)
 
-데스크탑: 1024px ~ 1279px
-@media (min-width: 1024px) and (max-width: 1279px)
-
-태블릿: 768px ~ 1023px
-@media (min-width: 768px) and (max-width: 1023px)
-
-모바일 가로: 480px ~ 767px
-@media (min-width: 480px) and (max-width: 767px)
-
-모바일 세로: ~479px
-@media (max-width: 479px)
 
 
 
