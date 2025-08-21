@@ -2,7 +2,7 @@ import React from "react";
 import { UIBoxProps } from "./types";
 import styles from "./styles.module.scss";
 
-export const UIBox: React.FC<UIBoxProps> = ({
+export const Article: React.FC<UIBoxProps> = ({
   variant,
   bgColor,
   bgPattern,
@@ -16,39 +16,62 @@ export const UIBox: React.FC<UIBoxProps> = ({
   ...rest
 }) => {
   const classes = [
-    styles["ui-box"],
-    styles[`ui-box-${variant}`],
-    styles[`ui-box-${bgColor}`],
-    styles[`ui-box-${align}`],
-    styles[`ui-box-${display}`],
-    styles[`ui-box-${jContent}`],
-    styles[`ui-box-${aItems}`],
+    styles["ui-box-article"],
+    styles[`ui-box-article-${variant}`],
+    styles[`ui-box-article-${bgColor}`],
+    styles[`ui-box-article-${align}`],
+    styles[`ui-box-article-${display}`],
+    styles[`ui-box-article-${jContent}`],
+    styles[`ui-box-article-${aItems}`],
     className,
   ]
     .filter(Boolean)
     .join(" ");
 
   return (
-    <UIBox variant="type1" className={classes} style={{}} {...rest}>
+    <article className={`${classes}`}style={{}} {...rest}>
       {children}
-    </UIBox>
+    </article>
   );
 };
 
-// 사용 예시
-// const App: React.FC = () => {
-//   const posts = [
-//     { id: 1, title: "TypeScript 기초", content: "타입 시스템 이해하기" },
-//     { id: 2, title: "React Hooks", content: "useState 활용법" }
-//   ];
+export const Div: React.FC<UIBoxProps> = ({
+  variant,
+  bgColor,
+  bgPattern,
+  as: UIBox = "article",
+  align,
+  display,
+  jContent,
+  aItems,
+  className,
+  children,
+  ...rest
+}) => {
+  const classes = [
+    styles["ui-box-div"],
+    styles[`ui-box-div-${variant}`],
+    styles[`ui-box-div-${bgColor}`],
+    styles[`ui-box-div-${align}`],
+    styles[`ui-box-div-${display}`],
+    styles[`ui-box-div-${jContent}`],
+    styles[`ui-box-div-${aItems}`],
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
-//   return (
-//     <div className="max-w-2xl mx-auto p-4">
-//       {posts.map(post => (
-//         <Content key={post.id} title={post.title} theme="light">
-//           <p className="text-gray-600">{post.content}</p>
-//         </Content>
-//       ))}
-//     </div>
-//   );
-// };
+  return (
+    <div className={`${classes}`} style={{}} {...rest}>
+      {children}
+    </div>
+  );
+};
+
+
+
+const UIBox = {
+  Article, Div
+}
+
+export {UIBox}

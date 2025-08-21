@@ -1,16 +1,15 @@
-.ui-box {
+@import "../../styles/utils/function";
+
+.ui-box-article {
   max-width: 1280px;
   width: 100%;
   margin: 0px auto;
   padding: 102px 0;
 }
 
-.ui-box-content {
-  // padding: 102px 0;
-}
 
 // align
-.ui-box-left {
+.ui-box-article-left {
   text-align: left;
 }
 .ui-box-center {
@@ -21,35 +20,43 @@
 }
 
 // display
-@media (min-width: 320px) and (max-width: 1023px) {
-  .ui-box-flex {
+@media (min-width: 320px) and (max-width: 767px) {
+  .ui-box-div-flex {
     display: block;
   }
 }
 
-@media all and (min-width: 1024px) {
-  .ui-box-flex {
+@media all and (min-width: 768px) {
+  .ui-box-div-flex {
     display: flex;
   }
 }
-// @media (min-width: 768px) and (max-width: 1279px) {
-//   .ui-box-flex {
-//     display: flex;
-//   }
-// }
 
 // jContent
-.ui-box-space-between {
+.ui-box-div-space-between {
   justify-content: space-between;
 }
 
 // aItems
-.ui-box-top {
+.ui-box-div-top {
   align-items: start;
 }
-.ui-box-middle {
+.ui-box-article-middle {
   align-items: center;
 }
-.ui-box-bottom {
+.ui-box-article-bottom {
   align-items: end;
+}
+
+// variant
+.ui-box-div-card {
+  height: fit-content;
+  background: #FFF302;
+  border-radius: toRem(24);
+  display: inline-block; 
+  width: 100%;
+  max-width: 550px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  text-align:left;
 }

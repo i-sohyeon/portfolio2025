@@ -38,7 +38,7 @@ function Home() {
     <>
       <UIContent bgColor="gray" bgPattern="check">
         <UIHeader size="md">S.H.LEE</UIHeader>
-        <UIBox align="center" style={{ padding: "240px 0 220px 0" }}>
+        <UIBox.Article align="center" style={{ padding: "240px 0 220px 0" }}>
           <div>
             <UIText.Header size="xl" align="center" variant="mainTitle" as="h1">
               UI &middot; UX
@@ -48,7 +48,7 @@ function Home() {
               <span>PORTFOLIO</span>
             </UIText.Header>
           </div>
-        </UIBox>
+        </UIBox.Article>
       </UIContent>
 
       <UIContent
@@ -124,84 +124,72 @@ function Home() {
       </UIContent>
 
       <UIContent bgColor="blue" bgPattern="waveyellow">
-        <UIBox variant="flex" jContent="space-between" aItems="middle">
-          <div>
-            <UIText.Header size="lg">경력 CAREER</UIText.Header>
-            <UIBanner.List
-              icon="study"
-              number="2020"
-              variant="list"
-              bgColor="type1"
-              title="ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정"
-              des="(20202.04~2020.10)" />
-            <UIBanner.List
-              icon="company"
-              number="2021"
-              variant="list"
-              bgColor="type2"
-              title="인조이웍스(enjoy works)"
-              des="(2021.01 ~ 2022.04)" />
-            <UIBanner.List
-              icon="study"
-              number="2022"
-              variant="list"
-              bgColor="type3"
-              title="[프론트엔드] 리액트 (React.js 자바스크립트)_주말"
-              des="(2022.01 ~2022.04)" />
-            <UIBanner.List
-              icon="company"
-              number="2023"
-              variant="list"
-              bgColor="type4"
-              title="인픽스(INPIX)"
-              des="(2022.06 ~ )" />
-            <UIBanner.List
-              icon="study"
-              number="2024"
-              variant="list"
-              bgColor="type5"
-              title="한국방송통신대학교 컴퓨터과학과 편입 (재학중)"
-              des="(2023.09 ~ )" />
-            <UIBanner.List
-              icon="company"
-              number="2025"
-              variant="list"
-              bgColor="type6"
-              title="??????"
-              des="(????.?? ~ )" />
-          </div>
-
-          <div
-            style={{
-              height: "fit-content",
-              backgroundColor: "#FFF302",
-              borderRadius: "24px",
-              display: "inline-block",
-              width: "100%",
-              maxWidth: "550px",
-              padding: "60px 40px",
-              boxSizing: "border-box",
-              marginTop: "24px",
-              textAlign:"left",
-            }}>
-            <div style={{ marginBottom: "32px" }}>
+        <UIBox.Article as="article" >
+          <UIText.Header size="lg">경력 CAREER</UIText.Header>
+          <UIBox.Div variant="flex" jContent="space-between" aItems="middle" className="pt-0">
+            <UIBox.Div className="mr-5 mb-4">
+              <UIBanner.List
+                icon="study"
+                number="2020"
+                variant="list"
+                bgColor="type1"
+                title="ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정"
+                des="(20202.04~2020.10)" />
+              <UIBanner.List
+                icon="company"
+                number="2021"
+                variant="list"
+                bgColor="type2"
+                title="인조이웍스(enjoy works)"
+                des="(2021.01 ~ 2022.04)" />
+              <UIBanner.List
+                icon="study"
+                number="2022"
+                variant="list"
+                bgColor="type3"
+                title="[프론트엔드] 리액트 (React.js 자바스크립트)_주말"
+                des="(2022.01 ~2022.04)" />
+              <UIBanner.List
+                icon="company"
+                number="2023"
+                variant="list"
+                bgColor="type4"
+                title="인픽스(INPIX)"
+                des="(2022.06 ~ )" />
+              <UIBanner.List
+                icon="study"
+                number="2024"
+                variant="list"
+                bgColor="type5"
+                title="한국방송통신대학교 컴퓨터과학과 편입 (재학중)"
+                des="(2023.09 ~ )" />
+              <UIBanner.List
+                icon="company"
+                number="2025"
+                variant="list"
+                bgColor="type6"
+                title="??????"
+                des="(????.?? ~ )" />
+            </UIBox.Div>             
+            <UIBox.Div variant="card">
               <UIText.Header as="p" font="tenada" size="md">
                 프로젝트 경험
               </UIText.Header>
               <UIText.Header as="p" font="tenada" size="md" color="blue">
                 Project Experience
               </UIText.Header>
-            </div>
-            <UITextList.Check variant="check" size="md" checkItems={textList} />
-          </div>
-        </UIBox>
+              <UITextList.Check variant="check" size="md" checkItems={textList} />
+            </UIBox.Div>
+          </UIBox.Div>
+          
+        </UIBox.Article>
       </UIContent>
 
       <UIContent
         bgColor="gray"
         bgPattern="check"
         style={{ overflowX: "hidden" }}>
-        <UIBox variant="content">
+        <UIBox.Article variant="content">
           <UIText.Header variant="h3" size="lg">
             PROJECT DETAILS
             <Link to="/Sub">경력기술서로 확인하기</Link>
@@ -232,7 +220,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th>사용 툴</th>
-                        <td>CMS, VSCODE, Figma, HTML, CSS, JQuery, Javascript, Photoshop, Admin</td>
+                        <td>CMS, VSCODE, Figma, HTML, CSS, JQuery, Javascript, Photoshop</td>
                       </tr>
                       <tr>
                         <th>웹주소</th>
@@ -241,11 +229,10 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-6">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#CMS</UIBadge>
                   <UIBadge size="md" variant="line">#적응형</UIBadge>
                   <UIBadge size="md" variant="line">#Webview</UIBadge>
-                  <UIBadge size="md" variant="line">#CMS</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -271,7 +258,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th>사용 툴</th>
-                        <td>VSCODE, Figma, React, css(scss), Typescript(Javascript), Git</td>
+                        <td>VSCODE, Figma, React, css(scss), Typescript, Git</td>
                       </tr>
                       <tr>
                         <th>웹주소</th>
@@ -280,12 +267,10 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#접근성</UIBadge>
-                  <UIBadge size="md" variant="line">#리액트</UIBadge>
-                  <UIBadge size="md" variant="line">#Webview</UIBadge>
+                  <UIBadge size="md" variant="line">#React</UIBadge>
                   <UIBadge size="md" variant="line">#다크모드</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -319,11 +304,9 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#디버깅</UIBadge>
-                  <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
                   <UIBadge size="md" variant="line">#다크모드</UIBadge>
                 </div>
               </SlideItem>
@@ -358,12 +341,10 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
-                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                <div className="mt-4">
+                  <UIBadge size="md" variant="line">#Gulp</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
-                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -398,7 +379,7 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#디버깅</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
@@ -437,7 +418,7 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#디버깅</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
@@ -476,7 +457,7 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#디버깅</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
@@ -514,7 +495,7 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#유지보수</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
@@ -553,7 +534,7 @@ function Home() {
                     </tbody>
                   </table>
                 </UITable.Default>
-                <div className="mt-8">
+                <div className="mt-4">
                   <UIBadge size="md" variant="line">#유지보수</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
@@ -563,11 +544,11 @@ function Home() {
               </SlideItem>
             </SwiperSlide>
           </UISwiper.Box>
-        </UIBox>
+        </UIBox.Article>
       </UIContent>
 
       <UIContent bgColor="pink">
-        <UIBox variant="content">
+        <UIBox.Article variant="content">
           <UIText.Header size="lg">ABOUT PORTFOLIO</UIText.Header>
           <UIAccordion.Line variant="line" id="acc-1" title="1. 접근성 (Accessibility)">
             <ul>
@@ -576,7 +557,7 @@ function Home() {
               <li>⌨️ 키보드 네비게이션 지원</li>
             </ul>
           </UIAccordion.Line>
-        </UIBox>
+        </UIBox.Article>
       </UIContent>
     </>
   );

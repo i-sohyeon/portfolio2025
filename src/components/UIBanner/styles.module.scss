@@ -45,7 +45,9 @@
     background-repeat: no-repeat;
   }
 }
-
+.ui-banner-center{
+  justify-content: center;
+}
 .bannerList {
   display: flex;
   margin-bottom: toRem(16);
@@ -69,6 +71,7 @@
   div {
     margin-left: toRem(28);
     display: block;
+    min-width: toRem(280);
     max-width: toRem(320);
     width: 100%;
     box-sizing: border-box;

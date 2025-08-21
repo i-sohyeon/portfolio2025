@@ -171,12 +171,12 @@ function Sub() {
   return (
     <UIContent bgColor="navy">
       <UIHeader size="md">S.H.LEE</UIHeader>
-      <UIBox variant="content">
+      <UIBox.Article variant="content">
         <UIText.Header size="lg" color="white">
           EXPERIENCE DETAIL
         </UIText.Header>
 
-        <UIBox display="flex" jContent="space-between">
+        <UIBox.Article display="flex" jContent="space-between">
           <UIParagraph
             title="현대카드"
             period="2025.01 ~"
@@ -184,11 +184,11 @@ function Sub() {
             desc="CMS를 통한 현대카드 웹사이트 PC/MO 버전 운영 관리"
           />
           <UITextList.Nested nestedItems={data01} style={{maxWidth: "650px"}}/>
-        </UIBox>
+        </UIBox.Article>
 
         <UIDivider variant="type1" />
 
-        <UIBox display="flex" jContent="space-between">
+        <UIBox.Article display="flex" jContent="space-between">
           <UIParagraph
             title="우리은행"
             period="2024.04 ~ 2024.12 (약 8개월)"
@@ -204,11 +204,11 @@ function Sub() {
           </div>
 
           <UITextList.Nested nestedItems={data02} style={{maxWidth: "650px"}}/>
-        </UIBox>
+        </UIBox.Article>
 
         <UIDivider variant="type1" />
 
-        <UIBox
+        <UIBox.Article
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -245,11 +245,11 @@ function Sub() {
           </div>
 
           <UITextList.Nested nestedItems={data03} style={{maxWidth: "650px"}} />
-        </UIBox>
+        </UIBox.Article>
 
         <UIDivider variant="type1" />
 
-        <UIBox
+        <UIBox.Article
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -289,11 +289,11 @@ function Sub() {
           </div>
 
           <UITextList.Nested nestedItems={data04} style={{maxWidth: "650px"}} />
-        </UIBox>
+        </UIBox.Article>
 
         <UIDivider variant="type1" />
 
-        <UIBox
+        <UIBox.Article
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -331,8 +331,8 @@ function Sub() {
           </div>
 
           <UITextList.Nested nestedItems={data05} style={{minWidth: "650px",}} />
-        </UIBox>
-      </UIBox>
+        </UIBox.Article>
+      </UIBox.Article>
     </UIContent>
   );
 }

@@ -9,6 +9,7 @@ export const List: React.FC<UIBannerProps> = ({
   des,
   variant,
   bgColor,
+  jContent,
   as: UIBanner = "div",
   className,
   children,
@@ -21,6 +22,7 @@ export const List: React.FC<UIBannerProps> = ({
     styles[`ui-banner-${icon}`],
     styles[`ui-banner-${variant}`],
     styles[`ui-banner-${bgColor}`],
+    styles[`ui-banner-${jContent}`],
     className
   ]
   .filter(Boolean)

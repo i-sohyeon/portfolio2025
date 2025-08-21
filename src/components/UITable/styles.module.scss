@@ -5,10 +5,10 @@
 }
 
 .ui-table-md {
-  font-size: 20px;
-  th {min-width: 120px;}
-  th, td {padding: 6px 0;}
-  td {padding-left: 50px;}
+  font-size: toRem(20);
+  th {min-width: toRem(120);}
+  th, td {padding: toRem(6) 0;}
+  td {padding-left: toRem(32)}
 }
 
 @media (max-width: 767px) {
