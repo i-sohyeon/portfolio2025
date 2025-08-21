@@ -44,8 +44,8 @@
       height: toRem(250);
     }
     h3 {
-      font-size: toRem(32);
-      margin-top: -28px;
+      font-size: toRem(30);
+      margin-top: toRem(-16);
       & + p {
         font-size: toRem(20);
       }

@@ -1,10 +1,12 @@
-//  variant
+@import "../../styles/style.scss";
+
+/***** checklist style *****/ 
+// variant (size = sm)
 .checkList {
   li {
     position: relative;
-    // font-size: 20px;
-    margin-top: 12px;
-    padding-left: 24px;
+    margin-top: toRem(12);
+    padding-left: toRem(24);
     &:first-child {
       margin-top: 0;
     }
@@ -15,25 +17,61 @@
       top: 0;
       left: 0;
       background-image: url("../../assets/images/icons/ico-check-blue.png");
-      background-size: 16px 16px;
-      width: 16px;
-      height: 16px;
+      background-size: toRem(16) toRem(16);
+      width: toRem(16);
+      height: toRem(16);
+    }
+  }
+}
+// size
+.ui-textList-md {
+  li {
+    font-size: toRem(20) !important;
+    line-height: 1.2;
+    padding-left: toRem(32);
+  }
+  & > li {
+      &::before {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
     }
   }
 }
 
+@media (max-width: 767px) {
+  .ui-textList-md {
+    li {
+      font-size: toRem(16) !important;
+      line-height: 1.2;
+      padding-left: toRem(24);
+    }
+    & > li {
+        &::before {
+          width: 16px;
+          height: 16px;
+          background-size: 16px 16px;
+      }
+    }
+  }
+}
+
+
+
+
+/***** circleList style *****/ 
 .circleList {
   li {
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: toRem(16);
     span {
       display: inline-block;
-      padding: 18px 8px;
+      padding: toRem(18) toRem(8);
       border-radius: 50%;
       background-color: #fff302;
       text-align: center;
       vertical-align: middle;
-      font-size: 16px;
+      font-size: toRem(16);
       font-family: "tenada";
       max-height: 55px;
       max-width: 55px;
@@ -71,18 +109,7 @@
   }
 }
 
-// size
-.ui-textList-sm {
-  font-size: 16px !important;
-  line-height: 18px;
-}
-.ui-textList-md {
-  li {
-    font-size: 20px !important;
-    line-height: 1.2;
-  }
-  
-}
+
 
 .firstLevelList > li {
   margin-bottom: 24px;

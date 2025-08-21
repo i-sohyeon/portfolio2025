@@ -133,46 +133,42 @@ function Home() {
               variant="list"
               bgColor="type1"
               title="ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정"
-              des="(20202.04~2020.10)"
-            />
+              des="(20202.04~2020.10)" />
             <UIBanner.List
               icon="company"
               number="2021"
               variant="list"
               bgColor="type2"
               title="인조이웍스(enjoy works)"
-              des="(2021.01 ~ 2022.04)"></UIBanner.List>
+              des="(2021.01 ~ 2022.04)" />
             <UIBanner.List
               icon="study"
               number="2022"
               variant="list"
               bgColor="type3"
               title="[프론트엔드] 리액트 (React.js 자바스크립트)_주말"
-              des="(2022.01 ~2022.04)"></UIBanner.List>
+              des="(2022.01 ~2022.04)" />
             <UIBanner.List
               icon="company"
               number="2023"
               variant="list"
               bgColor="type4"
               title="인픽스(INPIX)"
-              des="(2022.06 ~ )"
-            />
+              des="(2022.06 ~ )" />
             <UIBanner.List
               icon="study"
               number="2024"
               variant="list"
               bgColor="type5"
               title="한국방송통신대학교 컴퓨터과학과 편입 (재학중)"
-              des="(2023.09 ~ )"
-            />
+              des="(2023.09 ~ )" />
             <UIBanner.List
               icon="company"
               number="2025"
               variant="list"
               bgColor="type6"
               title="??????"
-              des="(????.?? ~ )"
-            />
+              des="(????.?? ~ )" />
           </div>
 
           <div
@@ -180,12 +176,13 @@ function Home() {
               height: "fit-content",
               backgroundColor: "#FFF302",
               borderRadius: "24px",
-              display: "block",
+              display: "inline-block",
               width: "100%",
               maxWidth: "550px",
               padding: "60px 40px",
               boxSizing: "border-box",
               marginTop: "24px",
+              textAlign:"left",
             }}>
             <div style={{ marginBottom: "32px" }}>
               <UIText.Header as="p" font="tenada" size="md">
@@ -239,7 +236,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th>웹주소</th>
-                        <td>https://www.hyundaicard.com/index.jsp</td>
+                        <td>https://www.hyundaicard.com</td>
                       </tr>
                     </tbody>
                   </table>
@@ -339,7 +336,7 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/kbbank.png"
                 bgColor="brown">
-                         <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -379,8 +376,35 @@ function Home() {
                 imgSrc="assets/images/swiper/playmoongu.png"
                 bgColor="yellow"
                 >
-                  {/* <UITable.Default columns={columns} rows={rows} /> */}
-                <span># 어쩌구</span>
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2021. 01. ~ 2022. 04</td>
+                      </tr>
+                      <tr>
+                        <th>참여도</th>
+                        <td>100% </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>https://playmoongu.com/brand</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#Git</UIBadge>
+                  <UIBadge size="md" variant="line">#재구축</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
 
@@ -391,27 +415,35 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/ddalgicong.png"
                 bgColor="red">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2021. 01. ~ 2022. 04</td>
+                      </tr>
+                      <tr>
+                        <th>참여도</th>
+                        <td>100% </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>https://www.ddalgicong.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#Git</UIBadge>
+                  <UIBadge size="md" variant="line">#재구축</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
        
@@ -422,27 +454,35 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/enjoyworks.png"
                 bgColor="brown">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2021. 01. ~ 2022. 04</td>
+                      </tr>
+                      <tr>
+                        <th>참여도</th>
+                        <td>100% </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>http://enjoyworks.co.kr</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#Git</UIBadge>
+                  <UIBadge size="md" variant="line">#재구축</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
             <SwiperSlide>
@@ -452,58 +492,74 @@ function Home() {
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/goodtraepay.png"
                 bgColor="brown">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2021. 01. ~ 2022. 04</td>
+                      </tr>
+                      <tr>
+                        <th>참여도</th>
+                        <td>100% </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>https://goodtraepay.buyeo.go.kr</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#유지보수</UIBadge>
+                  <UIBadge size="md" variant="line">#Git</UIBadge>
+                  <UIBadge size="md" variant="line">#재구축</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
 
             <SwiperSlide>
               <SlideItem 
-                title="딸기콩(PC/Mobile)"
+                title="딸기콩 관리자"
                 titleColor="green"
                 content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/ddalgicong_admin.png"
                 bgColor="red">
-                <table>
-                  <tbody>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                    <tr>
-                      <th>작업기간</th>
-                      <td>YYYY.MM.DD</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span># 어쩌구</span>
+                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>프로젝트 기간</th>
+                        <td>2021. 01. ~ 2022. 04</td>
+                      </tr>
+                      <tr>
+                        <th>참여도</th>
+                        <td>100% </td>
+                      </tr>
+                      <tr>
+                        <th>사용 툴</th>
+                        <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
+                      </tr>
+                      <tr>
+                        <th>웹주소</th>
+                        <td>.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </UITable.Default>
+                <div className="mt-8">
+                  <UIBadge size="md" variant="line">#유지보수</UIBadge>
+                  <UIBadge size="md" variant="line">#Git</UIBadge>
+                  <UIBadge size="md" variant="line">#재구축</UIBadge>
+                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
+                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                </div>
               </SlideItem>
             </SwiperSlide>
           </UISwiper.Box>
