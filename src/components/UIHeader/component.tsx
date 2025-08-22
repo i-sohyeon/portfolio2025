@@ -25,10 +25,9 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
     }
   };
 
-  function Logo({ children }: { children: React.ReactNode }) {
-    return <div className={styles.logo}>{children}</div>;
+  function Logo({ as: Component = "h1", children }: { as?: React.ElementType; children: React.ReactNode }) {
+    return <Component className={styles.logo}>{children}</Component>;
   }
-
   function Items({ children }: { children: React.ReactNode }) {
     return <ul className={styles.items}>{children}</ul>;
   }
