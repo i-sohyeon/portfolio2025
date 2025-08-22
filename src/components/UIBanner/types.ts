@@ -4,15 +4,16 @@ export type UIBannerBgPattern = 'check';
 export type UITextListIcon = "study" | "company";
 export type UIBannerjContent = "center"
 
-export interface UIBannerProps extends React.HTMLAttributes<HTMLElement> {
-  icon?: UITextListIcon,
-  number?: string,
-  title?: string,
-  des?: string,
-  variant?: UIBannerVariant;
-  bgColor?: UIBannerBgColor;
-  bgPattern?: UIBannerBgPattern;
-  jContent?:UIBannerjContent;
-  color?: string;
-  as?: React.ElementType;
+export interface UIBannerProps {
+  icon?: string;
+  number?: number | string;
+  title: string;
+  des?: string;
+  variant?: string;
+  bgColor?: string;
+  jContent?: string;
+  className?: string;
+  [key: string]: any; // 기타 props 허용
 }
+
+

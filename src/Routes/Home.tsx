@@ -43,7 +43,7 @@ function Home() {
             <UIText.Header size="xl" align="center" variant="mainTitle" as="h1">
               UI &middot; UX
               <br />
-              WEB PUBLISHER
+              <span className="gradient-text">WEB PUBLISHER</span>
               <br />
               <span>PORTFOLIO</span>
             </UIText.Header>
@@ -127,7 +127,7 @@ function Home() {
         <UIBox.Article as="article" >
           <UIText.Header size="lg">경력 CAREER</UIText.Header>
           <UIBox.Div variant="flex" jContent="space-between" aItems="middle" className="pt-0">
-            <UIBox.Div className="mr-5 mb-4">
+            <UIBanner.Wrapper className="mr-5 mb-4" animateOnScroll>
               <UIBanner.List
                 icon="study"
                 number="2020"
@@ -170,7 +170,8 @@ function Home() {
                 bgColor="type6"
                 title="??????"
                 des="(????.?? ~ )" />
-            </UIBox.Div>             
+            </UIBanner.Wrapper>
+            
             <UIBox.Div variant="card">
               <UIText.Header as="p" font="tenada" size="md">
                 프로젝트 경험
@@ -180,8 +181,7 @@ function Home() {
               </UIText.Header>
               <UITextList.Check variant="check" size="md" checkItems={textList} />
             </UIBox.Div>
-          </UIBox.Div>
-          
+          </UIBox.Div>          
         </UIBox.Article>
       </UIContent>
 
