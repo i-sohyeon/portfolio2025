@@ -1,6 +1,8 @@
 @import "../../styles/style.scss";
 
 .ui-header {
+  display: flex;
+  justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
   position: fixed;
@@ -8,9 +10,10 @@
   right: 0;
   transition: "top 0.5s ease-in-out";
   z-index: 100;
-
+  font-size: toRem(30);
   a {
     color: #3f89e6;
+    font-family: 'Bagel fat one';
     text-decoration: none;
   }
 }

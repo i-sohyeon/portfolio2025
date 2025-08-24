@@ -31,7 +31,6 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
   function Items({ children }: { children: React.ReactNode }) {
     return <ul className={styles.items}>{children}</ul>;
   }
-
   function Item({ children }: { children: React.ReactNode }) {
     return <li className={styles.item}>{children}</li>;
   }
@@ -54,15 +53,8 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
     <UIHeader
       className={classes}
       style={{
-        display: "flex",
-        justifyContent: "space-between",
         top: visible ? "0" : "-102px",
-        left: 0,
-        right: 0,
         transition: "top 0.5s ease-in-out",
-        zIndex: 100,
-        fontFamily: "Bagel fat one",
-        fontSize: "30px",
       }}
       {...rest}>
       <Logo>

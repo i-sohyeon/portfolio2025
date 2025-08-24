@@ -1,4 +1,6 @@
-// 텍스트 그라디언트
+
+
+// 텍스트 그라디언트 애니메이션
 .gradient-text {
   // font-size: 4rem;
   // font-weight: 900;
@@ -26,5 +28,42 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+
+// 텍스트가 흐르는 배너
+.txt-banner-wrap {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  .txt-banner {
+    display: flex;
+    .txt-banner-list {
+      display: flex;
+      animation: flow 15s linear infinite;
+      padding: 36px 0;
+
+      &:first-child > span:last-child {
+        // color: red;
+        animation-delay: 0s; // 첫번째 배너 리스트가 끝나면 뒤에 바로 붙음
+      }
+    }
+  }
+}
+
+.txt-banner span {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 36px;
+  width: 100%;
+}
+
+@keyframes flow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

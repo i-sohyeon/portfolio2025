@@ -85,6 +85,7 @@
     h3 {
       font-size: toRem(16);
       margin-bottom: toRem(12);
+      word-break: keep-all;
     }
     p {
       font-size: toRem(12);
@@ -96,7 +97,7 @@
 // 스크롤시에 리스트가 보이게 하는 애니메이션
 .bannerList {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(0px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 

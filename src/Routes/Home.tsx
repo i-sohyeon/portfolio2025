@@ -39,22 +39,19 @@ function Home() {
       <UIContent bgColor="gray" bgPattern="check">
         <UIHeader size="md">S.H.LEE</UIHeader>
         <UIBox.Article align="center" style={{ padding: "240px 0 220px 0" }}>
-          <div>
-            <UIText.Header size="xl" align="center" variant="mainTitle" as="h1">
-              UI &middot; UX
-              <br />
-              <span className="gradient-text">WEB PUBLISHER</span>
-              <br />
-              <span>PORTFOLIO</span>
-            </UIText.Header>
-          </div>
+          <UIText.Header size="xl" align="center" variant="mainTitle" as="h1">
+            UI &middot; UX
+            <br />
+            <span className="gradient-text">WEB PUBLISHER</span>
+            <br />
+            <span>PORTFOLIO</span>
+          </UIText.Header>
         </UIBox.Article>
       </UIContent>
 
       <UIContent
         bgColor="black"
-        className="txt-banner-wrap"
-        style={{ overflowX: "hidden", padding: "36px 0" }}>
+        className="txt-banner-wrap">
         <div className="txt-banner">
           <div className="txt-banner-list">
             <UIText.Basic font="tenada" size="lg" color="white">
@@ -173,7 +170,7 @@ function Home() {
             </UIBanner.Wrapper>
             
             <UIBox.Div variant="card">
-              <UIText.Header as="p" font="tenada" size="md">
+              <UIText.Header as="p" font="tenada" size="md" className="mb-1">
                 프로젝트 경험
               </UIText.Header>
               <UIText.Header as="p" font="tenada" size="md" color="blue">
@@ -238,7 +235,7 @@ function Home() {
             </SwiperSlide>
 
             <SwiperSlide>
-            <SlideItem 
+              <SlideItem 
                 title="우리은행 won 뱅킹 재구축"
                 titleColor="blue"
                 content="Adaptive Page Publishing"
