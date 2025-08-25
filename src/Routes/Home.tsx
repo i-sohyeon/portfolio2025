@@ -121,8 +121,8 @@ function Home() {
       </UIContent>
 
       <UIContent bgColor="blue" bgPattern="waveyellow">
-        <UIBox.Article as="article" >
-          <UIText.Header size="lg">경력 CAREER</UIText.Header>
+        <UIBox.Article as="article" align="center">
+          <UIText.Header size="lg" align="left">경력 CAREER</UIText.Header>
           <UIBox.Div variant="flex" jContent="space-between" aItems="middle" className="pt-0">
             <UIBanner.Wrapper className="mr-5 mb-4" animateOnScroll>
               <UIBanner.List
@@ -131,7 +131,8 @@ function Home() {
                 variant="list"
                 bgColor="type1"
                 title="ui/ux 스마트웹&앱디자인 (웹 퍼블리싱&프론트엔드) 실무과정"
-                des="(20202.04~2020.10)" />
+                des="(20202.04~2020.10)" 
+                align="left" />
               <UIBanner.List
                 icon="company"
                 number="2021"

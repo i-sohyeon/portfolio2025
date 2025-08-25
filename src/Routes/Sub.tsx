@@ -8,6 +8,7 @@ import {
   UIDivider,
   UIParagraph,
 } from "../components/v1";
+import "../styles/style.scss"
 
 function Sub() {
   const data01 = [
@@ -172,48 +173,62 @@ function Sub() {
     <UIContent bgColor="navy">
       <UIHeader size="md">S.H.LEE</UIHeader>
       <UIBox.Article variant="content">
-        <UIText.Header size="lg" color="white">
+        <UIText.Header size="lg" color="white" as="h2">
           EXPERIENCE DETAIL
         </UIText.Header>
 
-        <UIBox.Article display="flex" jContent="space-between">
-          <UIParagraph
-            title="현대카드"
-            period="2025.01 ~"
-            subTitle="현대카드 앱/웹 운영"
-            desc="CMS를 통한 현대카드 웹사이트 PC/MO 버전 운영 관리"
-          />
-          <UITextList.Nested nestedItems={data01} style={{maxWidth: "650px"}}/>
-        </UIBox.Article>
+        <UIBox.Div display="flex" jContent="space-between">
+          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
+            <UIParagraph
+              title="현대카드"
+              period="2025.01 ~"
+              subTitle="현대카드 앱/웹 운영"
+              desc="CMS를 통한 현대카드 웹사이트 PC/MO 버전 운영 관리"
+            />
+            <div className="mt-2">
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                React
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                크로스브라우징
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                접근성
+              </UIBadge>
+            </div>
+          </UIBox.Div>
+          <UITextList.Nested nestedItems={data01}  style={{maxWidth: "650px"}}/>
+        </UIBox.Div>
 
         <UIDivider variant="type1" />
 
-        <UIBox.Article display="flex" jContent="space-between">
+        <UIBox.Div display="flex" jContent="space-between">
+          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
           <UIParagraph
             title="우리은행"
             period="2024.04 ~ 2024.12 (약 8개월)"
             subTitle="우리 won 뱅킹 재구축 사업"
           />
-          <div style={{ marginRight: "64px" }}>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              React
-            </UIBadge>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              크로스브라우징
-            </UIBadge>
-          </div>
+            <div>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                React
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                크로스브라우징
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                접근성
+              </UIBadge>
+            </div>
 
+          </UIBox.Div>
           <UITextList.Nested nestedItems={data02} style={{maxWidth: "650px"}}/>
-        </UIBox.Article>
+        </UIBox.Div>
 
         <UIDivider variant="type1" />
 
-        <UIBox.Article
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}>
-          <div style={{ marginRight: "64px" }}>
+        <UIBox.Div display="flex" jContent="space-between">
+          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
             <UIText.Basic size="md" color="white" className="mr-2">
               농협은행
             </UIText.Basic>
@@ -228,33 +243,21 @@ function Sub() {
               weight="bold">
               올원뱅크 리뉴얼 구축
             </UIText.Basic>
-            {/* <UIText.Basic
-              size="fs20"
-              color="white"
-              display="block"
-              className="mb-5"
-              opacity="80">
-              KB 멤버십 플랫폼 구축
-            </UIText.Basic> */}
             <UIBadge variant="solid" bgColor="navy" size="sm">
               퍼블리싱
             </UIBadge>
             <UIBadge variant="solid" bgColor="navy" size="sm">
               크로스브라우징
             </UIBadge>
-          </div>
+          </UIBox.Div>
 
           <UITextList.Nested nestedItems={data03} style={{maxWidth: "650px"}} />
-        </UIBox.Article>
+        </UIBox.Div>
 
         <UIDivider variant="type1" />
 
-        <UIBox.Article
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}>
-          <div style={{ marginRight: "64px" }}>
+        <UIBox.Div display="flex" jContent="space-between">
+          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
             <UIText.Basic size="md" color="white" className="mr-2">
               KB국민은행
             </UIText.Basic>
@@ -286,19 +289,15 @@ function Sub() {
             <UIBadge variant="solid" bgColor="navy" size="sm">
               gulp
             </UIBadge>
-          </div>
+          </UIBox.Div>
 
           <UITextList.Nested nestedItems={data04} style={{maxWidth: "650px"}} />
-        </UIBox.Article>
+        </UIBox.Div>
 
         <UIDivider variant="type1" />
 
-        <UIBox.Article
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}>
-          <div style={{ marginRight: "64px" }}>
+        <UIBox.Div display="flex" jContent="space-between">
+          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
             <UIText.Basic size="md" color="white" className="mr-2">
               KB국민은행
             </UIText.Basic>
@@ -328,10 +327,11 @@ function Sub() {
             <UIBadge variant="solid" bgColor="navy" size="sm">
               크로스브라우징
             </UIBadge>
-          </div>
+          </UIBox.Div>
 
-          <UITextList.Nested nestedItems={data05} style={{minWidth: "650px",}} />
-        </UIBox.Article>
+          <UITextList.Nested nestedItems={data05} style={{maxWidth: "650px"}} />
+          
+        </UIBox.Div>
       </UIBox.Article>
     </UIContent>
   );
