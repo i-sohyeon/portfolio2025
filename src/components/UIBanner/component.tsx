@@ -6,8 +6,8 @@ import styles from "./styles.module.scss";
 // useInView.ts
 import { useEffect, useRef, useState } from "react";
 
-// threshold: 가시성 퍼센트 (default: 0.2)
-export function useInView(threshold = 0.2) {
+// threshold: 가시성 퍼센트 (default: 0.5)
+export function useInView(threshold = 0.5) {
   const ref = useRef<HTMLLIElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -49,6 +49,7 @@ const List: React.FC<UIBannerProps> = ({
   bgColor,
   jContent,
   className,
+  align,
   ...rest
 }) => {
   const { animateOnScroll } = useContext(BannerContext);
@@ -60,6 +61,7 @@ const List: React.FC<UIBannerProps> = ({
     variant && styles[`ui-banner-${variant}`],
     bgColor && styles[`ui-banner-${bgColor}`],
     jContent && styles[`ui-banner-${jContent}`],
+    align && styles[`ui-banner-${align}`],
     className,
   ]
     .filter(Boolean)
@@ -68,7 +70,7 @@ const List: React.FC<UIBannerProps> = ({
   return (
     <li
       ref={animateOnScroll ? ref : null}
-      className={`${styles.bannerList} ${classes} ${
+      className={`${classes} ${
         animateOnScroll && isVisible ? styles.show : ""
       }`}
       {...rest}

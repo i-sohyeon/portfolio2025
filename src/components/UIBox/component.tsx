@@ -17,12 +17,12 @@ export const Article: React.FC<UIBoxProps> = ({
 }) => {
   const classes = [
     styles["ui-box-article"],
-    styles[`ui-box-article-${variant}`],
-    styles[`ui-box-article-${bgColor}`],
-    styles[`ui-box-article-${align}`],
-    styles[`ui-box-article-${display}`],
-    styles[`ui-box-article-${jContent}`],
-    styles[`ui-box-article-${aItems}`],
+    styles[`ui-box-${variant}`],
+    styles[`ui-box-${bgColor}`],
+    styles[`ui-box-${align}`],
+    styles[`ui-box-${display}`],
+    styles[`ui-box-${jContent}`],
+    styles[`ui-box-${aItems}`],
     className,
   ]
     .filter(Boolean)
@@ -50,12 +50,12 @@ export const Div: React.FC<UIBoxProps> = ({
 }) => {
   const classes = [
     styles["ui-box-div"],
-    styles[`ui-box-div-${variant}`],
-    styles[`ui-box-div-${bgColor}`],
-    styles[`ui-box-div-${align}`],
-    styles[`ui-box-div-${display}`],
-    styles[`ui-box-div-${jContent}`],
-    styles[`ui-box-div-${aItems}`],
+    styles[`ui-box-${variant}`],
+    styles[`ui-box-${bgColor}`],
+    styles[`ui-box-${align}`],
+    styles[`ui-box-${display}`],
+    styles[`ui-box-${jContent}`],
+    styles[`ui-box-${aItems}`],
     className,
   ]
     .filter(Boolean)

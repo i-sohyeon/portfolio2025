@@ -3,13 +3,13 @@
   @return lighten($color, $amount);
 }
 
-@function toRem($px) {
+@function rem($px) {
   @return ($px / 16) + rem;
 }
 
 // helper class
 /** margin **/
-$margin-sizes: toRem(4), toRem(8), toRem(12), toRem(16), toRem(20), toRem(24), toRem(28), toRem(32), toRem(36), 40px, 44px, 48px, 52px, 56px, 60px;
+$margin-sizes: rem(4), rem(8), rem(12), rem(16), rem(20), rem(24), rem(28), rem(32), rem(36), 40px, 44px, 48px, 52px, 56px, 60px;
 @each $size in $margin-sizes {
   .mt-#{index($margin-sizes, $size)} {
     margin-top: $size !important;

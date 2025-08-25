@@ -2,7 +2,6 @@
 
 .ui-badge {
   display: inline-block;
-  // border-radius: 24px;
 }
 
 /** variant **/
@@ -20,23 +19,23 @@
 }
 /** size **/
 .ui-badge-sm {
-  padding: toRem(2) toRem(4);
-  margin-left: 8px;
-  border-radius: toRem(2);
-  font-size: toRem(12);
+  padding: rem(2) rem(4);
+  // margin-left: 8px;
+  border-radius: rem(2);
+  font-size: rem(12);
 }
-
+.ui-badge-sm + .ui-badge-sm {margin-left: rem(8);}
 .ui-badge-md {
-  padding: toRem(8);
-  margin-left: toRem(8);
-  border-radius: toRem(4);
-  font-size: toRem(16);
+  padding: rem(8);
+  margin-left: rem(8);
+  border-radius: rem(4);
+  font-size: rem(16);
 }
 @media (max-width: 767px) {
   .ui-badge-md {
-    padding: toRem(4);
-    margin-left: toRem(4);
-    border-radius: toRem(2);
-    font-size: toRem(12);
+    padding: rem(4);
+    margin-left: rem(4);
+    border-radius: rem(2);
+    font-size: rem(12);
   }
 }

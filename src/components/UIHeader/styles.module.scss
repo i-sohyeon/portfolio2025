@@ -10,21 +10,27 @@
   right: 0;
   transition: "top 0.5s ease-in-out";
   z-index: 100;
-  font-size: toRem(30);
+  font-size: rem(30);
+  // size
+  &-md {
+    padding: rem(36) rem(24);
+  }
+  &-lg {
+    padding: rem(40) rem(32);
+  }
   a {
     color: #3f89e6;
     font-family: 'Bagel fat one';
     text-decoration: none;
   }
+  button.menu {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none; /* 기본 데스크톱에서는 숨김 */
+  }
 }
 
-// size
-.ui-header-md {
-  padding: toRem(36) toRem(24);
-}
-.ui-header-lg {
-  padding: toRem(40) toRem(32);
-}
 
 .items {
   display: flex;
@@ -34,29 +40,59 @@
       scale: 1.3;
     }
     & + .item {
-      margin-left: toRem(28);
+      margin-left: rem(28);
     }
   }
 }
 
-@media (max-width: 767px) {
-  .ui-header-md {
-    padding: toRem(36) toRem(20);
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+  .ui-header {
+    &-md {
+      padding: rem(24);
+    }
+    &-lg {
+      padding: rem(36) rem(28);
+    }
   }
-  .ui-header-lg {
-    padding: toRem(40) toRem(24);
+  
+  .menu {
+    display: block !important; /* 버튼 보이기 */
+    width: rem(36);
+    height: rem(36);
+    background-color: red;
+    margin-right: rem(40);
   }
-  .items {
-    display: block;
-    .item {
-      transition: none;
-      &:hover {
-        scale: 1;
+   .nav{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+   }
+  .open {
+    position: absolute;
+    top: rem(80);
+    right: rem(24);
+    display: block !important;
+    opacity: 1;
+    overflow: visible;
+    transition: .5s;
+    background: rgba(256,256,256,.2);
+    border-radius: rem(16);
+    border: 2px solid #111111;
+    padding: rem(16);
+    ul {
+      display: block;
+      li {
+        margin-left: 0 !important;
+        margin-bottom: rem(12);
+        a{
+          display: block;
+          height: rem(36);
+        }
       }
-      & + .item {
-        margin-left: toRem(0);
-        margin-bottom: toRem(4);
-      }
+      li:last-child {margin-bottom: 0;}
     }
   }
 }

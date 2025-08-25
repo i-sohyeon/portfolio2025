@@ -13,6 +13,8 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
   children,
   ...rest
 }) => {
+
+  // 스크롤 시 메뉴 보이지 않게 애니메이션 효과
   const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
@@ -40,6 +42,12 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // 반응형일때 토글 메뉴로
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(prev => !prev);
+  };
+
   const classes = [
     styles["ui-header"],
     styles[`ui-header-${variant}`],
@@ -53,30 +61,36 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
     <UIHeader
       className={classes}
       style={{
-        top: visible ? "0" : "-102px",
+        top: visible ? "0" : "-300px",
         transition: "top 0.5s ease-in-out",
       }}
       {...rest}>
       <Logo>
         <Link to="/">{children}</Link>
       </Logo>
-      <Items>
-        <Item>
-          <Link to="https://github.com/i-sohyeon" target="_blank">
-            <UIIcon variant="github" size="lg" />
-          </Link>
-        </Item>
-        <Item>
-          <Link to="/" target="_blank">
-            <UIIcon variant="tistory" size="lg" />
-          </Link>
-        </Item>
-        <Item>
-          <Link to="/" target="_blank">
-            <UIIcon variant="codepen" size="lg" />
-          </Link>
-        </Item>
-      </Items>
+      <button  className={styles.menu} aria-expanded={isOpen} onClick={toggleMenu}>
+        메뉴
+      </button>
+      <nav className={isOpen ? styles.open : styles.nav}>
+        <Items>
+          <Item>
+            <Link to="https://github.com/" target="_blank">
+              <UIIcon variant="github" size="lg" />
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/" target="_blank">
+              <UIIcon variant="tistory" size="lg" />
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/" target="_blank">
+              <UIIcon variant="codepen" size="lg" />
+            </Link>
+          </Item>
+        </Items>
+      </nav>
+   
     </UIHeader>
   );
 };

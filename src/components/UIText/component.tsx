@@ -43,7 +43,7 @@ export const Header: React.FC<UITextHeaderProps> = ({
   font,
   variant,
   color,
-  // as = "div",
+  as = "h2",
   className,
   children,
   button,

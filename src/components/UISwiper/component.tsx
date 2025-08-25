@@ -53,7 +53,7 @@ export const Box: React.FC<SwiperProps> = ({
       ref={swiperBoxRef}
       onSwiper={handleSwiper}
       modules={[Navigation, Pagination, A11y, Autoplay]}
-      spaceBetween={50}
+      spaceBetween={30}
       slidesPerView={1.5}
       breakpoints={{
         320: {

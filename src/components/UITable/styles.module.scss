@@ -5,19 +5,19 @@
 }
 
 .ui-table-md {
-  font-size: toRem(20);
-  th {min-width: toRem(120);}
-  th, td {padding: toRem(6) 0;}
-  td {padding-left: toRem(32)}
+  font-size: rem(20);
+  th {min-width: rem(120);}
+  th, td {padding: rem(6) 0;}
+  td {padding-left: rem(32)}
 }
 
 @media (max-width: 767px) {
   .ui-table-md {
-    font-size: toRem(14);
-    th {min-width: toRem(88);}
-    th, td {padding: toRem(4) toRem(0);}
+    font-size: rem(14);
+    th {min-width: rem(88);}
+    th, td {padding: rem(4) rem(0);}
     td {
-      padding-left: toRem(0);
+      padding-left: rem(0);
     }
   }
 }
