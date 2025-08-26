@@ -14,6 +14,7 @@ import {
   UIBadge,
   UIAccordion,
   UIDivider,
+  UIScroll,
 } from "../components/v1";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
@@ -556,6 +557,8 @@ function Home() {
           
         </UIBox.Article>
       </UIContent>
+
+      <UIScroll.TopButton/>
     </>
   );
 }

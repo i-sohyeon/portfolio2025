@@ -7,6 +7,7 @@ import {
   UIBadge,
   UIDivider,
   UIParagraph,
+  UIScroll,
 } from "../components/v1";
 import "../styles/style.scss"
 
@@ -296,6 +297,8 @@ function Sub() {
           
         </UIBox.Div>
       </UIBox.Article>
+      <UIScroll.TopButton/>
+
     </UIContent>
   );
 }

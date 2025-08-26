@@ -8,6 +8,7 @@ export * from "./UIDivider/index";
 export * from "./UIHeader/index";
 export * from "./UIIcon/index";
 export * from "./UIParagraph/index";
+export * from "./UIScroll";
 export * from "./UISwiper/index";
 export * from "./UIText/index";
 export * from "./UITextList/index";
