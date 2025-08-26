@@ -78,6 +78,9 @@
   }
 
   /*** a 링크 태그 스타일 ***/ 
+  .headerLink {
+    color: red;
+  }
   &:has(a) {
     display: flex;
     align-items: center;
@@ -85,10 +88,25 @@
   }
 
   a {
+    position: relative;
+    padding-right: rem(32);
     font-size: rem(20);
     word-break: keep-all;
     text-align: right;
-    &:hover {color: #3e8ae3;}
+    transition: .5s;
+    &:hover {margin-top: rem(-12);}
+
+    &::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: rem(-1);
+      background-image: url(../../assets/images/icons/ico-arrow-r.png);
+      width: rem(20);
+      height: rem(20);
+      background-size: rem(20) rem(20);
+    }
   }
 }
 
