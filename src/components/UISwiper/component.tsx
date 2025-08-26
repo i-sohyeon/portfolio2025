@@ -105,7 +105,8 @@ export const SlideItem = ({
     <div ref={swiperContentRef} className={`${styles.slideItem} ${classes}`}>
       <img src={imgSrc} alt="" />
       <h3 className={`${colorClass} ${classes}`}>{title}</h3>
-      <p className={colorClass}>{content}</p>
+      {/* <p className={colorClass}>{content}</p> */}
+      {content && <p className={colorClass}>{content}</p>}
       {children}
     </div>
   );

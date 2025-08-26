@@ -13,6 +13,7 @@ import {
   UITable,
   UIBadge,
   UIAccordion,
+  UIDivider,
 } from "../components/v1";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
@@ -190,7 +191,7 @@ function Home() {
         <UIBox.Article variant="content">
           <UIText.Header variant="h3" size="lg">
             PROJECT DETAILS
-            <Link to="/Sub">경력기술서로 확인하기</Link>
+            <Link to="/Sub">경력기술서 확인하기</Link>
           </UIText.Header>
 
           <UISwiper.Box
@@ -202,10 +203,10 @@ function Home() {
               <SlideItem 
                 title="현대카드 web/app 운영"
                 titleColor="black"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/hyundaicard.png"
                 bgColor="gray">
-                 <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -218,11 +219,11 @@ function Home() {
                       </tr>
                       <tr>
                         <th>사용 툴</th>
-                        <td>CMS, VSCODE, Figma, HTML, CSS, JQuery, Javascript, Photoshop</td>
+                        <td>CMS, VSCode, Figma, HTML, CSS, JQuery, Javascript</td>
                       </tr>
                       <tr>
                         <th>웹주소</th>
-                        <td>https://www.hyundaicard.com</td>
+                        <td><a href="https://www.hyundaicard.com" target="_blank">www.hyundaicard.com</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -239,11 +240,11 @@ function Home() {
               <SlideItem 
                 title="우리은행 won 뱅킹 재구축"
                 titleColor="blue"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/wooribank.png"
                 bgColor="light-blue">
 
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -256,7 +257,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th>사용 툴</th>
-                        <td>VSCODE, Figma, React, css(scss), Typescript, Git</td>
+                        <td>VSCode, Figma, React, css(scss), Typescript, Git</td>
                       </tr>
                       <tr>
                         <th>웹주소</th>
@@ -277,10 +278,10 @@ function Home() {
               <SlideItem 
                 title="농협 올원뱅크 리뉴얼 구축"
                 titleColor="yellow"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/nhbank.png"
                 bgColor="green">
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -314,10 +315,10 @@ function Home() {
               <SlideItem 
                 title="KB국민은행 멤버십 플랫폼"
                 titleColor="yellow"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/kbbank.png"
                 bgColor="brown">
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -330,7 +331,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th>사용 툴</th>
-                        <td>VSCode, Html, Css, JQuery, Javascript, Gulp, Figma, CMS </td>
+                        <td>VSCode, Html, Scss, JQuery, Javascript, Gulp, Figma, CMS </td>
                       </tr>
                       <tr>
                         <th>웹주소</th>
@@ -351,11 +352,11 @@ function Home() {
               <SlideItem 
                 title="문구야놀자(PC/Mobile)"
                 titleColor="purple"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/playmoongu.png"
                 bgColor="yellow"
                 >
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -372,17 +373,16 @@ function Home() {
                       </tr>
                       <tr>
                         <th>웹주소</th>
-                        <td>https://playmoongu.com/brand</td>
+                        <td><a href="https://playmoongu.com/brand" target="_blank">playmoongu.com/brand</a></td>
                       </tr>
                     </tbody>
                   </table>
                 </UITable.Default>
                 <div className="mt-4">
-                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#반응형</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
-                  <UIBadge size="md" variant="line">#재구축</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
-                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                  <UIBadge size="md" variant="line">#구축</UIBadge>
+                  <UIBadge size="md" variant="line">#gulp</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -391,10 +391,10 @@ function Home() {
               <SlideItem 
                 title="딸기콩(PC/Mobile)"
                 titleColor="green"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/ddalgicong.png"
                 bgColor="red">
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -411,17 +411,16 @@ function Home() {
                       </tr>
                       <tr>
                         <th>웹주소</th>
-                        <td>https://www.ddalgicong.com</td>
+                        <td><a href="https://www.ddalgicong.com" target="_blank">www.ddalgicong.com</a></td>
                       </tr>
                     </tbody>
                   </table>
                 </UITable.Default>
                 <div className="mt-4">
-                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#gulp</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
-                  <UIBadge size="md" variant="line">#재구축</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
-                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                  <UIBadge size="md" variant="line">#구축</UIBadge>
+                  <UIBadge size="md" variant="line">#반응형</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -430,10 +429,10 @@ function Home() {
               <SlideItem 
                 title="인조이웍스 홈페이지"
                 titleColor="yellow"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/enjoyworks.png"
                 bgColor="brown">
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -450,17 +449,16 @@ function Home() {
                       </tr>
                       <tr>
                         <th>웹주소</th>
-                        <td>http://enjoyworks.co.kr</td>
+                        <td><a href="http://enjoyworks.co.kr" target="_blank">enjoyworks.co.kr</a></td>
                       </tr>
                     </tbody>
                   </table>
                 </UITable.Default>
                 <div className="mt-4">
-                  <UIBadge size="md" variant="line">#디버깅</UIBadge>
+                  <UIBadge size="md" variant="line">#반응형</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
-                  <UIBadge size="md" variant="line">#재구축</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
-                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                  <UIBadge size="md" variant="line">#구축</UIBadge>
+                  <UIBadge size="md" variant="line">#gulp</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -468,10 +466,10 @@ function Home() {
               <SlideItem 
                 title="굿뜨래페이"
                 titleColor="yellow"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/goodtraepay.png"
                 bgColor="brown">
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -488,7 +486,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th>웹주소</th>
-                        <td>https://goodtraepay.buyeo.go.kr</td>
+                        <td><a href="https://goodtraepay.buyeo.go.kr" target="_blank">goodtraepay.buyeo.go.kr</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -496,9 +494,8 @@ function Home() {
                 <div className="mt-4">
                   <UIBadge size="md" variant="line">#유지보수</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
-                  <UIBadge size="md" variant="line">#재구축</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
-                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                  <UIBadge size="md" variant="line">#적응형</UIBadge>
+                  <UIBadge size="md" variant="line">#gulp</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -507,10 +504,10 @@ function Home() {
               <SlideItem 
                 title="딸기콩 관리자"
                 titleColor="green"
-                content="Adaptive Page Publishing"
+                // content="Adaptive Page Publishing"
                 imgSrc="assets/images/swiper/ddalgicong_admin.png"
                 bgColor="red">
-                <UITable.Default className="mt-5" variant="type1" size="md" align="left">
+                <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <tbody>
                       <tr>
@@ -536,8 +533,8 @@ function Home() {
                   <UIBadge size="md" variant="line">#유지보수</UIBadge>
                   <UIBadge size="md" variant="line">#Git</UIBadge>
                   <UIBadge size="md" variant="line">#재구축</UIBadge>
-                  <UIBadge size="md" variant="line">#MoWeb</UIBadge>
-                  <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                  <UIBadge size="md" variant="line">#부트스트랩</UIBadge>
+                  <UIBadge size="md" variant="line">#gulp</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -555,6 +552,8 @@ function Home() {
               <li>⌨️ 키보드 네비게이션 지원</li>
             </ul>
           </UIAccordion.Line>
+          <UIDivider variant="type1" />
+          
         </UIBox.Article>
       </UIContent>
     </>

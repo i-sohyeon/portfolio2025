@@ -22,7 +22,7 @@ export interface SwiperProps extends React.HTMLAttributes<HTMLElement> {
 export interface SlideItemProps {
   title: string;
   titleColor?: SwiperTextColor;
-  content: string;
+  content?: string;
   imgSrc: string;
   children?: React.ReactNode;
   bgColor?: SwiperBgColor;

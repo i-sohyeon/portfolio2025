@@ -68,8 +68,14 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
       <Logo>
         <Link to="/">{children}</Link>
       </Logo>
-      <button  className={styles.menu} aria-expanded={isOpen} onClick={toggleMenu}>
-        메뉴
+      <button
+        className={`${styles.menu} ${isOpen ? styles.menuOpen : ""}`}
+        aria-expanded={isOpen}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
       <nav className={isOpen ? styles.open : styles.nav}>
         <Items>

@@ -229,26 +229,19 @@ function Sub() {
 
         <UIBox.Div display="flex" jContent="space-between">
           <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
-            <UIText.Basic size="md" color="white" className="mr-2">
-              농협은행
-            </UIText.Basic>
-            <UIText.Basic size="xxs" color="white" opacity="50">
-              2023.08 ~ 2024.03 (약 7개월)
-            </UIText.Basic>
-            <UIText.Basic
-              size="sm"
-              color="white"
-              display="block"
-              className="mb-2 mt-2"
-              weight="bold">
-              올원뱅크 리뉴얼 구축
-            </UIText.Basic>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              퍼블리싱
-            </UIBadge>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              크로스브라우징
-            </UIBadge>
+          <UIParagraph
+            title="농협은행"
+            period="2023.08 ~ 2024.03 (약 7개월)"
+            subTitle="올원뱅크 리뉴얼 구축"
+          />
+            <div>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                퍼블리싱
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                크로스브라우징
+              </UIBadge>
+            </div>
           </UIBox.Div>
 
           <UITextList.Nested nestedItems={data03} style={{maxWidth: "650px"}} />
@@ -258,37 +251,23 @@ function Sub() {
 
         <UIBox.Div display="flex" jContent="space-between">
           <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
-            <UIText.Basic size="md" color="white" className="mr-2">
-              KB국민은행
-            </UIText.Basic>
-            <UIText.Basic size="xxs" color="white" opacity="50">
-              2022.11 ~ 2023.07 (약 8개월)
-            </UIText.Basic>
-            <UIText.Basic
-              size="sm"
-              color="white"
-              display="block"
-              className="mb-2 mt-2"
-              weight="bold">
-              KB 국민은행 그룹 멤버십플랫폼 개발의뢰
-            </UIText.Basic>
-            <UIText.Basic
-              size="sm"
-              color="white"
-              display="block"
-              className="mb-5"
-              opacity="80">
-              KB 멤버십 플랫폼 구축
-            </UIText.Basic>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              퍼블리싱
-            </UIBadge>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              web view
-            </UIBadge>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              gulp
-            </UIBadge>
+            <UIParagraph
+              title="KB국민은행"
+              period="2022.11 ~ 2023.07 (약 8개월)"
+              subTitle="KB 국민은행 그룹 멤버십플랫폼 개발의뢰"
+              desc="KB 멤버십 플랫폼 구축"
+            />
+            <div className="mt-2">
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                퍼블리싱
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                web view
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                gulp
+              </UIBadge>
+            </div>
           </UIBox.Div>
 
           <UITextList.Nested nestedItems={data04} style={{maxWidth: "650px"}} />
@@ -298,37 +277,21 @@ function Sub() {
 
         <UIBox.Div display="flex" jContent="space-between">
           <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
-            <UIText.Basic size="md" color="white" className="mr-2">
-              KB국민은행
-            </UIText.Basic>
-            <UIText.Basic size="xxs" color="white" opacity="50">
-              2022.07 ~ 2022.11 (약 4개월)
-            </UIText.Basic>
-            <UIText.Basic
-              size="sm"
-              color="white"
-              display="block"
-              className="mb-2 mt-2"
-              weight="bold">
-              태블릿브랜치 금융투자 상품 판매 프로세스 구축
-            </UIText.Basic>
-            <UIText.Basic
-              size="sm"
-              color="white"
-              display="block"
-              className="mb-5"
-              opacity="80">
-              은행 직원이 태블릿을 사용하여 금융 업무를 처리할 수 있도록 하는
-              프로세스 구축
-            </UIText.Basic>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              퍼블리싱
-            </UIBadge>
-            <UIBadge variant="solid" bgColor="navy" size="sm">
-              크로스브라우징
-            </UIBadge>
+            <UIParagraph
+              title="KB국민은행"
+              period="2022.07 ~ 2022.11 (약 4개월)"
+              subTitle="태블릿브랜치 금융투자 상품 판매 프로세스 구축"
+              desc="은행 직원이 태블릿을 사용하여 금융 업무를 처리할 수 있도록 하는 프로세스 구축"
+            />
+            <div className="mt-2">
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                퍼블리싱
+              </UIBadge>
+              <UIBadge variant="solid" bgColor="navy" size="sm">
+                크로스브라우징
+              </UIBadge>
+            </div>
           </UIBox.Div>
-
           <UITextList.Nested nestedItems={data05} style={{maxWidth: "650px"}} />
           
         </UIBox.Div>
