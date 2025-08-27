@@ -6,14 +6,27 @@ export const UIDivider: React.FC<UIDividerProps> = ({
   variant,
   children,
   className,
+  margin,
 }) => {
   const classes = [
     styles["ui-divider"],
-    styles[`ui-divider-${variant}`],
+    variant && styles[`ui-divider-${variant}`],
     className,
   ]
     .filter(Boolean)
     .join(" ");
 
-  return <div className={classes}>{children}</div>;
+  // margin 스타일 객체 생성
+  const style = margin
+    ? {
+        margin: typeof margin === "number" ? `${margin}px` : margin,
+      }
+    : undefined;
+
+  return (
+    <div className={classes} style={style}>
+      {children}
+    </div>
+  );
 };
+

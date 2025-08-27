@@ -549,11 +549,11 @@ function Home() {
           <UIAccordion.Line variant="line" id="acc-1" title="1. 접근성 (Accessibility)">
             <ul>
               <li>🎨 웹 콘텐츠 접근성 지침(WCAG) 준수명도 대비 기준 충족 (예: 텍스트/배경 대비 4.5:1 이상)</li>
-              <li>📑 시멘틱 태그 사용 &rbrace;header&gt;, &rbrace;nav&gt;, &rbrace;main&gt;, &rbrace;footer&gt;</li>
+              <li>📑 시멘틱 태그 사용 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;</li>
               <li>⌨️ 키보드 네비게이션 지원</li>
             </ul>
           </UIAccordion.Line>
-          <UIDivider variant="type1" />
+          <UIDivider variant="type1" margin="0"/>
           
         </UIBox.Article>
       </UIContent>

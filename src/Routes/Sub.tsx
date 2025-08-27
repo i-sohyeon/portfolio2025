@@ -201,7 +201,7 @@ function Sub() {
           <UITextList.Nested nestedItems={data01}  style={{maxWidth: "650px"}}/>
         </UIBox.Div>
 
-        <UIDivider variant="type1" />
+        <UIDivider variant="type1" margin="60px 0" />
 
         <UIBox.Div display="flex" jContent="space-between">
           <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
@@ -226,7 +226,7 @@ function Sub() {
           <UITextList.Nested nestedItems={data02} style={{maxWidth: "650px"}}/>
         </UIBox.Div>
 
-        <UIDivider variant="type1" />
+        <UIDivider variant="type1" margin="60px 0" />
 
         <UIBox.Div display="flex" jContent="space-between">
           <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
@@ -248,7 +248,7 @@ function Sub() {
           <UITextList.Nested nestedItems={data03} style={{maxWidth: "650px"}} />
         </UIBox.Div>
 
-        <UIDivider variant="type1" />
+        <UIDivider variant="type1" margin="60px 0" />
 
         <UIBox.Div display="flex" jContent="space-between">
           <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
@@ -274,7 +274,7 @@ function Sub() {
           <UITextList.Nested nestedItems={data04} style={{maxWidth: "650px"}} />
         </UIBox.Div>
 
-        <UIDivider variant="type1" />
+        <UIDivider variant="type1" margin="60px 0" />
 
         <UIBox.Div display="flex" jContent="space-between">
           <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>

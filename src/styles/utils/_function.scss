@@ -24,8 +24,3 @@ $margin-sizes: rem(4), rem(8), rem(12), rem(16), rem(20), rem(24), rem(28), rem(
     margin-right: $size !important;
   }
 }
-
-/** px to rem **/
-// @function px-to-rem($px-value) {
-//   @return ($px-value / 16) + rem;
-// }

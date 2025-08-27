@@ -5,3 +5,13 @@
     font-size: rem(24);
   }
 }
+.accordion {
+  button {
+    padding: rem(32) 0;
+    background: none;
+  }
+  > div {
+    background: rgba(256,256,256,0.2);
+    padding: rem(32);
+  }
+}
