@@ -82,16 +82,19 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
           <Item>
             <Link to="https://github.com/" target="_blank">
               <UIIcon variant="github" size="lg" />
+              <span className="sr-only">깃허브 바로가기</span>
             </Link>
           </Item>
           <Item>
-            <Link to="/" target="_blank">
+            <Link to="https://github.com/" target="_blank">
               <UIIcon variant="tistory" size="lg" />
+              <span className="sr-only">티스토리 바로가기</span>
             </Link>
           </Item>
           <Item>
-            <Link to="/" target="_blank">
+            <Link to="https://github.com/" target="_blank">
               <UIIcon variant="codepen" size="lg" />
+              <span className="sr-only">코드펜 바로가기</span>
             </Link>
           </Item>
         </Items>

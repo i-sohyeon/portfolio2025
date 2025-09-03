@@ -209,21 +209,22 @@ function Home() {
                 bgColor="gray">
                  <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>현대카드 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2024. 12. ~</td>
                       </tr>
                       <tr>
-                        <th>작업 참여인원</th>
+                        <th scope="row">작업 참여인원</th>
                         <td>퍼블리싱 8명 </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>CMS, VSCode, Figma, HTML, CSS, JQuery, Javascript</td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td><a href="https://www.hyundaicard.com" target="_blank">www.hyundaicard.com</a></td>
                       </tr>
                     </tbody>
@@ -247,21 +248,22 @@ function Home() {
 
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>우리은행 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2024. 04. ~ 2024. 12</td>
                       </tr>
                       <tr>
-                        <th>작업 참여인원</th>
+                        <th scope="row">작업 참여인원</th>
                         <td>퍼블리싱 12명 </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Figma, React, css(scss), Typescript, Git</td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td>우리WON뱅킹 앱</td>
                       </tr>
                     </tbody>
@@ -284,21 +286,22 @@ function Home() {
                 bgColor="green">
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>농협 올원뱅크 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2023. 08. ~ 2024. 03</td>
                       </tr>
                       <tr>
-                        <th>작업 참여인원</th>
+                        <th scope="row">작업 참여인원</th>
                         <td>퍼블리싱 3명 </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Html, Css, JQuery, Javascript, Git, AdobeXD</td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td>NH올원뱅크 앱</td>
                       </tr>
                     </tbody>
@@ -321,21 +324,22 @@ function Home() {
                 bgColor="brown">
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>KB국민은행 멤버십 플랫폼 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2022. 11. ~ 2023. 07</td>
                       </tr>
                       <tr>
-                        <th>작업 참여인원</th>
+                        <th scope="row">작업 참여인원</th>
                         <td>퍼블리싱 4명 </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Html, Scss, JQuery, Javascript, Gulp, Figma, CMS </td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td>KB스타뱅킹 앱</td>
                       </tr>
                     </tbody>
@@ -359,21 +363,22 @@ function Home() {
                 >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>문구야놀자 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2021. 01. ~ 2022. 04</td>
                       </tr>
                       <tr>
-                        <th>참여도</th>
+                        <th scope="row">참여도</th>
                         <td>100% </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td><a href="https://playmoongu.com/brand" target="_blank">playmoongu.com/brand</a></td>
                       </tr>
                     </tbody>
@@ -397,21 +402,22 @@ function Home() {
                 bgColor="red">
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>딸기콩 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2021. 01. ~ 2022. 04</td>
                       </tr>
                       <tr>
-                        <th>참여도</th>
+                        <th scope="row">참여도</th>
                         <td>100% </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td><a href="https://www.ddalgicong.com" target="_blank">www.ddalgicong.com</a></td>
                       </tr>
                     </tbody>
@@ -435,21 +441,22 @@ function Home() {
                 bgColor="brown">
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>인조이웍스 홈페이지 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2021. 01. ~ 2022. 04</td>
                       </tr>
                       <tr>
-                        <th>참여도</th>
+                        <th scope="row">참여도</th>
                         <td>100% </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td><a href="http://enjoyworks.co.kr" target="_blank">enjoyworks.co.kr</a></td>
                       </tr>
                     </tbody>
@@ -472,21 +479,22 @@ function Home() {
                 bgColor="brown">
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>굿뜨래페이 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2021. 01. ~ 2022. 04</td>
                       </tr>
                       <tr>
-                        <th>참여도</th>
+                        <th scope="row">참여도</th>
                         <td>100% </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td><a href="https://goodtraepay.buyeo.go.kr" target="_blank">goodtraepay.buyeo.go.kr</a></td>
                       </tr>
                     </tbody>
@@ -510,21 +518,22 @@ function Home() {
                 bgColor="red">
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
+                    <caption>딸기콩 관리자 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
                     <tbody>
                       <tr>
-                        <th>프로젝트 기간</th>
+                        <th scope="row">프로젝트 기간</th>
                         <td>2021. 01. ~ 2022. 04</td>
                       </tr>
                       <tr>
-                        <th>참여도</th>
+                        <th scope="row">참여도</th>
                         <td>100% </td>
                       </tr>
                       <tr>
-                        <th>사용 툴</th>
+                        <th scope="row">사용 툴</th>
                         <td>VSCode, Html, Css(Scss), JQuery, Javascript, Gulp, Zeplin, AdobeXD </td>
                       </tr>
                       <tr>
-                        <th>웹주소</th>
+                        <th scope="row">웹주소</th>
                         <td>.</td>
                       </tr>
                     </tbody>
