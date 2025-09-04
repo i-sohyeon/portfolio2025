@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import "../styles/style.scss";
 import {
   UIText,
@@ -225,7 +225,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th scope="row">웹주소</th>
-                        <td><a href="https://www.hyundaicard.com" target="_blank">www.hyundaicard.com</a></td>
+                        <td><a href="https://www.hyundaicard.com" target="_blank" rel="noopener noreferrer">www.hyundaicard.com</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -379,7 +379,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th scope="row">웹주소</th>
-                        <td><a href="https://playmoongu.com/brand" target="_blank">playmoongu.com/brand</a></td>
+                        <td><a href="https://playmoongu.com/brand" target="_blank" rel="noopener noreferrer">playmoongu.com/brand</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -418,7 +418,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th scope="row">웹주소</th>
-                        <td><a href="https://www.ddalgicong.com" target="_blank">www.ddalgicong.com</a></td>
+                        <td><a href="https://www.ddalgicong.com" target="_blank" rel="noopener noreferrer">www.ddalgicong.com</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -457,7 +457,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th scope="row">웹주소</th>
-                        <td><a href="http://enjoyworks.co.kr" target="_blank">enjoyworks.co.kr</a></td>
+                        <td><a href="http://enjoyworks.co.kr" target="_blank" rel="noopener noreferrer">enjoyworks.co.kr</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -495,7 +495,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th scope="row">웹주소</th>
-                        <td><a href="https://goodtraepay.buyeo.go.kr" target="_blank">goodtraepay.buyeo.go.kr</a></td>
+                        <td><a href="https://goodtraepay.buyeo.go.kr" target="_blank" rel="noopener noreferrer">goodtraepay.buyeo.go.kr</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -560,10 +560,10 @@ function Home() {
               <li>🎨 웹 콘텐츠 접근성 지침(WCAG) 준수명도 대비 기준 충족 (예: 텍스트/배경 대비 4.5:1 이상)</li>
               <li>📑 시멘틱 태그 사용 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;</li>
               <li>⌨️ 키보드 네비게이션 지원</li>
+              랙이 왜걸리지??
             </ul>
           </UIAccordion.Line>
           <UIDivider variant="type1" margin="0"/>
-          
         </UIBox.Article>
       </UIContent>
 
