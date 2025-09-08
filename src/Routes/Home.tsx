@@ -15,6 +15,7 @@ import {
   UIAccordion,
   UIDivider,
   UIScroll,
+  UIFooter,
 } from "../components/v1";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
@@ -563,10 +564,13 @@ function Home() {
               랙이 왜걸리지??
             </ul>
           </UIAccordion.Line>
-          <UIDivider variant="type1" margin="0"/>
+          <UIDivider variant="type2" margin="0"/>
         </UIBox.Article>
       </UIContent>
 
+      <UIContent bgColor="green">
+        <UIFooter />
+      </UIContent>
       <UIScroll.TopButton/>
     </>
   );

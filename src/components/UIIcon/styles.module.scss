@@ -1,27 +1,36 @@
 .ui-icon {
   display: inline-block;
-  border-radius: 24px;
+  // border-radius: 24px;
 }
 
 /** variant **/
 .ui-icon-github {
-  background-image: url("../../assets//images/icons/ico_github.png");
+  background-image: url("../../assets/images/icons/ico_github.png");
   background-size: 100% 100%;
 }
 .ui-icon-tistory {
-  background-image: url("../../assets//images/icons/ico_tistory.png");
+  background-image: url("../../assets/images/icons/ico_tistory.png");
   background-size: 100% 100%;
 }
 .ui-icon-codepen {
-  background-image: url("../../assets//images/icons/ico_codepen.png");
+  background-image: url("../../assets/images/icons/ico_codepen.png");
+  background-size: 100% 100%;
+}
+
+.ui-icon-mail {
+  background-image: url("../../assets/images/icons/ico-mail.png");
   background-size: 100% 100%;
 }
 
 /** size **/
 .ui-icon-sm {
+  width: 20px;
+  height: 20px;
 }
 
 .ui-icon-md {
+  width: 24px;
+  height: 24px;
 }
 
 .ui-icon-lg {

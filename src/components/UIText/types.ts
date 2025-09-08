@@ -12,7 +12,7 @@ export type UITextVariant =
 
 export type UITextSize = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 export type UITextWeight = "normal" | "bold";
-export type UITextStyle = "tenada" | "bold";
+export type UITextStyle = "tenada" | "bagel";
 export type UITextColor = "white" | "blue";
 export type UIDisplay = "block" | "inline" | "inline-block";
 export type UITextAlign = "left" | "center" | "right";

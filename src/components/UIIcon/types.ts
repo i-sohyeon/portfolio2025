@@ -1,4 +1,4 @@
-export type UIIconVariant = "github" | "tistory" | "codepen";
+export type UIIconVariant = "github" | "tistory" | "codepen"  | "mail";
 export type UIIconSize = "sm" | "md" | "lg";
 
 export interface UIIconProps extends React.HTMLAttributes<HTMLElement> {

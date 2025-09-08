@@ -5,6 +5,7 @@ export * from "./UIBox/index";
 export * from "./UIButton/index";
 export * from "./UIContent/index";
 export * from "./UIDivider/index";
+export * from "./UIFooter/index";
 export * from "./UIHeader/index";
 export * from "./UIIcon/index";
 export * from "./UIParagraph/index";

@@ -8,6 +8,7 @@ import {
   UIDivider,
   UIParagraph,
   UIScroll,
+  UIFooter,
 } from "../components/v1";
 import "../styles/style.scss"
 
@@ -171,135 +172,139 @@ function Sub() {
 
 
   return (
-    <UIContent bgColor="navy">
-      <UIHeader size="md">S.H.LEE</UIHeader>
-      <UIBox.Article variant="content">
-        <UIText.Header size="lg" color="white" as="h2">
-          EXPERIENCE DETAIL
-        </UIText.Header>
+    <>
+      <UIContent bgColor="navy">
+        <UIHeader size="md">S.H.LEE</UIHeader>
+        <UIBox.Article variant="content">
+          <UIText.Header size="lg" color="white" as="h2">
+            EXPERIENCE DETAIL
+          </UIText.Header>
 
-        <UIBox.Div display="flex" jContent="space-between">
-          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
+          <UIBox.Div display="flex" jContent="space-between">
+            <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
+              <UIParagraph
+                title="현대카드"
+                period="2025.01 ~"
+                subTitle="현대카드 앱/웹 운영"
+                desc="CMS를 통한 현대카드 웹사이트 PC/MO 버전 운영 관리"
+              />
+              <div className="mt-2">
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  React
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  크로스브라우징
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  접근성
+                </UIBadge>
+              </div>
+            </UIBox.Div>
+            <UITextList.Nested nestedItems={data01}  style={{maxWidth: "650px"}}/>
+          </UIBox.Div>
+
+          <UIDivider variant="type2" margin="60px 0" />
+
+          <UIBox.Div display="flex" jContent="space-between">
+            <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
             <UIParagraph
-              title="현대카드"
-              period="2025.01 ~"
-              subTitle="현대카드 앱/웹 운영"
-              desc="CMS를 통한 현대카드 웹사이트 PC/MO 버전 운영 관리"
+              title="우리은행"
+              period="2024.04 ~ 2024.12 (약 8개월)"
+              subTitle="우리 won 뱅킹 재구축 사업"
             />
-            <div className="mt-2">
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                React
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                크로스브라우징
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                접근성
-              </UIBadge>
-            </div>
-          </UIBox.Div>
-          <UITextList.Nested nestedItems={data01}  style={{maxWidth: "650px"}}/>
-        </UIBox.Div>
+              <div>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  React
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  크로스브라우징
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  접근성
+                </UIBadge>
+              </div>
 
-        <UIDivider variant="type1" margin="60px 0" />
-
-        <UIBox.Div display="flex" jContent="space-between">
-          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
-          <UIParagraph
-            title="우리은행"
-            period="2024.04 ~ 2024.12 (약 8개월)"
-            subTitle="우리 won 뱅킹 재구축 사업"
-          />
-            <div>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                React
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                크로스브라우징
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                접근성
-              </UIBadge>
-            </div>
-
-          </UIBox.Div>
-          <UITextList.Nested nestedItems={data02} style={{maxWidth: "650px"}}/>
-        </UIBox.Div>
-
-        <UIDivider variant="type1" margin="60px 0" />
-
-        <UIBox.Div display="flex" jContent="space-between">
-          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
-          <UIParagraph
-            title="농협은행"
-            period="2023.08 ~ 2024.03 (약 7개월)"
-            subTitle="올원뱅크 리뉴얼 구축"
-          />
-            <div>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                퍼블리싱
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                크로스브라우징
-              </UIBadge>
-            </div>
+            </UIBox.Div>
+            <UITextList.Nested nestedItems={data02} style={{maxWidth: "650px"}}/>
           </UIBox.Div>
 
-          <UITextList.Nested nestedItems={data03} style={{maxWidth: "650px"}} />
-        </UIBox.Div>
+          <UIDivider variant="type2" margin="60px 0" />
 
-        <UIDivider variant="type1" margin="60px 0" />
-
-        <UIBox.Div display="flex" jContent="space-between">
-          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
+          <UIBox.Div display="flex" jContent="space-between">
+            <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
             <UIParagraph
-              title="KB국민은행"
-              period="2022.11 ~ 2023.07 (약 8개월)"
-              subTitle="KB 국민은행 그룹 멤버십플랫폼 개발의뢰"
-              desc="KB 멤버십 플랫폼 구축"
+              title="농협은행"
+              period="2023.08 ~ 2024.03 (약 7개월)"
+              subTitle="올원뱅크 리뉴얼 구축"
             />
-            <div className="mt-2">
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                퍼블리싱
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                web view
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                gulp
-              </UIBadge>
-            </div>
+              <div>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  퍼블리싱
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  크로스브라우징
+                </UIBadge>
+              </div>
+            </UIBox.Div>
+
+            <UITextList.Nested nestedItems={data03} style={{maxWidth: "650px"}} />
           </UIBox.Div>
 
-          <UITextList.Nested nestedItems={data04} style={{maxWidth: "650px"}} />
-        </UIBox.Div>
+          <UIDivider variant="type2" margin="60px 0" />
 
-        <UIDivider variant="type1" margin="60px 0" />
+          <UIBox.Div display="flex" jContent="space-between">
+            <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
+              <UIParagraph
+                title="KB국민은행"
+                period="2022.11 ~ 2023.07 (약 8개월)"
+                subTitle="KB 국민은행 그룹 멤버십플랫폼 개발의뢰"
+                desc="KB 멤버십 플랫폼 구축"
+              />
+              <div className="mt-2">
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  퍼블리싱
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  web view
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  gulp
+                </UIBadge>
+              </div>
+            </UIBox.Div>
 
-        <UIBox.Div display="flex" jContent="space-between">
-          <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
-            <UIParagraph
-              title="KB국민은행"
-              period="2022.07 ~ 2022.11 (약 4개월)"
-              subTitle="태블릿브랜치 금융투자 상품 판매 프로세스 구축"
-              desc="은행 직원이 태블릿을 사용하여 금융 업무를 처리할 수 있도록 하는 프로세스 구축"
-            />
-            <div className="mt-2">
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                퍼블리싱
-              </UIBadge>
-              <UIBadge variant="solid" bgColor="navy" size="sm">
-                크로스브라우징
-              </UIBadge>
-            </div>
+            <UITextList.Nested nestedItems={data04} style={{maxWidth: "650px"}} />
           </UIBox.Div>
-          <UITextList.Nested nestedItems={data05} style={{maxWidth: "650px"}} />
-          
-        </UIBox.Div>
-      </UIBox.Article>
+
+          <UIDivider variant="type2" margin="60px 0" />
+
+          <UIBox.Div display="flex" jContent="space-between">
+            <UIBox.Div className="mb-10" style={{minWidth:"340px"}}>
+              <UIParagraph
+                title="KB국민은행"
+                period="2022.07 ~ 2022.11 (약 4개월)"
+                subTitle="태블릿브랜치 금융투자 상품 판매 프로세스 구축"
+                desc="은행 직원이 태블릿을 사용하여 금융 업무를 처리할 수 있도록 하는 프로세스 구축"
+              />
+              <div className="mt-2">
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  퍼블리싱
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  크로스브라우징
+                </UIBadge>
+              </div>
+            </UIBox.Div>
+            <UITextList.Nested nestedItems={data05} style={{maxWidth: "650px"}} />
+          </UIBox.Div>
+        </UIBox.Article>
+      </UIContent>
+
+      <UIContent bgColor="green">
+        <UIFooter />
+      </UIContent>
       <UIScroll.TopButton/>
-
-    </UIContent>
+    </>
   );
 }
 
