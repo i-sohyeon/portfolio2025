@@ -1,12 +1,26 @@
 # 🌐 Portfolio 2025
+### Install dependencies
+➡️ npm install
+
+### Run development server
+➡️ npm run start
+
+### Build project
+➡️ npm run build
+
+### Deploy (GitHub Pages에 배포)
+➡️ npm run deploy
+
+
+
 
 ## 🛜 개인 포트폴리오 웹사이트  
 React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최적화를 모두 고려했습니다.  
-[👉 배포 URL](https://i-sohyeon.github.io/portfolio2025/)
+👉 [배포 URL](https://i-sohyeon.github.io/portfolio2025/)
 
 
 
----
+
 ## 🛠️ 기술 스택
 - **Framework**: [Create React App](https://create-react-app.dev/) (TypeScript + JSX/TSX)
 - **Language**: TypeScript, SCSS
@@ -14,7 +28,7 @@ React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최�
 - **Build & Deploy**: GitHub Actions
 - **Accessibility**: 시맨틱 마크업, aria-속성 적용, 명도 대비 준수
 - **Performance**: 코드 스플리팅, 이미지 최적화(Lazy Loading, WebP 변환)
----
+
 
 
 ## 📱 주요 기능 및 특징
@@ -60,8 +74,6 @@ React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최�
 - (구현 예정) 메인 화면 : 카드 이미지가 뒤집히는게 무한으로 반복되는 애니메이션
 - (구현 예정) Career 콘텐츠 영역 : 아래로 스크롤 할때 텍스트가 주르륵 나타는 애니메이션, 다시 아래로 스크롤을 올리면 텍스트가 주르륵 사라짐
 
-
----
 
 
 ## 📁 폴더 구조
@@ -129,7 +141,6 @@ React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최�
 - ### UITextList
   `UITextList.Check` `UITextList.Circle` `UITextList.Step`
 
-====
 
 
 
@@ -137,7 +148,8 @@ React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최�
 
 
 
-### 텍스트 사이즈
+
+## 텍스트 사이즈
 UITextSize
 
 - xxs 12 | 11
