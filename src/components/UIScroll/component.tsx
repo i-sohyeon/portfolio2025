@@ -63,7 +63,7 @@ export const TopButton: React.FC<UIScrollButtonProps> = ({
       style={{
         position: "fixed",
         right: 24,
-        bottom: 240,
+        bottom: 80,
         padding: "10px 12px",
         borderRadius: "12px",
         backgroundColor: "#3f89e6",

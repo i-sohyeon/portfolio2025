@@ -242,10 +242,10 @@ function Home() {
             <SwiperSlide>
               <SlideItem 
                 title="우리은행 won 뱅킹 재구축"
-                titleColor="blue"
+                titleColor="white"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/wooribank.png"}
-                bgColor="light-blue">
+                bgColor="navy">
 
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
@@ -281,7 +281,7 @@ function Home() {
             <SwiperSlide>
               <SlideItem 
                 title="농협 올원뱅크 리뉴얼 구축"
-                titleColor="yellow"
+                titleColor="black"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/nhbank.png"}
                 bgColor="green">
@@ -436,10 +436,10 @@ function Home() {
             <SwiperSlide>
               <SlideItem 
                 title="인조이웍스 홈페이지"
-                titleColor="yellow"
+                titleColor="black"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/enjoyworks.png"}
-                bgColor="brown">
+                bgColor="yellowgreen">
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>인조이웍스 홈페이지 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>

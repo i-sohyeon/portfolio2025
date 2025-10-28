@@ -86,13 +86,13 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
             </Link>
           </Item>
           <Item>
-            <Link to="https://github.com/" target="_blank">
+            <Link to="https://s-notee.tistory.com/" target="_blank">
               <UIIcon variant="tistory" size="lg" />
               <span className="sr-only">티스토리 바로가기</span>
             </Link>
           </Item>
           <Item>
-            <Link to="https://github.com/" target="_blank">
+            <Link to="https://codepen.io/sohyeon403" target="_blank">
               <UIIcon variant="codepen" size="lg" />
               <span className="sr-only">코드펜 바로가기</span>
             </Link>
