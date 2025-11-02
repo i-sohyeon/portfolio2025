@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      var pathname = window.location.pathname;
+      var redirectTo = '/'; 
+      if (pathname !== '/') {
+        redirectTo = '/?' + pathname.substr(1);
+      }
+      window.location.replace(redirectTo);
+    </script>
+  </head>
+  <body></body>
+</html>
