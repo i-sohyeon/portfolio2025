@@ -52,6 +52,7 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
     styles["ui-header"],
     styles[`ui-header-${variant}`],
     styles[`ui-header-${size}`],
+    styles[`ui-header-${color}`],
     className,
   ]
     .filter(Boolean)
@@ -80,7 +81,7 @@ export const UIHeader: React.FC<UIHeaderProps> = ({
       <nav className={isOpen ? styles.open : styles.nav}>
         <Items>
           <Item>
-            <Link to="https://github.com/" target="_blank">
+            <Link to="http://github.com/i-sohyeon" target="_blank">
               <UIIcon variant="github" size="lg" />
               <span className="sr-only">깃허브 바로가기</span>
             </Link>

@@ -52,7 +52,7 @@ export const UIFooter: React.FC<UIFooterProps> = ({
                 </Link>
               </Item>
               <Item>
-                <Link to="https://github.com/" target="_blank">
+                <Link to="https://codepen.io/sohyeon403" target="_blank">
                   <UIIcon variant="codepen" size="md" />
                   <span className="sr-only">코드펜 바로가기</span>
                 </Link>

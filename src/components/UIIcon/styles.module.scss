@@ -8,8 +8,16 @@
   background-image: url("../../assets/images/icons/ico_github.png");
   background-size: 100% 100%;
 }
+.ui-icon-github-wht {
+  background-image: url("../../assets/images/icons/ico_github_wht.png");
+  background-size: 100% 100%;
+}
 .ui-icon-tistory {
   background-image: url("../../assets/images/icons/ico_tistory.png");
+  background-size: 100% 100%;
+}
+.ui-icon-tistory-wht {
+  background-image: url("../../assets/images/icons/ico_tistory_wht.png");
   background-size: 100% 100%;
 }
 .ui-icon-codepen {
@@ -20,6 +28,11 @@
 .ui-icon-mail {
   background-image: url("../../assets/images/icons/ico-mail.png");
   background-size: 100% 100%;
+}
+
+/** color **/ 
+.ui-icon-wht {
+  // background: red;
 }
 
 /** size **/

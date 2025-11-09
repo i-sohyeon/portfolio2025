@@ -18,6 +18,17 @@
   &-lg {
     padding: rem(40) rem(32);
   }
+
+  // color
+  &-bk {
+
+  }
+  &-wht {
+    .ui-icon-github-wht {
+      background-image: url("../../assets/images/icons/ico_github_wht.png");
+      background-size: 100% 100%;
+    }
+  }
   a {
     color: #3f89e6;
     font-family: 'Bagel fat one';

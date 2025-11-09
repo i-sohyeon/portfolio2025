@@ -7,11 +7,13 @@ export const UIIcon: React.FC<UIIconProps> = ({
   size,
   children,
   className,
+  color,
 }) => {
   const classes = [
     styles["ui-icon"],
     styles[`ui-icon-${variant}`],
     styles[`ui-icon-${size}`],
+    styles[`ui-icon-${color}`],
     className,
   ]
     .filter(Boolean)
