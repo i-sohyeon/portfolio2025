@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import ReactDOM from "react-dom";
 import "../styles/style.scss";
 import {
@@ -19,6 +19,7 @@ import {
 } from "../components/v1";
 import { SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
+import UIPopup from "../components/UIPopup/component";
 // import { Pagination } from 'swiper/modules';
 
 function Home() {
@@ -36,7 +37,13 @@ function Home() {
     "포토이 인생사진 mobile",
     "태양광 햇빛마루 pc/mobile(적응형)",
   ];
-
+  const [popupContent, setPopupContent] = useState<React.ReactNode | null>(null);
+  const handleOpenPopup = (content: React.ReactNode) => {
+    setPopupContent(content);
+  };
+  const handleClosePopup = () => {
+    setPopupContent(null);
+  };
   return (
     <>
       <UIContent bgColor="gray" bgPattern="check">
@@ -207,7 +214,17 @@ function Home() {
                 titleColor="black"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/hyundaicard.png"}
-                bgColor="gray">
+                bgColor="gray"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div>
+                      {/* 팝업에 나올 전용 내용 */}
+                      <h2 className="mb-20">현대카드 web/app 운영 </h2>
+                      <p> 팝업 영역 현재 작업 중 입니다.</p>
+                    </div>
+                  )
+                }
+                >
                  <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>현대카드 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
@@ -361,6 +378,17 @@ function Home() {
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/playmoongu.png"}
                 bgColor="yellow"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                      <h2>문구야놀자(PC/Mobile)</h2>
+                        <div>
+                          <img src="/assets/images/swiper/01_content.png" alt="" />
+                        </div>
+                    </div>
+                  )
+                }
                 >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
@@ -550,6 +578,10 @@ function Home() {
               </SlideItem>
             </SwiperSlide>
           </UISwiper.Box>
+
+
+        {/* 팝업 조건부 렌더링 */}
+        {popupContent && <UIPopup content={popupContent} onClose={handleClosePopup} />}
         </UIBox.Article>
       </UIContent>
 
@@ -558,13 +590,21 @@ function Home() {
           <UIText.Header size="lg">ABOUT PORTFOLIO</UIText.Header>
           <UIAccordion.Line variant="line" id="acc-1" title="1. 접근성 (Accessibility)">
             <ul>
-              <li>🎨 웹 콘텐츠 접근성 지침(WCAG) 준수명도 대비 기준 충족 (예: 텍스트/배경 대비 4.5:1 이상)</li>
+              <li>
+                🎨 웹 콘텐츠 접근성 지침(WCAG) 준수명도 대비 기준 충족 (예: 텍스트/배경 대비 4.5:1 이상)
+                </li>
               <li>📑 시멘틱 태그 사용 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;</li>
               <li>⌨️ 키보드 네비게이션 지원</li>
-              랙이 왜걸리지??
             </ul>
           </UIAccordion.Line>
           <UIDivider variant="type2" margin="0"/>
+          <UIAccordion.Line variant="line" id="acc-2" title="2. 반응형 디자인 (Responsive Design)">
+            <ul>
+              <li>반응형 디자인 (Responsive Design)</li>
+              <li>📱 모바일, 태블릿, 데스크톱 해상도 대응<br/>- Media Query를 사용하여 각 디바이스별 분기처리</li>
+              <li>📏 뷰포트 단위 활용 (vw, vh, rem 등)</li>
+            </ul>
+          </UIAccordion.Line>
         </UIBox.Article>
       </UIContent>
 
