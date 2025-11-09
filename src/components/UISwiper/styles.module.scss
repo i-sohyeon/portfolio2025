@@ -16,12 +16,22 @@
   border-radius: 40px;
   box-sizing: border-box;
   background-color: #ccc !important;
+  button {
+    padding: 0;
+    background: none;
+    overflow: hidden;
+    border-radius: 28px;
+    &:hover > img {
+      transform: scale(1.2);
+    }
+  }
   img {
     width: 650px;
     height: 380px;
     background: #eee;
     border-radius: 28px;
     object-fit: cover;
+    transition: transform 0.8s ease; 
   }
   h3 {
     font-family: "tenada";
@@ -105,7 +115,6 @@
     }
   }
 }
-
 
 // UISwiper.Box slide bgColor
 .ui-swiper-red {background-color: #E41201 !important;}

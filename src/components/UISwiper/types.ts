@@ -1,6 +1,6 @@
 export type SwiperVariant = "type1";
 export type SwiperBgColor = "red" | "yellow" | "gray" | "navy" | "green" | "brown" | "yellowgreen";
-export type SwiperTextColor = "purple" | "green" | "black" | "blue" | "yellow" | "white" ;
+export type SwiperTextColor = "purple" | "green" | "black" | "blue" | "yellow" | "white";
 
 export interface SwiperProps extends React.HTMLAttributes<HTMLElement> {
   variant?: SwiperVariant;
@@ -20,11 +20,12 @@ export interface SwiperProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 export interface SlideItemProps {
-  title: string;
+  title?: string;
   titleColor?: SwiperTextColor;
   content?: string;
   imgSrc: string;
   children?: React.ReactNode;
   bgColor?: SwiperBgColor;
   ref?: string;
+  onClick?: () => void;
 }

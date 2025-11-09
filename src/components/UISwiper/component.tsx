@@ -88,7 +88,8 @@ export const SlideItem = ({
   imgSrc,
   children,
   bgColor,
-}: SlideItemProps) => {
+  onClick,
+}: SlideItemProps & { onClick?: () => void }) => {
   const swiperContentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -103,7 +104,10 @@ export const SlideItem = ({
 
   return (
     <div ref={swiperContentRef} className={`${styles.slideItem} ${classes}`}>
-      <img src={imgSrc} alt="" />
+      <button onClick={onClick}>
+        <img src={imgSrc} alt="" /> 
+      </button>
+      
       <h3 className={`${colorClass} ${classes}`}>{title}</h3>
       {/* <p className={colorClass}>{content}</p> */}
       {content && <p className={colorClass}>{content}</p>}
