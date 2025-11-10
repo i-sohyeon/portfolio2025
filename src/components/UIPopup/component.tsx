@@ -19,12 +19,12 @@ const UIPopup: React.FC<{ content: string | React.ReactNode; onClose: () => void
   return (
     <div className={`${styles.popupOverlay}`} onClick={onClose}>
       <div className={`${styles.popupContent}`} onClick={(e) => e.stopPropagation()}>
+        <button onClick={onClose} className={`${styles.popupbutton}`}>
+        </button>
         <div className={`${styles.content}`}>
           {typeof content === "string" ? <p>{content}</p> : content}
         </div>
-        <button onClick={onClose} className={`${styles.popupbutton}`}>
-          닫기
-        </button>
+  
       </div>
     </div>
   );
