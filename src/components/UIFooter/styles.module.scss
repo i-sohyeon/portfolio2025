@@ -1,13 +1,13 @@
 @import "../../styles/style.scss";
 
 .ui-footer {
-  // width: 100%;
   
-  max-width: 1280px;
   background: #049713;
-  margin: 0 auto;
   padding: rem(36) rem(24);
   .footerWrap {
+  max-width: 1280px;
+  margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
