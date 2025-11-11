@@ -1,4 +1,9 @@
 # 🌐 Portfolio 2025
+
+## 🛜 개인 포트폴리오 웹사이트  
+React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최적화를 모두 고려하여 작업했습니다.  
+👉 [배포 URL](https://i-sohyeon.github.io/portfolio2025/)
+
 ### Install dependencies
 ➡️ npm install
 
@@ -10,14 +15,6 @@
 
 ### Deploy (GitHub Pages에 배포)
 ➡️ npm run deploy
-
-
-
-
-## 🛜 개인 포트폴리오 웹사이트  
-React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최적화를 모두 고려했습니다.  
-👉 [배포 URL](https://i-sohyeon.github.io/portfolio2025/)
-
 
 
 
@@ -149,7 +146,7 @@ React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최�
 
 
 
-## 텍스트 사이즈
+<!-- ## 텍스트 사이즈
 UITextSize
 
 - xxs 12 | 11
@@ -167,7 +164,7 @@ UITextHeaderSize
 - lg 60 |
 - xl 72 |
 - xxl 80 | 60
-
+ -->
 
 
 
