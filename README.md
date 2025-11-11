@@ -19,7 +19,7 @@ React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최�
 
 
 ## 🛠️ 기술 스택
-- **Framework**: [Create React App](https://create-react-app.dev/) (TypeScript + JSX/TSX)
+- **Framework**: React [Create React App](https://create-react-app.dev/)
 - **Language**: TypeScript, SCSS
 - **Styling**: CSS Modules, SCSS
 - **Build & Deploy**: GitHub Actions
