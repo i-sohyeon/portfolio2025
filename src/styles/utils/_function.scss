@@ -28,16 +28,16 @@ $margin-sizes: rem(4), rem(8), rem(12), rem(16), rem(20), rem(24), rem(28), rem(
 
 $padding-sizes: rem(4), rem(8), rem(12), rem(16), rem(20), rem(24), rem(28), rem(32), rem(36), rem(40), rem(44), rem(48), rem(52), rem(56), rem(60);
 @each $size in $padding-sizes {
-  .mt-#{index($padding-sizes, $size)} {
+  .pt-#{index($padding-sizes, $size)} {
     padding-top: $size !important;
   }
-  .mb-#{index($padding-sizes, $size)} {
+  .pb-#{index($padding-sizes, $size)} {
     padding-bottom: $size !important;
   }
-  .ml-#{index($padding-sizes, $size)} {
+  .pl-#{index($padding-sizes, $size)} {
     padding-left: $size !important;
   }
-  .mr-#{index($padding-sizes, $size)} {
+  .pr-#{index($padding-sizes, $size)} {
     padding-right: $size !important;
   }
 }
