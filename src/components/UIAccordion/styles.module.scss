@@ -3,11 +3,15 @@
 .ui-acc-line {
   button {
     font-size: rem(24);
+    font-weight: 700;
+    color: #111111;
+    text-align: left;
+    font-size: rem(24);
   }
 }
 .accordion {
   button {
-    padding: rem(32) 0;
+    padding: rem(24) 0;
     background: none;
   }
   > div {
