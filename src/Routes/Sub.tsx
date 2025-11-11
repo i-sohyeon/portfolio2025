@@ -173,8 +173,8 @@ function Sub() {
 
   return (
     <>
+      <UIHeader size="md" color="wht">S.H.LEE</UIHeader>
       <UIContent bgColor="navy">
-        <UIHeader size="md">S.H.LEE</UIHeader>
         <UIBox.Article variant="content">
           <UIText.Header size="lg" color="white" as="h2">
             EXPERIENCE DETAIL
@@ -300,9 +300,7 @@ function Sub() {
         </UIBox.Article>
       </UIContent>
 
-      <UIContent bgColor="green">
-        <UIFooter />
-      </UIContent>
+      <UIFooter />
       <UIScroll.TopButton/>
     </>
   );

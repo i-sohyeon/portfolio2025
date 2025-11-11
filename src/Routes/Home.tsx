@@ -46,8 +46,9 @@ function Home() {
   };
   return (
     <>
+      <UIHeader size="md">S.H.LEE</UIHeader>
+
       <UIContent bgColor="gray" bgPattern="check">
-        <UIHeader size="md">S.H.LEE</UIHeader>
         <UIBox.Article align="center" style={{ padding: "240px 0 220px 0" }}>
           <UIText.Header size="xl" align="center" variant="mainTitle" as="h1">
             UI &middot; UX
@@ -217,10 +218,12 @@ function Home() {
                 bgColor="gray"
                 onClick={() =>
                   handleOpenPopup(
-                    <div>
+                    <div className="">
                       {/* 팝업에 나올 전용 내용 */}
-                      <h2 className="mb-20">현대카드 web/app 운영 </h2>
-                      <p> 팝업 영역 현재 작업 중 입니다.</p>
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/hyundaicard.png"} alt="" />
+                        </div>
+                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다.</p>
                     </div>
                   )
                 }
@@ -262,7 +265,19 @@ function Home() {
                 titleColor="white"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/wooribank.png"}
-                bgColor="navy">
+                bgColor="navy"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/wooribank.png"} alt="" />
+                        </div>
+                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다.</p>
+                    </div>
+                  )
+                }
+                >
 
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
@@ -301,7 +316,19 @@ function Home() {
                 titleColor="black"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/nhbank.png"}
-                bgColor="green">
+                bgColor="green"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/nhbank.png"} alt="" />
+                        </div>
+                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다.</p>
+                    </div>
+                  )
+                }
+                >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>농협 올원뱅크 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
@@ -339,7 +366,19 @@ function Home() {
                 titleColor="yellow"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/kbbank.png"}
-                bgColor="brown">
+                bgColor="brown"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/kbbank.png"} alt="" />
+                        </div>
+                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다.</p>
+                    </div>
+                  )
+                }
+                >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>KB국민은행 멤버십 플랫폼 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
@@ -382,9 +421,9 @@ function Home() {
                   handleOpenPopup(
                     <div className="">
                       {/* 팝업에 나올 전용 내용 */}
-                      <h2>문구야놀자(PC/Mobile)</h2>
+                    
                         <div>
-                          <img src="/assets/images/swiper/01_content.png" alt="" />
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/01_content.png"} alt="" />
                         </div>
                     </div>
                   )
@@ -428,7 +467,19 @@ function Home() {
                 titleColor="green"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/ddalgicong.png"}
-                bgColor="red">
+                bgColor="red"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                    
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/03_content.png"} alt="" />
+                        </div>
+                    </div>
+                  )
+                }
+                >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>딸기콩 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
@@ -467,7 +518,19 @@ function Home() {
                 titleColor="black"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/enjoyworks.png"}
-                bgColor="yellowgreen">
+                bgColor="yellowgreen"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                    
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/05_content.png"} alt="" />
+                        </div>
+                    </div>
+                  )
+                }
+                >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>인조이웍스 홈페이지 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
@@ -499,13 +562,25 @@ function Home() {
                 </div>
               </SlideItem>
             </SwiperSlide>
+
             <SwiperSlide>
               <SlideItem 
                 title="굿뜨래페이"
-                titleColor="yellow"
+                titleColor="white"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/goodtraepay.png"}
-                bgColor="brown">
+                bgColor="navy"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/04_content.png"} alt="" />
+                        </div>
+                    </div>
+                  )
+                }
+                >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>굿뜨래페이 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
@@ -544,7 +619,19 @@ function Home() {
                 titleColor="green"
                 // content="Adaptive Page Publishing"
                 imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/ddalgicong_admin.png"}
-                bgColor="red">
+                bgColor="red"
+                onClick={() =>
+                  handleOpenPopup(
+                    <div className="">
+                      {/* 팝업에 나올 전용 내용 */}
+                    
+                        <div>
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/02_content.png"} alt="" />
+                        </div>
+                    </div>
+                  )
+                }
+                >
                 <UITable.Default className="mt-4" variant="type1" size="md" align="left">
                   <table>
                     <caption>딸기콩 관리자 프로젝트 참여기간, 인원, 사용 툴, 주소</caption>
@@ -579,7 +666,6 @@ function Home() {
             </SwiperSlide>
           </UISwiper.Box>
 
-
         {/* 팝업 조건부 렌더링 */}
         {popupContent && <UIPopup content={popupContent} onClose={handleClosePopup} />}
         </UIBox.Article>
@@ -591,26 +677,35 @@ function Home() {
           <UIAccordion.Line variant="line" id="acc-1" title="1. 접근성 (Accessibility)">
             <ul>
               <li>
-                🎨 웹 콘텐츠 접근성 지침(WCAG) 준수명도 대비 기준 충족 (예: 텍스트/배경 대비 4.5:1 이상)
-                </li>
-              <li>📑 시멘틱 태그 사용 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;</li>
-              <li>⌨️ 키보드 네비게이션 지원</li>
+                <UIText.Basic size="sm" as="p" className="mt-10 mb-5">
+                  🎨 웹 콘텐츠 접근성 지침(WCAG) 준수명도 대비 기준 충족 (예: 텍스트/배경 대비 4.5:1 이상)
+                </UIText.Basic>
+                <UIBox.Div>
+                  <img src={process.env.PUBLIC_URL + "/assets/images/etc/acc_web_accessibility.webp"} alt="" />
+                </UIBox.Div>
+              </li>
+              <li>
+                <UIText.Basic size="sm" as="p" className="mt-10 mb-5">
+                  📑 시멘틱 태그 사용 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;
+                </UIText.Basic>
+                <UIBox.Div>
+                  <img src={process.env.PUBLIC_URL + "/assets/images/etc/acc_semantic.webp"} alt="" />
+                </UIBox.Div>
+              </li>
+              {/* <li>⌨️ 키보드 네비게이션 지원</li> */}
             </ul>
           </UIAccordion.Line>
           <UIDivider variant="type2" margin="0"/>
           <UIAccordion.Line variant="line" id="acc-2" title="2. 반응형 디자인 (Responsive Design)">
-            <ul>
-              <li>반응형 디자인 (Responsive Design)</li>
+            작업중입니다!!
+            {/* <ul>
               <li>📱 모바일, 태블릿, 데스크톱 해상도 대응<br/>- Media Query를 사용하여 각 디바이스별 분기처리</li>
               <li>📏 뷰포트 단위 활용 (vw, vh, rem 등)</li>
-            </ul>
+            </ul> */}
           </UIAccordion.Line>
         </UIBox.Article>
       </UIContent>
-
-      <UIContent bgColor="green">
-        <UIFooter />
-      </UIContent>
+      <UIFooter />
       <UIScroll.TopButton/>
     </>
   );
