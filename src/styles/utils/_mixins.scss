@@ -32,9 +32,7 @@
 /* 모바일 가로 & 테블릿 세로 (480px ~ 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
   body {
-    background-color: blue;
-    h3,
-    p {
+    h3, p {
       // font-size: calc(16px / 16px * 1rem) !important;
       // @include fontSize(36px);
     }
@@ -44,7 +42,6 @@
 /* 테블릿 가로 & 노트북 (768px ~ 1279px) */
 @media (min-width: 768px) and (max-width: 1279px) {
   body {
-    background-color: red;
     section {
       padding: 0 20px;
       box-sizing: border-box;
