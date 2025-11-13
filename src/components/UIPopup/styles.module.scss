@@ -31,14 +31,14 @@
 }
  button {
   position: absolute;
-  top: 16px;
-  right: 40px;
-  width: 36px;
-  height: 36px;
+  top: rem(16);
+  right: rem(40);
+  width: rem(36);
+  height: rem(36);
   border-radius: 50%;
-  // background: #000000;
   cursor: pointer;  
   background-image: url("../../assets/images/icons/ico_close.png");
-  background-size: 36px 36px;
+  background-size: rem(36) rem(36);
+  background-color: #ffffff;
  }
 }

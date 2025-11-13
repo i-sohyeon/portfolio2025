@@ -9,6 +9,7 @@
     font-size: rem(24);
   }
 }
+
 .accordion {
   button {
     padding: rem(24) 0;
@@ -19,3 +20,19 @@
     padding: rem(32);
   }
 }
+
+
+@media (max-width: 768px) {
+  .accordion {
+    button {
+      padding: rem(16) 0;
+      background: none;
+    }
+    > div {
+      background: rgba(256,256,256,0.2);
+      padding: rem(16);
+    }
+  }
+}
+
+

@@ -26,6 +26,7 @@ $margin-sizes: rem(4), rem(8), rem(12), rem(16), rem(20), rem(24), rem(28), rem(
   }
 }
 
+/** padding **/ 
 $padding-sizes: rem(4), rem(8), rem(12), rem(16), rem(20), rem(24), rem(28), rem(32), rem(36), rem(40), rem(44), rem(48), rem(52), rem(56), rem(60);
 @each $size in $padding-sizes {
   .pt-#{index($padding-sizes, $size)} {

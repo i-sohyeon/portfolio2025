@@ -253,6 +253,7 @@ function Home() {
                 </UITable.Default>
                 <div className="mt-4">
                   <UIBadge size="md" variant="line">#CMS</UIBadge>
+                  <UIBadge size="md" variant="line">#유지보수</UIBadge>
                   <UIBadge size="md" variant="line">#적응형</UIBadge>
                   <UIBadge size="md" variant="line">#Webview</UIBadge>
                 </div>
@@ -293,7 +294,7 @@ function Home() {
                       </tr>
                       <tr>
                         <th scope="row">사용 툴</th>
-                        <td>VSCode, Figma, React, css(scss), Typescript, Git</td>
+                        <td>VSCode, Figma, React, css(scss), Typescript, Git, pnpm</td>
                       </tr>
                       <tr>
                         <th scope="row">웹주소</th>
@@ -306,6 +307,7 @@ function Home() {
                   <UIBadge size="md" variant="line">#접근성</UIBadge>
                   <UIBadge size="md" variant="line">#React</UIBadge>
                   <UIBadge size="md" variant="line">#다크모드</UIBadge>
+                  <UIBadge size="md" variant="line">#APP구축</UIBadge>
                 </div>
               </SlideItem>
             </SwiperSlide>
@@ -423,7 +425,7 @@ function Home() {
                       {/* 팝업에 나올 전용 내용 */}
                     
                         <div>
-                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/01_content.png"} alt="" />
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/01_content.webp"} alt="" />
                         </div>
                     </div>
                   )
@@ -472,9 +474,8 @@ function Home() {
                   handleOpenPopup(
                     <div className="">
                       {/* 팝업에 나올 전용 내용 */}
-                    
                         <div>
-                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/03_content.png"} alt="" />
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/03_content.webp"} alt="" />
                         </div>
                     </div>
                   )
@@ -523,9 +524,8 @@ function Home() {
                   handleOpenPopup(
                     <div className="">
                       {/* 팝업에 나올 전용 내용 */}
-                    
                         <div>
-                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/05_content.png"} alt="" />
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/05_content.webp"} alt="" />
                         </div>
                     </div>
                   )
@@ -575,7 +575,7 @@ function Home() {
                     <div className="">
                       {/* 팝업에 나올 전용 내용 */}
                         <div>
-                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/04_content.png"} alt="" />
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/04_content.webp"} alt="" />
                         </div>
                     </div>
                   )
@@ -624,9 +624,8 @@ function Home() {
                   handleOpenPopup(
                     <div className="">
                       {/* 팝업에 나올 전용 내용 */}
-                    
                         <div>
-                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/02_content.png"} alt="" />
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/02_content.webp"} alt="" />
                         </div>
                     </div>
                   )
@@ -686,7 +685,7 @@ function Home() {
               </li>
               <li>
                 <UIText.Basic size="sm" as="p" className="mt-10 mb-5">
-                  📑 시멘틱 태그 사용 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;
+                  📑 시멘틱 태그 사용 &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;
                 </UIText.Basic>
                 <UIBox.Div>
                   <img src={process.env.PUBLIC_URL + "/assets/images/etc/acc_semantic.webp"} alt="" />
@@ -697,11 +696,37 @@ function Home() {
           </UIAccordion.Line>
           <UIDivider variant="type2" margin="0"/>
           <UIAccordion.Line variant="line" id="acc-2" title="2. 반응형 디자인 (Responsive Design)">
-            작업중입니다!!
-            {/* <ul>
-              <li>📱 모바일, 태블릿, 데스크톱 해상도 대응<br/>- Media Query를 사용하여 각 디바이스별 분기처리</li>
-              <li>📏 뷰포트 단위 활용 (vw, vh, rem 등)</li>
-            </ul> */}
+            <ul>
+              <li>
+                <UIText.Basic size="sm" as="p" className="mt-10 mb-5">
+                  📱 모바일, 태블릿, 데스크톱 해상도 대응 (Media Query를 사용하여 각 디바이스별 분기처리)
+                </UIText.Basic>
+                <UIBox.Div>
+                  <img src={process.env.PUBLIC_URL + "/assets/images/etc/acc_mediaquery.webp"} alt="" />
+                </UIBox.Div>
+              </li>
+              <li>
+                <UIText.Basic size="sm" as="p" className="mt-10 mb-5">
+                  📏 뷰포트 단위 활용 (vw, vh, rem 등)
+                </UIText.Basic>
+                <UIBox.Div>
+                  <img src={process.env.PUBLIC_URL + "/assets/images/etc/acc_web_unit.webp"} alt="" />
+                </UIBox.Div>
+              </li>
+            </ul>
+          </UIAccordion.Line>
+          <UIDivider variant="type2" margin="0"/>
+          <UIAccordion.Line variant="line" id="acc-2" title="3. 성능 최적화 (Performance Optimization)">
+            <ul>
+              <li>
+                <UIText.Basic size="sm" as="p" className="mt-10 mb-5">
+                  🏙️ 이미지 압축 (WebP, AVIF)
+                </UIText.Basic>
+                <UIBox.Div>
+                  <img src={process.env.PUBLIC_URL + "/assets/images/etc/acc_webpimg.webp"} alt="" />
+                </UIBox.Div>
+              </li>
+            </ul>
           </UIAccordion.Line>
         </UIBox.Article>
       </UIContent>
