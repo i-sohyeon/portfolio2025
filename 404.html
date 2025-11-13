@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta http-equiv="refresh" content="0; URL=/portfolio2025/" />
     <script>
-      var pathname = window.location.pathname;
-      var redirectTo = '/'; 
-      if (pathname !== '/') {
-        redirectTo = '/?' + pathname.substr(1);
-      }
-      window.location.replace(redirectTo);
+      var redirect = '/portfolio2025/#' + window.location.pathname.replace('/portfolio2025', '');
+      window.location.replace(redirect);
     </script>
   </head>
   <body></body>
