@@ -24,7 +24,8 @@ function Sub() {
         { id: 1-4, name: "- EM(outlook mail) 발송 시 전반적인 마크업 담당" },
         { id: 1-5, name: "- 기기별로 반응형 레이아웃을 적용하여 최적화된 인터페이스를 구현" },
         { id: 1-6, name: "- HTML 마크업 및 CSS 스타일링, javascript 작업" },
-        { id: 1-7, name: "- 보이는 ARS 페이지 개발 대응 및 유지 보수" },
+        { id: 1-7, name: "- 기획/디자인 변경에 따른 jsp 마크업 수정" },
+        { id: 1-8, name: "- 보이는 ARS 페이지 개발 대응 및 유지 보수" },
       ],
     },
     {

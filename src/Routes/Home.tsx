@@ -244,6 +244,7 @@ function Home() {
                               <UIBox.Div className="pl-4">
                                 <UIText.Basic size="xs" className="mt-4" align="left" as="p" weight="normal">📂 the purple special offer</UIText.Basic>
                                 <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 공통 스타일 가이드를 가지고 제작</UIText.Basic>
+                                <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 모바일 전용 페이지</UIText.Basic>
                               </UIBox.Div>
                             </UIBox.Div>
                           </UIBox.Div>
@@ -258,6 +259,7 @@ function Home() {
                                 <UIText.Basic size="xs" className="mt-4" align="left" as="p" weight="normal">📂 tribe 이벤트 페이지</UIText.Basic>
                                 <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 공통 스타일 가이드를 가지고 제작</UIText.Basic>
                                 <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 라이트/다크모드 적용</UIText.Basic>
+                                <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 모바일 전용 페이지</UIText.Basic>
                               </UIBox.Div>
                              
                             </UIBox.Div>
@@ -269,6 +271,7 @@ function Home() {
                               <UIBox.Div className="pl-4">
                                 <UIText.Basic size="xs" className="mt-4" align="left" as="p" weight="normal">📂 코스트코 이벤트 페이지</UIText.Basic>
                                 <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 공통 스타일 가이드를 가지고 제작</UIText.Basic>
+                                <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 모바일 전용 페이지</UIText.Basic>
                               </UIBox.Div>
                             </UIBox.Div>
                           </UIBox.Div>
