@@ -29,6 +29,7 @@ export type UITextOpacity =
 
 export interface UITextProps extends React.HTMLAttributes<HTMLElement> {
   variant?: UITextVariant;
+  align?:UITextAlign,
   size?: UITextSize;
   weight?: UITextWeight;
   color?: UITextColor;

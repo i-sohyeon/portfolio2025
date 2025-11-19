@@ -46,6 +46,7 @@ export const Div: React.FC<UIBoxProps> = ({
   aItems,
   className,
   children,
+  scroll,
   ...rest
 }) => {
   const classes = [
@@ -56,6 +57,7 @@ export const Div: React.FC<UIBoxProps> = ({
     styles[`ui-box-${display}`],
     styles[`ui-box-${jContent}`],
     styles[`ui-box-${aItems}`],
+    styles[`ui-box-${scroll}`],
     className,
   ]
     .filter(Boolean)
@@ -68,10 +70,50 @@ export const Div: React.FC<UIBoxProps> = ({
   );
 };
 
+export const Scroll: React.FC<UIBoxProps> = ({
+  variant,
+  bgColor,
+  bgPattern,
+  as: UIBox = "article",
+  align,
+  display,
+  jContent,
+  aItems,
+  className,
+  children,
+  scroll,
+  imgSrc,
+  href,
+  ...rest
+}) => {
+  const classes = [
+    styles["ui-box-div"],
+    styles[`ui-box-${variant}`],
+    styles[`ui-box-${bgColor}`],
+    styles[`ui-box-${align}`],
+    styles[`ui-box-${display}`],
+    styles[`ui-box-${jContent}`],
+    styles[`ui-box-${aItems}`],
+    styles[`ui-box-${scroll}`],
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
+  return (
+    <>
+      <div className={`${classes}, ${styles.previewBox}`} style={{}} {...rest}>
+        {children}
+        <a href={href} target="_blank" rel="noreferrer">
+          <img src={imgSrc} alt="" />
+        </a>
+      </div>
+    </>
+  );
+};
 
 const UIBox = {
-  Article, Div
+  Article, Div, Scroll
 }
 
 export {UIBox}

@@ -5,6 +5,7 @@ export type UIBoxTextAlign = "left" | "center" | "right";
 export type UIBoxDisplay = "flex";
 export type UIBoxjustifyContent = "space-between";
 export type UIBoxAItems = "top" | "middle" | "bottom";
+export type UIBoxScroll = "scroll"
 
 export interface UIBoxProps extends React.HTMLAttributes<HTMLElement> {
   variant?: UIBoxVariant;
@@ -15,6 +16,9 @@ export interface UIBoxProps extends React.HTMLAttributes<HTMLElement> {
   display?: UIBoxDisplay;
   jContent?: UIBoxjustifyContent;
   aItems?: UIBoxAItems;
+  scroll?: UIBoxScroll;
+  imgSrc?:string;
+  href?:string;
   as?: React.ElementType;
 }
 
