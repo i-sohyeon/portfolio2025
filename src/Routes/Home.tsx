@@ -222,8 +222,8 @@ function Home() {
                       {/* 팝업에 나올 전용 내용 */}
                         <div>
                           <img src={process.env.PUBLIC_URL + "/assets/images/swiper/06_content.webp"} alt="" />
-                          <UIText.Basic size="md" className="mt-10 mb-6" align="left" as="p" weight="bold">✅ 작업한 이벤트 페이지</UIText.Basic>
-                          <UIBox.Div variant="flex" jContent="space-between" >
+                          <UIText.Basic size="md" className="mt-10 mb-6 pl-2" align="left" as="p" weight="bold">✅ 작업한 이벤트 페이지</UIText.Basic>
+                          <UIBox.Div variant="flex" jContent="space-between" className="pl-2 pr-2">
                             <UIBox.Div>
                               <UIBox.Scroll 
                                 href="https://www.hyundaicard.com/emart/m/html/emart_event2501.html"
@@ -232,6 +232,7 @@ function Home() {
                               <UIBox.Div className="pl-4">
                                 <UIText.Basic size="xs" className="mt-4" align="left" as="p" weight="normal">📂 이마트 이벤트 페이지</UIText.Basic>
                                 <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 공통 스타일 가이드를 가지고 제작</UIText.Basic>
+                                <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 모바일 전용 페이지</UIText.Basic>
                               </UIBox.Div>
                              
                             </UIBox.Div>
@@ -247,7 +248,7 @@ function Home() {
                             </UIBox.Div>
                           </UIBox.Div>
 
-                          <UIBox.Div variant="flex" jContent="space-between" className="mt-10">
+                          <UIBox.Div variant="flex" jContent="space-between" className="pl-2 pr-2 mt-10">
                             <UIBox.Div>
                               <UIBox.Scroll 
                                 href="https://www.hyundaicard.com/m/tribe/html/amex_centurion_newyork.html"
@@ -256,6 +257,7 @@ function Home() {
                               <UIBox.Div className="pl-4">
                                 <UIText.Basic size="xs" className="mt-4" align="left" as="p" weight="normal">📂 tribe 이벤트 페이지</UIText.Basic>
                                 <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 공통 스타일 가이드를 가지고 제작</UIText.Basic>
+                                <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 라이트/다크모드 적용</UIText.Basic>
                               </UIBox.Div>
                              
                             </UIBox.Div>
