@@ -29,7 +29,7 @@ export const Article: React.FC<UIBoxProps> = ({
     .join(" ");
 
   return (
-    <article className={`${classes}`}style={{}} {...rest}>
+    <article className={`${classes}`} style={{}} {...rest}>
       {children}
     </article>
   );

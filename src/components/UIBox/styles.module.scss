@@ -52,6 +52,14 @@
   text-align:left;
 }
 
+// display
+.ui-box-flex {display: flex;}
+.ui-box-grid {display: grid;}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 // scroll
 .previewBox {
   width: 100%;
@@ -84,7 +92,7 @@
   }
   .ui-box-div {
   }
-  .ui-box-flex {
+  .ui-box-flex, .ui-box-grid {
     display: block;
   }
   .ui-box-card {
