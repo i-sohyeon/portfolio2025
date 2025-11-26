@@ -19,5 +19,5 @@ export const UIIcon: React.FC<UIIconProps> = ({
     .filter(Boolean)
     .join(" ");
 
-  return <span className={classes}>{children}</span>;
+  return <i className={classes}>{children}</i>;
 };

@@ -18,14 +18,10 @@
     width: 100%;
     padding: rem(24) rem(12);
     background: none;
-    img {
-      width: rem(24);
-      height: rem(24);
-    }
-    
+    i {width: rem(20);height: rem(20);}
     &[aria-expanded="true"] {
       font-weight: 700;
-      img {transform: rotate(180deg);}
+      i {transform: rotate(180deg);}
     }
 
     &[aria-expanded="true"] + .accordion-panel {

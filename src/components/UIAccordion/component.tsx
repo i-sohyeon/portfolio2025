@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { UIAccordionProps } from "./types";
 import styles from "./styles.module.scss";
+import { UIIcon } from "../UIIcon";
 
 export const Line: React.FC<UIAccordionProps> = ({
   id, 
@@ -36,7 +37,8 @@ export const Line: React.FC<UIAccordionProps> = ({
           <span>
             {title}
           </span>
-          <img src="../../assets/images/icons/ico_arrow_bk.png" alt=""/>
+          <UIIcon variant="arrow-down" size="sm" />
+          {/* <img src="../../assets/images/icons/ico_arrow_bk.png" alt=""/> */}
         </button>
       </h3>
       <div
