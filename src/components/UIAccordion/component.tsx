@@ -33,7 +33,10 @@ export const Line: React.FC<UIAccordionProps> = ({
           onClick={toggleAccordion}
           className="accordion-trigger"
         >
-          {title}
+          <span>
+            {title}
+          </span>
+          <img src="../../assets/images/icons/ico_arrow_bk.png" alt=""/>
         </button>
       </h3>
       <div

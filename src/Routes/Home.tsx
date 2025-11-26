@@ -553,7 +553,7 @@ function Home() {
                     <div className="">
                       {/* 팝업에 나올 전용 내용 */}
                         <div>
-                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/03_content.webp"} alt="" />
+                          <img src={process.env.PUBLIC_URL + "/assets/images/swiper/03_content.webp"} alt="" loading="lazy" />
                         </div>
                     </div>
                   )

@@ -3,7 +3,7 @@
 .ui-acc-line {
   button {
     font-size: rem(24);
-    font-weight: 700;
+    font-weight: 400;
     color: #111111;
     text-align: left;
     font-size: rem(24);
@@ -12,8 +12,29 @@
 
 .accordion {
   button {
-    padding: rem(24) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: rem(24) rem(12);
     background: none;
+    img {
+      width: rem(24);
+      height: rem(24);
+    }
+    
+    &[aria-expanded="true"] {
+      font-weight: 700;
+      img {transform: rotate(180deg);}
+    }
+
+    &[aria-expanded="true"] + .accordion-panel {
+      max-height: 300px;     // 펼쳐질 최대 높이
+      opacity: 1;
+      padding: 16px 0;
+      background: #111111;
+    }
+  
   }
   > div {
     background: rgba(256,256,256,0.2);
@@ -21,6 +42,17 @@
     // text-align: center;
     img {width: 80%;}
   }
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: 
+    max-height 0.3s ease,
+    opacity 0.3s ease,
+    padding 0.3s ease;
 }
 
 
