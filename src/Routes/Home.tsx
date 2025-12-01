@@ -224,9 +224,19 @@ function Home() {
                           <img src={process.env.PUBLIC_URL + "/assets/images/swiper/06_content.webp"} alt="" />
                           <UIText.Basic size="md" className="mt-10 mb-6 pl-2" align="left" as="p" weight="bold">✅ 작업한 이벤트 페이지</UIText.Basic>
 
-                          <UIBox.Div display="grid" className="grid-2 pt-0" 
-                            // style={{gridTemplateColumns: "repeat(2, 1fr)",}}
-                            >
+                          <UIBox.Div display="grid" className="grid-2 pt-0">
+                          <UIBox.Div className="mt-4">
+                              <UIBox.Scroll 
+                                href="https://www.hyundaicard.com/koreanair/event/event_2512.html"
+                                imgSrc={process.env.PUBLIC_URL + "/assets/images/swiper/hd_koreanair_year-end.png"} className="mt-5">
+                              </UIBox.Scroll>
+                              <UIBox.Div className="pl-4">
+                                <UIText.Basic size="xs" className="mt-4" align="left" as="p" weight="bold">📂 대한항공카드 이벤트 페이지</UIText.Basic>
+                                <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 공통 스타일 가이드를 기반으로 전체 css 수정</UIText.Basic>
+                                <UIText.Basic size="xs" className="mt-1" align="left" as="p" weight="normal">- 반응형페이지(PC/Mobile)</UIText.Basic>
+                              </UIBox.Div>
+                            </UIBox.Div>
+
                             <UIBox.Div className="mt-4">
                               <UIBox.Scroll 
                                 href="https://hyundaicard.com/costco/m/html/costco_cashBack2510_case03_v1.html"
@@ -352,7 +362,7 @@ function Home() {
                         <div>
                           <img src={process.env.PUBLIC_URL + "/assets/images/swiper/wooribank.png"} alt="" />
                         </div>
-                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다. <br/> 경력 기술서를 확인해주세요!</p>
+                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다. <br/> <strong>경력 기술서</strong>를 확인해주세요!<br/> 현재는 [문구야놀자] 슬라이드부터 팝업 이미지를 확인하실 수 있습니다!! </p>
                     </div>
                   )
                 }
@@ -404,7 +414,7 @@ function Home() {
                         <div>
                           <img src={process.env.PUBLIC_URL + "/assets/images/swiper/nhbank.png"} alt="" />
                         </div>
-                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다.</p>
+                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다. <br/> <strong>경력 기술서</strong>를 확인해주세요!<br/> 현재는 [문구야놀자] 슬라이드부터 팝업 이미지를 확인하실 수 있습니다!! </p>
                     </div>
                   )
                 }
@@ -454,7 +464,7 @@ function Home() {
                         <div>
                           <img src={process.env.PUBLIC_URL + "/assets/images/swiper/kbbank.png"} alt="" />
                         </div>
-                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다.</p>
+                        <p><br/>해당 팝업 영역은 현재 이미지 작업중입니다. <br/> <strong>경력 기술서</strong>를 확인해주세요!<br/> 현재는 [문구야놀자] 슬라이드부터 팝업 이미지를 확인하실 수 있습니다!! </p>
                     </div>
                   )
                 }

@@ -75,8 +75,8 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
   &:hover img{
     overflow-y: scroll;
-    transform: scale(1.002);
-    transition: 0.3s;
+    transform: translateY(-50%);
+    transition: 5s;
   }
   &:last-child{
     margin-right: 0;
