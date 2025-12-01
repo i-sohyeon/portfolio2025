@@ -1,9 +1,5 @@
-
-
 // 텍스트 그라디언트 애니메이션
 .gradient-text {
-  // font-size: 4rem;
-  // font-weight: 900;
   background: linear-gradient(
     270deg,
     #ff6ec7,
@@ -45,7 +41,6 @@
       padding: 36px 0;
 
       &:first-child > span:last-child {
-        // color: red;
         animation-delay: 0s; // 첫번째 배너 리스트가 끝나면 뒤에 바로 붙음
       }
     }

@@ -74,7 +74,7 @@ export const Scroll: React.FC<UIBoxProps> = ({
   variant,
   bgColor,
   bgPattern,
-  as: UIBox = "article",
+  as: UIBox = "div",
   align,
   display,
   jContent,

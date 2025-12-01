@@ -6,7 +6,7 @@ import { UIScroll } from "./components/UIScroll";
 function App() {
   return (
     <Router>
-      <UIScroll.ToTop />
+      {/* <UIScroll.ToTop /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sub" element={<Sub />} />

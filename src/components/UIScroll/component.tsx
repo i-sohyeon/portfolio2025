@@ -88,7 +88,7 @@ const UIScroll = {
   ToTop, TopButton
 };
 
-UIScroll.ToTop.displayName = "UIScroll.ToTop";
+// UIScroll.ToTop.displayName = "UIScroll.ToTop";
 UIScroll.TopButton.displayName = "UIScroll.TopButton";
 
 export {UIScroll};
